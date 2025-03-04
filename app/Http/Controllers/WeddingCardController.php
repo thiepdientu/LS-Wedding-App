@@ -43,37 +43,93 @@ class WeddingCardController extends Controller
      */
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'bride_name' => 'required|string|max:255',
-            'groom_name' => 'required|string|max:255',
-            'banner_top' => 'required|string|max:255',
-            'wedding_date' => 'required|date',
-            'address_wedding' => 'required|string|max:255',
-            'address_wedding_map' => 'required|string|max:500',
-            'bride_birthday' => 'required|date',
-            'groom_birday' => 'required|date',
-            'bride_avatar' => 'required|string|max:500',
-            'groom_avatar' => 'required|string|max:500',
-            'banner_coundown' => 'required|string|max:500',
-            'album' => 'required|string|max:5000',
-            'date_coundown' => 'required|string|max:500',
-            'address_groom' => 'required|string|max:500',
-            'address_bride' => 'required|string|max:500',
-            'time_groom' => 'required|string|max:500',
-            'time_groom_al' => 'required|string|max:500',
-            'time_bride' => 'required|string|max:500',
-            'time_bride_al' => 'required|string|max:500',
-            'bride_phone' => 'required|string|max:15',
-            'groom_phone' => 'required|string|max:15',
+        // $validated = $request->validate([
+        //     'bride_name' => 'required|string|max:255',
+        //     'groom_name' => 'required|string|max:255',
+        //     'banner_top' => 'required|string|max:255',
+        //     'wedding_date' => 'required|date',
+        //     'address_wedding' => 'required|string|max:255',
+        //     'address_wedding_map' => 'required|string|max:500',
+        //     'bride_birthday' => 'required|date',
+        //     'groom_birday' => 'required|date',
+        //     'bride_avatar' => 'required|string|max:500',
+        //     'groom_avatar' => 'required|string|max:500',
+        //     'banner_coundown' => 'required|string|max:500',
+        //     'album' => 'required|string|max:5000',
+        //     'date_coundown' => 'required|string|max:500',
+        //     'address_groom' => 'required|string|max:500',
+        //     'address_bride' => 'required|string|max:500',
+        //     'time_groom' => 'required|string|max:500',
+        //     'time_groom_al' => 'required|string|max:500',
+        //     'time_bride' => 'required|string|max:500',
+        //     'time_bride_al' => 'required|string|max:500',
+        //     'bride_phone' => 'required|string|max:15',
+        //     'groom_phone' => 'required|string|max:15',
          
-            'groom_qr' => 'required|string|max:500',
-            'bride_qr' => 'required|string|max:500',
-            'groom_map' => 'required|string|max:500',
-            'bride_map' => 'required|string|max:500',
-        ]);
+        //     'groom_qr' => 'required|string|max:500',
+        //     'bride_qr' => 'required|string|max:500',
+        //     'groom_map' => 'required|string|max:500',
+        //     'bride_map' => 'required|string|max:500',
+        // ]);
 
-        // Tạo mới thiệp cưới
-        $weddingCard =  WeddingCard::create($validated);
+        // $imagePaths = [];
+
+        // if ($request->hasFile('image')) {
+        //     foreach ($request->file('image') as $image) {
+        //         $path = $image->store('uploads', 'public'); // Lưu vào thư mục storage/app/public/uploads
+        //         $imagePaths[] = $path;
+        //     }
+        // }
+
+        // // Tạo mới thiệp cưới
+        // $weddingCard =  WeddingCard::create($validated);
+
+        $validated = $request->validate([
+                'bride_name' => 'required|string|max:255',
+                'groom_name' => 'required|string|max:255',
+                'banner_top' => 'required|string|max:255',
+                'wedding_date' => 'required|date',
+                'address_wedding' => 'required|string|max:255',
+                'address_wedding_map' => 'required|string|max:500',
+                'bride_birthday' => 'required|date',
+                'groom_birday' => 'required|date',
+                'bride_avatar' => 'required|string|max:500',
+                'groom_avatar' => 'required|string|max:500',
+                'banner_coundown' => 'required|string|max:500',
+                'album' => 'required|string|max:5000',
+                'date_coundown' => 'required|string|max:500',
+                'address_groom' => 'required|string|max:500',
+                'address_bride' => 'required|string|max:500',
+                'time_groom' => 'required|string|max:500',
+                'time_groom_al' => 'required|string|max:500',
+                'time_bride' => 'required|string|max:500',
+                'time_bride_al' => 'required|string|max:500',
+                'bride_phone' => 'required|string|max:15',
+                'groom_phone' => 'required|string|max:15',
+             
+                'groom_qr' => 'required|string|max:500',
+                'bride_qr' => 'required|string|max:500',
+                'groom_map' => 'required|string|max:500',
+                'bride_map' => 'required|string|max:500',
+            ]);
+    
+        // 2️⃣ Tạo thiệp cưới trước để lấy ID
+        $weddingCard = WeddingCard::create($validated);
+        $weddingId = $weddingCard->id; // Lấy ID của thiệp vừa tạo
+    
+        // 3️⃣ Lưu ảnh vào thư mục public/{id}
+        $imagePaths = [];
+    
+        if ($request->hasFile('image')) {
+            foreach ($request->file('image') as $image) {
+                $fileName = time() . '-' . $image->getClientOriginalName(); // Đặt tên file
+                $path = $image->move(public_path("weddings/$weddingId"), $fileName); // Lưu ảnh
+                $imagePaths[] = "weddings/$weddingId/$fileName"; // Lưu đường dẫn ảnh
+            }
+        }
+    
+        // 4️⃣ Cập nhật đường dẫn ảnh vào database
+        $weddingCard->update(['album' => json_encode($imagePaths)]);
 
         
 
@@ -138,12 +194,54 @@ class WeddingCardController extends Controller
             'bride_qr' => 'required|string|max:500',
             'groom_map' => 'required|string|max:500',
             'bride_map' => 'required|string|max:500',
+            'images.*' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
 
         $weddingCard = WeddingCard::findOrFail($key);
         $weddingCard->update($data);
 
         return redirect()->route('wedding.edit', $key)->with('success', 'Cập nhật thiệp cưới thành công!');
+    }
+
+ /**
+     * Show the form for creating a new resource.
+     */
+    public function creates()
+    {
+        return view('imageupload');
+    }
+
+    // Xử lý cập nhật ảnh
+    public function updateImage(Request $request)
+    {
+        // // Kiểm tra file có tồn tại
+        // $request->validate([
+        //     'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048' // Giới hạn 2MB
+        // ]);
+
+        // // Lưu ảnh vào thư mục storage/app/public/images
+        // $path = $request->file('image')->store('images', 'public');
+
+        $request->validate([
+            'images.*' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048'
+        ]);
+
+        $imagePaths = [];
+
+        if ($request->hasFile('image')) {
+            foreach ($request->file('image') as $image) {
+                $path = $image->store('uploads', 'public'); // Lưu vào thư mục storage/app/public/uploads
+                $imagePaths[] = $path;
+            }
+        }
+
+        return response()->json([
+            'message' => 'Upload thành công!',
+            'paths' => $imagePaths
+        ]);
+
+       // return back()->with('success', 'Ảnh đã được tải lên thành công!')->with('image', $path);
+       return $path;
     }
 
     /**

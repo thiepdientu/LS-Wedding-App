@@ -126,7 +126,7 @@
     @endif
 
     <!-- Form -->
-    <form action="{{ isset($weddingCard) ? route('wedding.update', $weddingCard->id) : route('wedding.store') }}" method="POST">
+    <form action="{{ isset($weddingCard) ? route('wedding.update', $weddingCard->id) : route('wedding.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
 
         <label>Cô Dâu:</label>
@@ -203,7 +203,8 @@
 
         <label>Map Cô Dâu:</label>
         <input type="text" name="bride_map" value="{{ old('bride_map', $weddingCard->bride_map ?? '') }}"><br>
-
+        <label>Chọn ảnh</label>
+        <input type="file" name="image[]" multiple required>
     
         <button type="submit">{{ isset($weddingCard) ? 'Cập Nhật' : 'Lưu' }} Thiệp Cưới</button>
     </form>

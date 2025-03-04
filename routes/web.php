@@ -37,6 +37,10 @@ Route::get('/edit/{id}', [WeddingCardController::class, 'edit'])->name('wedding.
 Route::post('/update/{id}', [WeddingCardController::class, 'update'])->name('wedding.update');
 
 
+Route::get('/image', [WeddingCardController::class, 'creates'])->name('wedding.creates');
+Route::post('/upload', [WeddingCardController::class, 'updateImage'])->name('wedding.upload');
+
+
 Route::get('/wedding', [WeddingCardController::class, 'index']); // Lấy danh sách
 Route::get('/wedding-cards', [WeddingCardController::class, 'index']); // Lấy danh sách
 Route::post('/wedding-cards', [WeddingCardController::class, 'store']); // Thêm mới
