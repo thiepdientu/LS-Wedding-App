@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\WeddingCard;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class WeddingCardController extends Controller
 {
@@ -43,47 +44,6 @@ class WeddingCardController extends Controller
      */
     public function store(Request $request)
     {
-        // $validated = $request->validate([
-        //     'bride_name' => 'required|string|max:255',
-        //     'groom_name' => 'required|string|max:255',
-        //     'banner_top' => 'required|string|max:255',
-        //     'wedding_date' => 'required|date',
-        //     'address_wedding' => 'required|string|max:255',
-        //     'address_wedding_map' => 'required|string|max:500',
-        //     'bride_birthday' => 'required|date',
-        //     'groom_birday' => 'required|date',
-        //     'bride_avatar' => 'required|string|max:500',
-        //     'groom_avatar' => 'required|string|max:500',
-        //     'banner_coundown' => 'required|string|max:500',
-        //     'album' => 'required|string|max:5000',
-        //     'date_coundown' => 'required|string|max:500',
-        //     'address_groom' => 'required|string|max:500',
-        //     'address_bride' => 'required|string|max:500',
-        //     'time_groom' => 'required|string|max:500',
-        //     'time_groom_al' => 'required|string|max:500',
-        //     'time_bride' => 'required|string|max:500',
-        //     'time_bride_al' => 'required|string|max:500',
-        //     'bride_phone' => 'required|string|max:15',
-        //     'groom_phone' => 'required|string|max:15',
-         
-        //     'groom_qr' => 'required|string|max:500',
-        //     'bride_qr' => 'required|string|max:500',
-        //     'groom_map' => 'required|string|max:500',
-        //     'bride_map' => 'required|string|max:500',
-        // ]);
-
-        // $imagePaths = [];
-
-        // if ($request->hasFile('image')) {
-        //     foreach ($request->file('image') as $image) {
-        //         $path = $image->store('uploads', 'public'); // Lưu vào thư mục storage/app/public/uploads
-        //         $imagePaths[] = $path;
-        //     }
-        // }
-
-        // // Tạo mới thiệp cưới
-        // $weddingCard =  WeddingCard::create($validated);
-
         $validated = $request->validate([
                 'bride_name' => 'required|string|max:255',
                 'groom_name' => 'required|string|max:255',
@@ -121,10 +81,11 @@ class WeddingCardController extends Controller
         $imagePaths = [];
     
         if ($request->hasFile('image')) {
+           
             foreach ($request->file('image') as $image) {
-                $fileName = time() . '-' . $image->getClientOriginalName(); // Đặt tên file
-                $path = $image->move(public_path("weddings/$weddingId"), $fileName); // Lưu ảnh
-                $imagePaths[] = "weddings/$weddingId/$fileName"; // Lưu đường dẫn ảnh
+            
+                $path = $image->store("weddings/$weddingId", 'public');
+                $imagePaths[] = Storage::url($path);
             }
         }
     
@@ -140,16 +101,15 @@ class WeddingCardController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($identify)
+    public function show($key)
     {
-       // $cards = WeddingCard::where('groom_name', $identify)->get(); // Tìm chính xác
-    //    $cards = DB::table('wedding_cards')->first();
-    //     $image = "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2025/1/18/96df3e2dca9f438eb608e499b87a549b" ;
-    //     // return $cards;
-    //    return view('template01',compact('cards','image'));
-        $cards = DB::table('wedding_cards')->first();
-        $image = "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2025/1/18/96df3e2dca9f438eb608e499b87a549b" ;
-        return view('template01',compact('cards','image'));
+      // Tìm thiệp cưới theo key
+      $weddingCard = DB::table('wedding_cards')->where('id', $key)->first();
+
+      if (!$weddingCard) {
+          abort(404, 'Thiệp cưới không tồn tại');
+      }
+      return view('template01',compact('weddingCard')) ;
     }
     
 
