@@ -11,11 +11,20 @@ class WeddingCard extends Model
         'bride_name',           // Tên cô dâu
         'groom_name',           // Tên chú rể
         'banner_top',           // Banner ảnh top
+        'wedding_message',    
         'wedding_date',         // Ngày tổ chức lễ thành hôn
         'address_wedding',      // Địa chỉ tổ chức lễ thành hôn
         'address_wedding_map',  // Bản đồ địa chỉ tổ chức lễ thành hôn
         'bride_birthday',       // Ngày sinh cô dâu
-        'groom_birday',         // Ngày sinh chú rể
+        'groom_birthday',         // Ngày sinh chú rể
+        'groom_eating_title',
+        'bride_eating_title',
+        'groom_eating_date',
+         'bride_eating_date',
+         'message_invite',
+         'message_gift',
+         'message_thanks',
+         'banner_thanks',
         'bride_avatar',         // Ảnh đại diện cô dâu
         'groom_avatar',         // Ảnh đại diện chú rể
         'banner_coundown',      // Banner đếm ngược

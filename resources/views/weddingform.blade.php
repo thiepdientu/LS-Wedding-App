@@ -30,6 +30,9 @@
         <label>Chú Rể:</label>
         <input type="text" name="groom_name" value="{{ old('groom_name', $weddingCard->groom_name ?? '') }}" required><br>
 
+        <label>Nội dung lễ thành hôn</label>
+        <input type="text" name="wedding_message" value="{{ old('wedding_message', $weddingCard->wedding_message ?? '') }}" required><br>
+
         <label>Ngày Cưới:</label>
         <input type="date" name="wedding_date" value="{{ old('wedding_date', $weddingCard->wedding_date ?? '') }}" required><br>
 
@@ -43,7 +46,7 @@
         <input type="date" name="bride_birthday" value="{{ old('bride_birthday', $weddingCard->bride_birthday ?? '') }}" required><br>
 
         <label>Ngày Sinh Chú Rể:</label>
-        <input type="date" name="groom_birday" value="{{ old('groom_birday', $weddingCard->groom_birday ?? '') }}" required><br>
+        <input type="date" name="groom_birthday" value="{{ old('groom_birthday', $weddingCard->groom_birthday ?? '') }}" required><br>
 
         <label>Avatar Cô Dâu:</label>
         <input type="text" name="bride_avatar" value="{{ old('bride_avatar', $weddingCard->bride_avatar ?? '') }}"><br>
@@ -69,14 +72,29 @@
         <label>Địa Chỉ Cô Dâu:</label>
         <input type="text" name="address_bride" value="{{ old('address_bride', $weddingCard->address_bride ?? '') }}"><br>
 
-        <label>Thời Gian Mời Cỗ Chú Rể (Dương lịch):</label>
+        <label>Lời mời ăn cỗ chung ( Trân trọng ....)</label>
+        <input type="text" name="message_invite" value="{{ old('message_invite', $weddingCard->message_invite ?? '') }}"><br>
+
+        <label>Lời mời ăn cỗ nhà trai (Nhà Trai)</label>
+        <input type="text" name="groom_eating_title" value="{{ old('groom_eating_title', $weddingCard->groom_eating_title ?? '') }}"><br>
+
+        <label>Giờ ăn cỗ nhà trai:</label>
         <input type="text" name="time_groom" value="{{ old('time_groom', $weddingCard->time_groom ?? '') }}"><br>
+
+        <label>Ngày ăn cỗ nhà trai:</label>
+        <input type="date" name="groom_eating_date" value="{{ old('groom_eating_date', $weddingCard->groom_eating_date ?? '') }}" required><br>
 
         <label>Thời Gian Mời Cỗ Chú Rể (Âm lịch):</label>
         <input type="text" name="time_groom_al" value="{{ old('time_groom_al', $weddingCard->time_groom_al ?? '') }}"><br>
 
-        <label>Thời Gian Mời Cỗ Cô Dâu (Dương lịch):</label>
+        <label>Lời mời ăn cỗ nhà gái (Nhà Gái)</label>
+        <input type="text" name="bride_eating_title" value="{{ old('bride_eating_title', $weddingCard->bride_eating_title ?? '') }}"><br>
+
+        <label>Giờ ăn cỗ nhà gái:</label>
         <input type="text" name="time_bride" value="{{ old('time_bride', $weddingCard->time_bride ?? '') }}"><br>
+
+        <label>Ngày ăn cỗ nhà gái:</label>
+        <input type="date" name="bride_eating_date" value="{{ old('bride_eating_date', $weddingCard->bride_eating_date ?? '') }}" required><br>
 
         <label>Thời Gian Mời Cỗ Cô Dâu (Âm lịch):</label>
         <input type="text" name="time_bride_al" value="{{ old('time_bride_al', $weddingCard->time_bride_al ?? '') }}"><br>
@@ -86,6 +104,15 @@
 
         <label>SĐT Chú Rể:</label>
         <input type="text" name="groom_phone" value="{{ old('groom_phone', $weddingCard->groom_phone ?? '') }}" required><br>
+
+        <label>Nội dung quà (Mọi yêu ...)</label>
+        <input type="text" name="message_gift" value="{{ old('message_gift', $weddingCard->message_gift ?? '') }}"><br>
+
+        <label>Nội dung thanks</label>
+        <input type="text" name="message_thanks" value="{{ old('message_thanks', $weddingCard->message_thanks ?? '') }}"><br>
+
+        <label>Banner Thanks:</label>
+        <input type="text" name="banner_thanks" value="{{ old('banner_thanks', $weddingCard->banner_thanks ?? '') }}"><br>
 
         <label>QR Chú Rể:</label>
         <input type="text" name="groom_qr" value="{{ old('groom_qr', $weddingCard->groom_qr ?? '') }}"><br>
@@ -99,7 +126,7 @@
         <label>Map Cô Dâu:</label>
         <input type="text" name="bride_map" value="{{ old('bride_map', $weddingCard->bride_map ?? '') }}"><br>
         <label>Chọn ảnh</label>
-        <input type="file" name="image[]" multiple required>
+        <input type="file" name="image[]" multiple {{ !isset($weddingCard) ? 'required' : '' }} >
     
         <button type="submit">{{ isset($weddingCard) ? 'Cập Nhật' : 'Lưu' }} Thiệp Cưới</button>
     </form>

@@ -8,14 +8,20 @@
     <meta property="og:image" content="https://i.ibb.co/jWsVnjf/27a9211baf9e14c04d8f8.jpg">
 
     <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
-    <title>Cường Thanh - Thiệp cưới online</title>
+    <title> {{ $weddingCard->groom_name }}
+        ❤️
+        {{ $weddingCard->bride_name }} - Thiệp cưới online</title>
     <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
-    <link rel="canonical" href="https://sontit1999.github.io/cuongthanh/">
+    <link rel="canonical" href="/wedding-cards/{{ $weddingCard->id}}/">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Cường Thanh - Thiệp cưới online">
-    <meta property="og:url" content="https://sontit1999.github.io/cuongthanh/">
-    <meta property="og:site_name" content="Cường Thanh - Thiệp cưới online">
+    <meta property="og:title" content="{{ $weddingCard->groom_name }}
+        ❤️
+        {{ $weddingCard->bride_name }} - Thiệp cưới online">
+    <meta property="og:url" content="/wedding-cards/{{ $weddingCard->id}}/">
+    <meta property="og:site_name" content="{{ $weddingCard->groom_name }}
+        ❤️
+        {{ $weddingCard->bride_name }} - Thiệp cưới online">
     <meta property="og:updated_time" content="2024-03-13T11:56:14+00:00">
     <meta property="og:image" content="https://i.ibb.co/jWsVnjf/27a9211baf9e14c04d8f8.jpg">
     <meta property="og:image:secure_url" content="https://i.ibb.co/jWsVnjf/27a9211baf9e14c04d8f8.jpg">
@@ -24,7 +30,9 @@
     <meta property="og:image:alt" content="Mẫu Thiệp Sang Trọng">
     <meta property="og:image:type" content="image/jpeg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Cường Thanh - Thiệp cưới online">
+    <meta name="twitter:title" content="{{ $weddingCard->groom_name }}
+        ❤️
+        {{ $weddingCard->bride_name }} - Thiệp cưới online">
     <meta name="twitter:image" content="https://i.ibb.co/jWsVnjf/27a9211baf9e14c04d8f8.jpg">
     <!-- /Rank Math WordPress SEO plugin -->
 
@@ -577,7 +585,9 @@
             <img src="images/logo-doc3.png" alt="" style="max-width: 150px;" class="uk-animation-slide-top">
 
             <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
-                Cường Thanh - Thiệp cưới online</h2>
+                {{ $weddingCard->groom_name }}
+        ❤️
+        {{ $weddingCard->bride_name }} </h2>
 
         </div>
 
@@ -607,10 +617,19 @@
                             data-aos-duration="3000">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->year }}</span>
                     </div>
                     <div class="banner-location" data-aos="fade-up" data-aos-duration="3000">
-                        <p class="script-font">Hôn lễ được tổ chức tại</p>
+                        <p class="script-font">{{ $weddingCard->wedding_message }}</p>
                         <p class="banner_sub_location">Nhà Trai</p>
                         <!--  <p class="banner_location_name">Luxury Palace</p> -->
                         <p class="banner_location_adress">{{ $weddingCard->address_wedding }}</p>
+                        <div class="social-link">
+                            <a href="tel:(+84){{ $weddingCard->groom_phone }}" class="phone_number">
+                                <i class="ri-phone-fill"></i>
+                            </a>
+
+                            <a href="{{ $weddingCard->groom_map }}" class="invi_map" target="_blank">
+                                <i class="ri-map-2-fill"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -639,7 +658,7 @@
                         <h3 class="bride_name"> {{ $weddingCard->bride_name }}</h3>
                         <p class="bride_birthday">
                             {{ \Carbon\Carbon::parse($weddingCard->bride_birthday)->format('d-m-Y') }}</p>
-                        <p class="bride_des">Máy bay</p>
+                        {{-- <p class="bride_des">Máy bay</p> --}}
                     </div>
                 </div>
                 <div class="about-card" style="order:1">
@@ -650,8 +669,8 @@
                     <div class="about-body" data-aos="fade-up" data-aos-duration="3000">
                         <h3 class="groom_name">{{ $weddingCard->groom_name }}</h3>
                         <p class="groom_birthday">
-                            {{ \Carbon\Carbon::parse($weddingCard->groom_birday)->format('d-m-Y') }}</p>
-                        <p class="groom_des">Phi Công</p>
+                            {{ \Carbon\Carbon::parse($weddingCard->groom_birthday)->format('d-m-Y') }}</p>
+                        {{-- <p class="groom_des">Phi Công</p> --}}
                     </div>
                 </div>
             </div>
@@ -713,11 +732,16 @@
 
             <div class="invitation">
                 <div class="invitation-container">
+                    <h2 class="uk-heading-small uk-text-center card-title  uk-text-cappercase">
+                        {{ $weddingCard->message_invite }}
+                    </h2>
                     <div class="invitation-card"> <img
                             src="{{ asset('template01/images/7a1eab9f1a1aa144f80b3.jpg') }}" alt="">
-                        <h3 class="card-title uk-margin-remove">NHÀ TRAI</h3>
+                        <h3 class="card-title uk-margin-remove">{{ $weddingCard->groom_eating_title }}</h3>
                         <address class="uk-margin-remove">
-                            <p>     <p>{{ $weddingCard->address_groom }}</p></p>
+                            <p>
+                            <p>{{ $weddingCard->address_groom }}</p>
+                            </p>
                         </address>
                         <div class="invitation-body">
                             <div class="invi_time">
@@ -730,18 +754,18 @@
                                     <span class="invi_date_text">
                                         @php
                                             \Carbon\Carbon::setLocale('vi'); // Đặt ngôn ngữ tiếng Việt
-                                            $date = \Carbon\Carbon::parse($weddingCard->wedding_date);
+                                            $date = \Carbon\Carbon::parse($weddingCard->groom_eating_date);
                                             $weekdayGroom = ucwords($date->translatedFormat('l')); // Viết hoa chữ cái đầu của mỗi từ // Viết hoa chữ cái đầu // Lấy thứ tiếng Việt
                                         @endphp
                                         {{ $weekdayGroom }} </span>
                                     <span class="invi_date_number">
                                         <p class="invi_date">
-                                            {{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}</p> /
+                                            {{ \Carbon\Carbon::parse($weddingCard->groom_eating_date)->day }}</p> /
                                         <p class="invi_month">
-                                            {{ \Carbon\Carbon::parse($weddingCard->wedding_date)->month }}</p>
+                                            {{ \Carbon\Carbon::parse($weddingCard->groom_eating_date)->month }}</p>
                                     </span>
                                     <span class="invi_year_text">
-                                        {{ \Carbon\Carbon::parse($weddingCard->wedding_date)->year }} </span>
+                                        {{ \Carbon\Carbon::parse($weddingCard->groom_eating_date)->year }} </span>
                                 </div>
 
                                 <p class="invi_amlich">{{ $weddingCard->time_groom_al }}</p>
@@ -762,7 +786,7 @@
                     </div>
                     <div class="invitation-card"> <img
                             src="{{ asset('template01/images/27a9211baf9e14c04d8f8.jpg') }}" alt="">
-                        <h3 class="card-title uk-margin-remove">NHÀ GÁI</h3>
+                        <h3 class="card-title uk-margin-remove">{{ $weddingCard->bride_eating_title }}</h3>
                         <address class="uk-margin-remove">
                             <p>{{ $weddingCard->address_bride }}</p>
                         </address>
@@ -776,17 +800,19 @@
 
                                     <span class="invi_date_text">
                                         @php
-                                        \Carbon\Carbon::setLocale('vi'); // Đặt ngôn ngữ tiếng Việt
-                                        $date = \Carbon\Carbon::parse($weddingCard->wedding_date);
-                                        $weekdayBride = ucwords($date->translatedFormat('l')); // Viết hoa chữ cái đầu của mỗi từ // Viết hoa chữ cái đầu // Lấy thứ tiếng Việt
-                                    @endphp
-                                       {{ $weekdayBride }} </span>
+                                            \Carbon\Carbon::setLocale('vi'); // Đặt ngôn ngữ tiếng Việt
+                                            $date = \Carbon\Carbon::parse($weddingCard->bride_eating_date);
+                                            $weekdayBride = ucwords($date->translatedFormat('l')); // Viết hoa chữ cái đầu của mỗi từ // Viết hoa chữ cái đầu // Lấy thứ tiếng Việt
+                                        @endphp
+                                        {{ $weekdayBride }} </span>
                                     <span class="invi_date_number">
-                                        <p class="invi_date">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}</p> /
-                                        <p class="invi_month">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->month }}</p>
+                                        <p class="invi_date">
+                                            {{ \Carbon\Carbon::parse($weddingCard->bride_eating_date)->day }}</p> /
+                                        <p class="invi_month">
+                                            {{ \Carbon\Carbon::parse($weddingCard->bride_eating_date)->month }}</p>
                                     </span>
                                     <span class="invi_year_text">
-                                        {{ \Carbon\Carbon::parse($weddingCard->wedding_date)->year }}  </span>
+                                        {{ \Carbon\Carbon::parse($weddingCard->bride_eating_date)->year }} </span>
                                 </div>
 
                                 <p class="invi_amlich">{{ $weddingCard->time_bride_al }}</p>
@@ -814,7 +840,7 @@
     <!-- END DRESS CODE -->
     <!-- TIMELINE -->
 
-    <section id="time-line" class="time-line-section img_bg bg_overlay"
+    {{-- <section id="time-line" class="time-line-section img_bg bg_overlay"
         style="background-image:url({{ asset('template01/images/5f3390b321369a68c3275.jpg') }})">
 
         <div class="time-line container">
@@ -909,7 +935,7 @@
 
         </div>
 
-    </section>
+    </section> --}}
 
     <!-- END TIMELINE -->
 
@@ -922,16 +948,20 @@
                 ALBUM ẢNH</h2>
         </div>
 
-
+        @php
+            $album = !empty($weddingCard->album) ? json_decode($weddingCard->album, true) : [];
+        @endphp
         <div class="album-slide">
             <div class="swiper-wrapper album">
-                @foreach (json_decode($weddingCard->album, true) as $image)
-                    <div class="swiper-slide">
-                        <a href="{{ asset($image) }}" data-fancybox="gallery">
-                            <img src="{{ asset($image) }}" style="object-position:">
-                        </a>
-                    </div>
-                @endforeach
+                @if (!empty($album))
+                    @foreach (json_decode($weddingCard->album, true) as $image)
+                        <div class="swiper-slide">
+                            <a href="{{ asset($image) }}" data-fancybox="gallery">
+                                <img src="{{ asset($image) }}" style="object-position:">
+                            </a>
+                        </div>
+                    @endforeach
+                @endif
 
             </div>
             <div class="swiper-pagination"></div>
@@ -979,7 +1009,7 @@
 
     <!-- LỜI CHÚC -->
     <!-- TIN NHẮN -->
-    <section id="message" class="section-message uk-background-cover uk-section"
+    {{-- <section id="message" class="section-message uk-background-cover uk-section"
         style="background-image:url({{ asset('template01/images/8527e1ec6d69d6378f78.jpg') }}); display:block">
         <div class="uk-position-cover uk-overlay uk-overlay-primary" style="opacity:.5"> </div>
         <div class="message-container container uk-position-relative uk-position-z-index">
@@ -1017,7 +1047,7 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- END TIN NHẮN -->
     <script>
         fetch('/wp-json/wp/v2/comments?post=999&per_page=100', {
@@ -1191,7 +1221,8 @@
     <section id="gift" class="section-gift" style="display:block">
         <div class="container">
             <p class="subtitle"></p>
-            <h2 class="uk-heading-small uk-text-center script-font uk-text-cappercase">GỬI QUÀ ĐẾN CÔ DÂU VÀ CHÚ RỂ
+            <h2 class="uk-heading-small uk-text-center script-font uk-text-cappercase">
+                {{ $weddingCard->message_gift }}
             </h2>
             <a href="#box-gift" data-fancybox="" class="btn btn-primary">
                 <svg width="54" height="54" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
@@ -1233,10 +1264,10 @@
         <img src="{{ asset('template01/images/0ccec3384dbdf6e3afac.jpg') }}" alt=""
             class="thankyou-bg thankyou_img" style="object-position:">
         <div class="thankyou-body container uk-position-relative uk-position-z-index">
-            <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up"
-                data-aos-duration="2000">Thank you!</h2>
+            <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-down"
+                data-aos-duration="2500">Thank you!</h2>
             <p class="thankyou-des" data-aos="fade" data-aos-duration="3000"></p>
-            <p>Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi. Chân thành cám ơn !</p>
+            <p>{{ $weddingCard->message_thanks }}</p>
             <p></p>
 
         </div>

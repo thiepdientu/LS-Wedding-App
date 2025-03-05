@@ -59,7 +59,7 @@
 
 .album img {
 
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1.5;
 
     object-fit: cover;
 
@@ -68,6 +68,8 @@
     height: 100%;
 
     object-position: center 10%;
+
+    border-radius: 15px;
 
 }
 
