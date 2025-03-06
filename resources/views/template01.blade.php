@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <meta property="og:image" content="https://i.ibb.co/jWsVnjf/27a9211baf9e14c04d8f8.jpg">
+    <meta property="og:image" content="{{ $weddingCard->banner_coundown }}">
 
     <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
     <title> {{ $weddingCard->groom_name }}
@@ -23,8 +23,8 @@
         ❤️
         {{ $weddingCard->bride_name }} - Thiệp cưới online">
     <meta property="og:updated_time" content="2024-03-13T11:56:14+00:00">
-    <meta property="og:image" content="https://i.ibb.co/jWsVnjf/27a9211baf9e14c04d8f8.jpg">
-    <meta property="og:image:secure_url" content="https://i.ibb.co/jWsVnjf/27a9211baf9e14c04d8f8.jpg">
+    <meta property="og:image" content="{{ $weddingCard->banner_coundown }}">
+    <meta property="og:image:secure_url" content="{{ $weddingCard->banner_coundown }}">
     <meta property="og:image:width" content="961">
     <meta property="og:image:height" content="1440">
     <meta property="og:image:alt" content="Mẫu Thiệp Sang Trọng">
@@ -33,133 +33,13 @@
     <meta name="twitter:title" content="{{ $weddingCard->groom_name }}
         ❤️
         {{ $weddingCard->bride_name }} - Thiệp cưới online">
-    <meta name="twitter:image" content="https://i.ibb.co/jWsVnjf/27a9211baf9e14c04d8f8.jpg">
+    <meta name="twitter:image" content="{{ $weddingCard->banner_coundown }}">
     <!-- /Rank Math WordPress SEO plugin -->
 
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="//unpkg.com">
-    <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Thiệp cưới online »"
-        href="https://thiepdientu.com.vn/feed/">
-    <link rel="alternate" type="application/rss+xml" title="Thiệp cưới online » Dòng bình luận"
-        href="https://thiepdientu.com.vn/comments/feed/">
-    <link rel="alternate" type="application/rss+xml" title="Thiệp cưới online » Mẫu Thiệp Sang Trọng Dòng bình luận"
-        href="https://thiepdientu.com.vn/mau-thiep/mau-thiep-sang-trong/feed/">
-    <script>
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
-            "svgExt": ".svg",
-            "source": {
-                "concatemoji": "https:\/\/thiepdientu.com.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"
-            }
-        };
-        /*! This file is auto-generated */
-        ! function(i, n) {
-            var o, s, e;
-
-            function c(e) {
-                try {
-                    var t = {
-                        supportTests: e,
-                        timestamp: (new Date).valueOf()
-                    };
-                    sessionStorage.setItem(o, JSON.stringify(t))
-                } catch (e) {}
-            }
-
-            function p(e, t, n) {
-                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
-                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
-                    r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e
-                        .getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-                return t.every(function(e, t) {
-                    return e === r[t]
-                })
-            }
-
-            function u(e, t, n) {
-                switch (t) {
-                    case "flag":
-                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !
-                            n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e,
-                                "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-                                "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
-                            );
-                    case "emoji":
-                        return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
-                }
-                return !1
-            }
-
-            function f(e, t, n) {
-                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(
-                        300, 150) : i.createElement("canvas"),
-                    a = r.getContext("2d", {
-                        willReadFrequently: !0
-                    }),
-                    o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
-                return e.forEach(function(e) {
-                    o[e] = t(a, e, n)
-                }), o
-            }
-
-            function t(e) {
-                var t = i.createElement("script");
-                t.src = e, t.defer = !0, i.head.appendChild(t)
-            }
-            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
-                everything: !0,
-                everythingExceptFlag: !0
-            }, e = new Promise(function(e) {
-                i.addEventListener("DOMContentLoaded", e, {
-                    once: !0
-                })
-            }), new Promise(function(t) {
-                var n = function() {
-                    try {
-                        var e = JSON.parse(sessionStorage.getItem(o));
-                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() <
-                            e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
-                    } catch (e) {}
-                    return null
-                }();
-                if (!n) {
-                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" !=
-                        typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
-                        var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p
-                                .toString()
-                            ].join(",") + "));",
-                            r = new Blob([e], {
-                                type: "text/javascript"
-                            }),
-                            a = new Worker(URL.createObjectURL(r), {
-                                name: "wpTestEmojiSupports"
-                            });
-                        return void(a.onmessage = function(e) {
-                            c(n = e.data), a.terminate(), t(n)
-                        })
-                    } catch (e) {}
-                    c(n = f(s, u, p))
-                }
-                t(n)
-            }).then(function(e) {
-                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n
-                    .supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports
-                        .everythingExceptFlag && n.supports[t]);
-                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n
-                    .DOMReady = !1, n.readyCallback = function() {
-                        n.DOMReady = !0
-                    }
-            }).then(function() {
-                return e
-            }).then(function() {
-                var e;
-                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e
-                    .concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
-            }))
-        }((window, document), window._wpemojiSettings);
-    </script>
+    
+   
     <style id="wp-emoji-styles-inline-css">
         img.wp-smiley,
         img.emoji {
@@ -548,16 +428,9 @@
     <script src="{{ asset('template01/js/jquery.min_1.js') }}" id="jquery-core-js"></script>
     <script src="{{ asset('template01/js/jquery-migrate.min.js') }}" id="jquery-migrate-js"></script>
     <script src="{{ asset('template01/js/jquery.min.js') }}" id="Jquery-js"></script>
-    <link rel="https://api.w.org/" href="https://thiepdientu.com.vn/wp-json/">
-    <link rel="alternate" title="JSON" type="application/json"
-        href="https://thiepdientu.com.vn/wp-json/wp/v2/mau-thiep/999">
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thiepdientu.com.vn/xmlrpc.php?rsd">
+    
     <meta name="generator" content="WordPress 6.6.1">
-    <link rel="shortlink" href="https://thiepdientu.com.vn/?p=999">
-    <link rel="alternate" title="oNhúng (JSON)" type="application/json+oembed"
-        href="https://thiepdientu.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthiepdientu.com.vn%2Fmau-thiep%2Fmau-thiep-sang-trong%2F">
-    <link rel="alternate" title="oNhúng (XML)" type="text/xml+oembed"
-        href="https://thiepdientu.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthiepdientu.com.vn%2Fmau-thiep%2Fmau-thiep-sang-trong%2F&amp;format=xml">
+   
     <style type="text/css">
         .site-title,
         .site-description {
@@ -568,8 +441,7 @@
     <link rel="icon" href="images/cropped-logo-favicon-32x32.png" sizes="32x32">
     <link rel="icon" href="images/cropped-logo-favicon-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="images/cropped-logo-favicon-180x180.png">
-    <meta name="msapplication-TileImage"
-        content="https://thiepdientu.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2024/03/26115441/cropped-logo-favicon-270x270.png">
+    
     <link rel="stylesheet" href="{{ asset('template01/css/style.css') }}">
     <script src="{{ asset('template01/js/wp-emoji-release.min.js') }}" defer=""></script>
 </head>
@@ -651,7 +523,7 @@
             <div class="about-container">
                 <div class="about-card" style="order:1">
                     <div class="about-media">
-                        <img src="{{ asset('template01/images/c5b6d53764b2dfec86a36.jpg') }}" alt=""
+                        <img src="{{ $weddingCard->bride_avatar }}" alt=""
                             class="bride_img">
                     </div>
                     <div class="about-body" data-aos="fade-up" data-aos-duration="3000">
@@ -663,7 +535,7 @@
                 </div>
                 <div class="about-card" style="order:1">
                     <div class="about-media">
-                        <img src="{{ asset('template01/images/6aabe71b699ed2c08b8f11.jpg') }}" alt=""
+                        <img src="{{ $weddingCard->groom_avatar }}" alt=""
                             class="groom_img">
                     </div>
                     <div class="about-body" data-aos="fade-up" data-aos-duration="3000">
@@ -684,7 +556,7 @@
             <!-- COUNTDOWN -->
 
             <div class="count-down section-countdown img_bg bg_overlay"
-                style="background-image:url({{ asset('template01/images/265e55dfe45a5f04064b7.jpg') }})">
+                style="background-image:url({{ $weddingCard->banner_coundown }})">
                 <p class="subtitle">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
                 <h2 class="section-title">
                     SAVE THE DATE </h2>
@@ -736,7 +608,7 @@
                         {{ $weddingCard->message_invite }}
                     </h2>
                     <div class="invitation-card"> <img
-                            src="{{ asset('template01/images/7a1eab9f1a1aa144f80b3.jpg') }}" alt="">
+                            src="{{ $weddingCard->groom_avatar }}" alt="">
                         <h3 class="card-title uk-margin-remove">{{ $weddingCard->groom_eating_title }}</h3>
                         <address class="uk-margin-remove">
                             <p>
@@ -785,7 +657,7 @@
 
                     </div>
                     <div class="invitation-card"> <img
-                            src="{{ asset('template01/images/27a9211baf9e14c04d8f8.jpg') }}" alt="">
+                            src="{{ $weddingCard->bride_avatar }}" alt="">
                         <h3 class="card-title uk-margin-remove">{{ $weddingCard->bride_eating_title }}</h3>
                         <address class="uk-margin-remove">
                             <p>{{ $weddingCard->address_bride }}</p>
@@ -1239,9 +1111,9 @@
                 <div class="gift-container" id="gift-container">
                     <div class="gift-card">
                         <div class="gift-qr">
-                            <img src="{{ asset('template01/images/b9c340eb8a11314f680013.jpg') }}" alt=""
+                            <img src="{{ $weddingCard->groom_qr }}" alt=""
                                 class="groom_qr" style="max-width:100%">
-                            <img src="{{ asset('template01/images/b9c340eb8a11314f680013.jpg') }}" alt=""
+                            <img src="{{ $weddingCard->bride_qr }}" alt=""
                                 class="groom_qr" style="max-width:100%">
                         </div>
                         <div class="gift-body">
@@ -1261,7 +1133,7 @@
     <!-- THANK YOU -->
     <section id="thankyou" class="section-thankyou bg_overlay uk-position-z-index">
         <div class="uk-overlay uk-overlay-primary uk-position-cover"> </div>
-        <img src="{{ asset('template01/images/0ccec3384dbdf6e3afac.jpg') }}" alt=""
+        <img src="{{ $weddingCard->banner_thanks }}" alt=""
             class="thankyou-bg thankyou_img" style="object-position:">
         <div class="thankyou-body container uk-position-relative uk-position-z-index">
             <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-down"

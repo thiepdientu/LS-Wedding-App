@@ -49,15 +49,20 @@
         <input type="date" name="groom_birthday" value="{{ old('groom_birthday', $weddingCard->groom_birthday ?? '') }}" required><br>
 
         <label>Avatar Cô Dâu:</label>
+        <input type="file" name="avatar_bride"  {{ !isset($weddingCard) ? 'required' : '' }} >
         <input type="text" name="bride_avatar" value="{{ old('bride_avatar', $weddingCard->bride_avatar ?? '') }}"><br>
 
         <label>Avatar Chú Rể:</label>
+        <input type="file" name="avatar_groom"  {{ !isset($weddingCard) ? 'required' : '' }} >
         <input type="text" name="groom_avatar" value="{{ old('groom_avatar', $weddingCard->groom_avatar ?? '') }}"><br>
 
         <label>Banner Top:</label>
+        <input type="file" name="banner_top_image"  {{ !isset($weddingCard) ? 'required' : '' }} >
         <input type="text" name="banner_top" value="{{ old('banner_top', $weddingCard->banner_top ?? '') }}"><br>
 
+
         <label>Banner Countdown:</label>
+        <input type="file" name="banner_coundown_image"  {{ !isset($weddingCard) ? 'required' : '' }} >
         <input type="text" name="banner_coundown" value="{{ old('banner_coundown', $weddingCard->banner_coundown ?? '') }}"><br>
 
         <label>Album Ảnh:</label>
@@ -112,12 +117,15 @@
         <input type="text" name="message_thanks" value="{{ old('message_thanks', $weddingCard->message_thanks ?? '') }}"><br>
 
         <label>Banner Thanks:</label>
+        <input type="file" name="banner_thanks_image"  {{ !isset($weddingCard) ? 'required' : '' }} >
         <input type="text" name="banner_thanks" value="{{ old('banner_thanks', $weddingCard->banner_thanks ?? '') }}"><br>
 
         <label>QR Chú Rể:</label>
+        <input type="file" name="groom_qr_image"  {{ !isset($weddingCard) ? 'required' : '' }} >
         <input type="text" name="groom_qr" value="{{ old('groom_qr', $weddingCard->groom_qr ?? '') }}"><br>
 
         <label>QR Cô Dâu:</label>
+        <input type="file" name="bride_qr_image"  {{ !isset($weddingCard) ? 'required' : '' }} >
         <input type="text" name="bride_qr" value="{{ old('bride_qr', $weddingCard->bride_qr ?? '') }}"><br>
 
         <label>Map Chú Rể:</label>

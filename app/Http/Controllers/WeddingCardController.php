@@ -47,7 +47,7 @@ class WeddingCardController extends Controller
         $validated = $request->validate([
                 'bride_name' => 'required|string|max:255',
                 'groom_name' => 'required|string|max:255',
-                'banner_top' => 'required|string|max:255',
+                'banner_top' => 'required|string|max:1000',
                 'wedding_date' => 'required|date',
                 'wedding_message' => 'required|string|max:1000',
                 'address_wedding' => 'required|string|max:1000',
@@ -80,11 +80,57 @@ class WeddingCardController extends Controller
                 'groom_map' => 'required|string|max:500',
                 'bride_map' => 'required|string|max:500',
             ]);
+            
     
         // 2️⃣ Tạo thiệp cưới trước để lấy ID
         $weddingCard = WeddingCard::create($validated);
         $weddingId = $weddingCard->id; // Lấy ID của thiệp vừa tạo
     
+        $realPathBannerTop = "";
+        $realPathAvatarGroom = "";
+        $realPathAvatarBride = "";
+        $realPathGroomQr = "";
+        $realPathBrideQr = "";
+        $realPathBannerCoundown = "";
+        $realPathBannerThanks = "";
+        if ($request->hasFile('banner_top_image')) {
+            $path = $request->file('banner_top_image')->store("weddings/$weddingId", 'public');
+            $realPathBannerTop = Storage::url($path);
+        }
+
+        if ($request->hasFile('banner_coundown_image')) {
+            $path = $request->file('banner_coundown_image')->store("weddings/$weddingId", 'public');
+            $realPathBannerCoundown = Storage::url($path);
+        }
+
+
+        if ($request->hasFile('banner_thanks_image')) {
+            $path = $request->file('banner_thanks_image')->store("weddings/$weddingId", 'public');
+            $realPathBannerThanks = Storage::url($path);
+        }
+
+
+        if ($request->hasFile('avatar_groom')) {
+            $path = $request->file('avatar_groom')->store("weddings/$weddingId", 'public');
+            $realPathAvatarGroom = Storage::url($path);
+        }
+
+        if ($request->hasFile('avatar_bride')) {
+            $path = $request->file('avatar_bride')->store("weddings/$weddingId", 'public');
+            $realPathAvatarBride = Storage::url($path);
+        }
+
+        if ($request->hasFile('groom_qr_image')) {
+            $path = $request->file('groom_qr_image')->store("weddings/$weddingId", 'public');
+            $realPathGroomQr = Storage::url($path);
+        }
+
+        if ($request->hasFile('bride_qr_image')) {
+            $path = $request->file('bride_qr_image')->store("weddings/$weddingId", 'public');
+            $realPathBrideQr = Storage::url($path);
+        }
+
+
         // 3️⃣ Lưu ảnh vào thư mục public/{id}
         $imagePaths = [];
     
@@ -100,6 +146,14 @@ class WeddingCardController extends Controller
         // 4️⃣ Cập nhật đường dẫn ảnh vào database
         $weddingCard->update(['album' => json_encode($imagePaths)]);
 
+         // 4️⃣ Cập nhật image
+         $weddingCard->update(['banner_top' => $realPathBannerTop]);
+         $weddingCard->update(['groom_avatar' => $realPathAvatarGroom]);
+         $weddingCard->update(['bride_avatar' => $realPathAvatarBride]);
+         $weddingCard->update(['banner_coundown' => $realPathBannerCoundown]);
+         $weddingCard->update(['banner_thanks' => $realPathBannerThanks]);
+         $weddingCard->update(['groom_qr' => $realPathGroomQr]);
+         $weddingCard->update(['bride_qr' => $realPathBrideQr]);
         
 
         // Trả về view với thông báo thành công
@@ -173,7 +227,58 @@ class WeddingCardController extends Controller
         ]);
 
         $weddingCard = WeddingCard::findOrFail($key);
+        $weddingId = $weddingCard->id;
         $weddingCard->update($data);
+
+        if ($request->hasFile('banner_top_image')) {
+            $path = $request->file('banner_top_image')->store("weddings/$weddingId", 'public');
+            $weddingCard->update(['banner_top' => Storage::url($path)]);
+        }
+
+        if ($request->hasFile('banner_coundown_image')) {
+            $path = $request->file('banner_coundown_image')->store("weddings/$weddingId", 'public');
+            $weddingCard->update(['banner_coundown' => Storage::url($path)]);
+        }
+
+        if ($request->hasFile('banner_thanks_image')) {
+            $path = $request->file('banner_thanks_image')->store("weddings/$weddingId", 'public');
+            $weddingCard->update(['banner_thanks' => Storage::url($path)]);
+        }
+
+        if ($request->hasFile('avatar_groom')) {
+            $path = $request->file('avatar_groom')->store("weddings/$weddingId", 'public');
+            $weddingCard->update(['groom_avatar' => Storage::url($path)]);
+        }
+
+        if ($request->hasFile('avatar_bride')) {
+            $path = $request->file('avatar_bride')->store("weddings/$weddingId", 'public');
+            $weddingCard->update(['bride_avatar' => Storage::url($path)]);
+        }
+
+        if ($request->hasFile('groom_qr_image')) {
+            $path = $request->file('groom_qr_image')->store("weddings/$weddingId", 'public');
+            $weddingCard->update(['groom_qr' => Storage::url($path)]);
+        }
+
+        if ($request->hasFile('bride_qr_image')) {
+            $path = $request->file('bride_qr_image')->store("weddings/$weddingId", 'public');
+            $weddingCard->update(['bride_qr' => Storage::url($path)]);
+        }
+
+          // 3️⃣ Lưu ảnh vào thư mục public/{id}
+          $imagePaths = [];
+    
+          if ($request->hasFile('image')) {
+             
+              foreach ($request->file('image') as $image) {
+              
+                  $path = $image->store("weddings/$weddingId", 'public');
+                  $imagePaths[] = Storage::url($path);
+              }
+          }
+      
+          // 4️⃣ Cập nhật đường dẫn ảnh vào database
+          $weddingCard->update(['album' => json_encode($imagePaths)]);
 
         return redirect()->route('wedding.edit', $key)->with('success', 'Cập nhật thiệp cưới thành công!');
     }
