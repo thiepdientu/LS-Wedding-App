@@ -17,7 +17,7 @@ Route::get('/test-db', function () {
     }
 });
 
-Route::get('/all-wedding', function () {
+Route::get('admin/all-wedding', function () {
     try {
          DB::connection()->getPdo();
          $cards = DB::select("SELECT * FROM wedding_cards;");
@@ -30,22 +30,14 @@ Route::get('/all-wedding', function () {
 
 
 // Route điều hướng user đến thiệp cưới dựa vào key
-Route::get('/weddings/{key}', [WeddingCardController::class, 'showWeddingCard']);
+Route::get('/wedding-cards/{id}', [WeddingCardController::class, 'show']); // Lấy chi tiết
+// Route điều hướng user đến thiệp cưới dựa vào key
+Route::get('/weddingInvite/{key}', [WeddingCardController::class, 'showWeddingCardByName']);
 // Hiển thị form chỉnh sửa dữ liệu
-Route::get('/edit/{id}', [WeddingCardController::class, 'edit'])->name('wedding.edit');
+Route::get('admin/edit/{id}', [WeddingCardController::class, 'edit'])->name('wedding.edit');
+// Hiển thị form chỉnh sửa dữ liệu theo tên
+Route::get('admin/editByName/{id}', [WeddingCardController::class, 'editByName'])->name('wedding.edit');
 // Cập nhật dữ liệu thiệp cưới
 Route::post('/update/{id}', [WeddingCardController::class, 'update'])->name('wedding.update');
-
-
-Route::get('/image', [WeddingCardController::class, 'creates'])->name('wedding.creates');
-Route::post('/upload', [WeddingCardController::class, 'updateImage'])->name('wedding.upload');
-
-
-Route::get('/wedding', [WeddingCardController::class, 'index']); // Lấy danh sách
-Route::get('/wedding-cards', [WeddingCardController::class, 'index']); // Lấy danh sách
-Route::post('/wedding-cards', [WeddingCardController::class, 'store']); // Thêm mới
-Route::get('/wedding-cards/{id}', [WeddingCardController::class, 'show']); // Lấy chi tiết
-Route::put('/wedding-cards/{id}', [WeddingCardController::class, 'update']); // Cập nhật
-Route::delete('/wedding-cards/{id}', [WeddingCardController::class, 'destroy']); // Xóa
-Route::get('/create', [WeddingCardController::class, 'create'])->name('wedding.create');
+Route::get('admin/create', [WeddingCardController::class, 'create'])->name('wedding.create');
 Route::post('/wedding-cards/store', [WeddingCardController::class, 'store'])->name('wedding.store');

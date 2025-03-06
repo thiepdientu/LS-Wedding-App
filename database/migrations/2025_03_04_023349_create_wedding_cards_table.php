@@ -13,11 +13,13 @@ return new class extends Migration
     {
         Schema::create('wedding_cards', function (Blueprint $table) {
             $table->id();
+            $table->string('identifyWedding'); // tên thiệp
             $table->string('bride_name'); // tên cô dâu
             $table->string('groom_name'); // tên chú rể
             $table->longText('banner_top'); // banner ảnh top
             $table->date('wedding_date'); // Ngày tổ chức lễ thành hôn
             $table->longText('wedding_message'); //message lễ thành hôn
+            $table->string('name_place_wedding'); // Tên nơi tổ chức lễ thành hôn
             $table->string('address_wedding'); // Địa chỉ tổ chức lễ thành hôn
             $table->string('address_wedding_map'); // map địa chỉ tổ chức lễ thành hôn
             $table->date('bride_birthday'); // Ngày sinh cô dâu

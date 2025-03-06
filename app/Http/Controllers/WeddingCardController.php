@@ -31,6 +31,18 @@ class WeddingCardController extends Controller
        // return view('wedding.index', compact('weddingCard'));
     }
 
+    public function showWeddingCardByName($key) {
+        // Tìm thiệp cưới theo name
+        $weddingCard = WeddingCard::where('identifyWedding', $key)->first();
+
+        if (!$weddingCard) {
+            abort(404, 'Thiệp cưới không tồn tại');
+        }
+        return view('template01',compact('weddingCard')) ;
+        // Trả về view wedding.blade.php với dữ liệu từ database
+       // return view('wedding.index', compact('weddingCard'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */
@@ -43,14 +55,24 @@ class WeddingCardController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {
+    {   
+        $weddingCardCheck = WeddingCard::where('identifyWedding', $request->identifyWedding)->first();
+
+        if ($weddingCardCheck) {
+          // abort(404, 'Tên Thiệp cưới đã tồn tại. Thử tên khác nhé');
+           return response()->json([
+            'message' => 'Tên Thiệp cưới đã tồn tại. Thử tên khác nhé'
+        ]);
+        }
         $validated = $request->validate([
+                'identifyWedding' => 'required|string|max:255',
                 'bride_name' => 'required|string|max:255',
                 'groom_name' => 'required|string|max:255',
                 'banner_top' => 'required|string|max:1000',
                 'wedding_date' => 'required|date',
                 'wedding_message' => 'required|string|max:1000',
                 'address_wedding' => 'required|string|max:1000',
+                'name_place_wedding' => 'required|string|max:1000',
                 'address_wedding_map' => 'required|string|max:1000',
                 'bride_birthday' => 'required|date',
                 'groom_birthday' => 'required|date',
@@ -80,7 +102,7 @@ class WeddingCardController extends Controller
                 'groom_map' => 'required|string|max:500',
                 'bride_map' => 'required|string|max:500',
             ]);
-            
+           
     
         // 2️⃣ Tạo thiệp cưới trước để lấy ID
         $weddingCard = WeddingCard::create($validated);
@@ -181,6 +203,21 @@ class WeddingCardController extends Controller
     public function edit($key)
     {
         $weddingCard = WeddingCard::findOrFail($key);
+        if (!$weddingCard) {
+            abort(404, 'Thiệp cưới không tồn tại');
+        }
+        return view('weddingform', compact('weddingCard'));
+    }
+
+     /**
+     * Show the form for editing the specified resource.
+     */
+    public function editByName($key)
+    {
+        $weddingCard = DB::table('wedding_cards')->where('identifyWedding', $key)->first(); 
+        if (!$weddingCard) {
+            abort(404, 'Thiệp cưới không tồn tại');
+        }
         return view('weddingform', compact('weddingCard'));
     }
 
@@ -190,12 +227,14 @@ class WeddingCardController extends Controller
     public function update(Request $request, $key)
     {
         $data = $request->validate([
-            'bride_name' => 'required|string|max:255',
+               'identifyWedding' => 'required|string|max:255',
+               'bride_name' => 'required|string|max:255',
                 'groom_name' => 'required|string|max:255',
                 'banner_top' => 'required|string|max:255',
                 'wedding_date' => 'required|date',
                 'wedding_message' => 'required|string|max:1000',
                 'address_wedding' => 'required|string|max:1000',
+                'name_place_wedding' => 'required|string|max:1000',
                 'address_wedding_map' => 'required|string|max:1000',
                 'bride_birthday' => 'required|date',
                 'groom_birthday' => 'required|date',
@@ -280,7 +319,10 @@ class WeddingCardController extends Controller
           // 4️⃣ Cập nhật đường dẫn ảnh vào database
           $weddingCard->update(['album' => json_encode($imagePaths)]);
 
-        return redirect()->route('wedding.edit', $key)->with('success', 'Cập nhật thiệp cưới thành công!');
+        // return redirect()->route('wedding.edit', $key)->with('success', 'Cập nhật thiệp cưới thành công!');
+        return response()->json([
+            'message' => 'Cập nhật thiệp cưới thành công!'
+        ]);
     }
 
  /**

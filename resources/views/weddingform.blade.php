@@ -23,7 +23,8 @@
     <!-- Form -->
     <form action="{{ isset($weddingCard) ? route('wedding.update', $weddingCard->id) : route('wedding.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
-
+        <label>Tên thiệp</label>
+        <input type="text" name="identifyWedding" value="{{ old('identifyWedding', $weddingCard->identifyWedding ?? '') }}" required><br>
         <label>Cô Dâu:</label>
         <input type="text" name="bride_name" value="{{ old('bride_name', $weddingCard->bride_name ?? '') }}" required><br>
 
@@ -38,6 +39,9 @@
 
         <label>Địa Chỉ Tổ Chức:</label>
         <input type="text" name="address_wedding" value="{{ old('address_wedding', $weddingCard->address_wedding ?? '') }}" required><br>
+
+        <label>Tên nơi Tổ Chức:</label>
+        <input type="text" name="name_place_wedding" value="{{ old('name_place_wedding', $weddingCard->name_place_wedding ?? '') }}" required><br>
 
         <label>Bản Đồ Địa Chỉ Tổ Chức:</label>
         <input type="text" name="address_wedding_map" value="{{ old('address_wedding_map', $weddingCard->address_wedding_map ?? '') }}"><br>

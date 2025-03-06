@@ -8,10 +8,12 @@ class WeddingCard extends Model
 {
     //
     protected $fillable = [
+        'identifyWedding' ,  // Định danh thiệp
         'bride_name',           // Tên cô dâu
         'groom_name',           // Tên chú rể
         'banner_top',           // Banner ảnh top
-        'wedding_message',    
+        'wedding_message', 
+        'name_place_wedding',   
         'wedding_date',         // Ngày tổ chức lễ thành hôn
         'address_wedding',      // Địa chỉ tổ chức lễ thành hôn
         'address_wedding_map',  // Bản đồ địa chỉ tổ chức lễ thành hôn

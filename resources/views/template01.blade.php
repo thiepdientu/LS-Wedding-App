@@ -5,35 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <meta property="og:image" content="{{ $weddingCard->banner_coundown }}">
+    <meta property="og:image" content="{{ asset($weddingCard->banner_coundown) }}">
 
     <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
     <title> {{ $weddingCard->groom_name }}
         ❤️
         {{ $weddingCard->bride_name }} - Thiệp cưới online</title>
     <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
-    <link rel="canonical" href="/wedding-cards/{{ $weddingCard->id}}/">
+    <link rel="canonical" href="{{ url()->current() }}">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ $weddingCard->groom_name }}
         ❤️
         {{ $weddingCard->bride_name }} - Thiệp cưới online">
-    <meta property="og:url" content="/wedding-cards/{{ $weddingCard->id}}/">
+    <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:site_name" content="{{ $weddingCard->groom_name }}
         ❤️
         {{ $weddingCard->bride_name }} - Thiệp cưới online">
     <meta property="og:updated_time" content="2024-03-13T11:56:14+00:00">
-    <meta property="og:image" content="{{ $weddingCard->banner_coundown }}">
-    <meta property="og:image:secure_url" content="{{ $weddingCard->banner_coundown }}">
+    <meta property="og:image" content="{{ asset($weddingCard->banner_coundown) }}">
+    <meta property="og:image:secure_url" content="{{ asset($weddingCard->banner_coundown) }}">
     <meta property="og:image:width" content="961">
     <meta property="og:image:height" content="1440">
-    <meta property="og:image:alt" content="Mẫu Thiệp Sang Trọng">
+    <meta property="og:image:alt" content="Thiệp 01">
     <meta property="og:image:type" content="image/jpeg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ $weddingCard->groom_name }}
         ❤️
         {{ $weddingCard->bride_name }} - Thiệp cưới online">
-    <meta name="twitter:image" content="{{ $weddingCard->banner_coundown }}">
+    <meta name="twitter:image" content="{{ asset($weddingCard->banner_coundown) }}">
     <!-- /Rank Math WordPress SEO plugin -->
 
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
@@ -490,8 +490,8 @@
                     </div>
                     <div class="banner-location" data-aos="fade-up" data-aos-duration="3000">
                         <p class="script-font">{{ $weddingCard->wedding_message }}</p>
-                        <p class="banner_sub_location">Nhà Trai</p>
-                        <!--  <p class="banner_location_name">Luxury Palace</p> -->
+                 
+                          <p class="banner_location_name">{{ $weddingCard->name_place_wedding }}</p> 
                         <p class="banner_location_adress">{{ $weddingCard->address_wedding }}</p>
                         <div class="social-link">
                             <a href="tel:(+84){{ $weddingCard->groom_phone }}" class="phone_number">
@@ -981,114 +981,7 @@
     </script>
     <!-- END LỜI CHÚC -->
 
-    <!-- FORM XÁC NHẬN -->
-    <!-- FROM XÁC NHẬN -->
-    <!-- <section id="form" class="form" style="display:block">
-  <div class="container">
-    <form action="" method="post" id="form-wedding" style="background-image:url(images/paper-cut-sweet-pink-envelope-and-heart-with-copy-space-for-design-valentine-s-day-or-love-day-background-concept-send-a-letter-to-a-lover-couple-free-vector.jpg)">
-      <h2 class="section-title">Xác nhận tham dự</h2>
-      <p class="sub-title">Hãy cho chúng tôi biết bạn sẽ đến tham dự nhé!</p>
-      <div class="form-container">
-              <div class="group-radio">
-        
-          <label class="radio-container">TƯ GIA NHÀ TRAI            <span class="tooltip"> <p>ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
- </span>
-            <input type="radio" name="fav_language" id="nha_trai" value="TƯ GIA NHÀ TRAI">
-            <span class="checkmark"></span>
-          </label>
-          
-          <label class="radio-container">Tư GIA NHÀ GÁI            <span class="tooltip"> <p>ẤP H�&nbsp;, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
- </span>
-            <input type="radio" name="fav_language" id="nha_trai" value="Tư GIA NHÀ GÁI">
-            <span class="checkmark"></span>
-          </label>
-                  </div>
-                <div class="group-input">
-          <label>Tên Khách Mời</label>
-          <input type="text" class="input" id="f_name" required="" placeholder="Tên Khách Mời">
-        </div>
-        
-        <div class="group-input">
-          <p class="group-title"></p>
-          <div class="group-select">
-            <select name="" id="wedding-select" class="uk-text-truncate" style="max-width:320px">
-              <option value="Có tôi sẽ đến">Có tôi sẽ đến </option>
-              <option value="Xin Lỗi tôi không tham dự được !">Xin Lỗi tôi không tham dự được ! </option>
-            </select>
-            <i class="bx bx-chevron-down"></i>
-          </div>
-          <div class="group-select">
-            <select name="" id="num_user">
-              <option value="1 Người">1 Người </option>
-              <option value="2 Người">2 Người</option>
-              <option value="3 Người">3 Người</option>
-            </select>
-            <i class="bx bx-chevron-down"></i>
-        </div>
-        </div>
-        <div class="group-input">
-          <label></label>
-          <textarea name="" id="f_text" cols="30" rows="4">          </textarea>
-        </div>
-        <div class="message-form">
-          
-        </div>
-        <div class="group-input">
-          <button type="submit" class="wedding-submit">Xác nhận</button>
-        </div>
-      </div>
-
-    </form>
-  </div>
-</section> -->
-
-    <script>
-        //XỬ LÝ FORM
-        $(document).ready(function() {
-            $('.message-form').fadeOut(300)
-            $('#form').on('submit', function(e) {
-                e.preventDefault();
-                f_userName = "Công Thành-Phương Ánh"
-                f_check = $('input[type="radio"]:checked').val()
-                f_name = $(this).find('#f_name').val()
-                f_numUser = $('#num_user').find('option:selected').val()
-                f_select = $('#wedding-select').find('option:selected').val()
-                f_text = $(this).find('#f_text').val()
-                var form_data = {
-                    'entry.737056527': f_userName,
-                    'entry.642873731': f_check,
-                    'entry.1699210899': f_name,
-                    'entry.369695229': f_numUser,
-                    'entry.1528762541': f_select,
-                    'entry.1679764871': f_text,
-                }
-                $('.wedding-submit[type="submit"]').text('Đang gửi ...')
-                $.ajax({
-                    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdD9g3WsFXklx1iJ2WTwnaKq7qXDh8fLcOetjSV8GMatzoWaA/formResponse",
-                    type: "POST",
-                    data: form_data,
-                    dataType: "xml",
-                    statusCode: {
-                        0: function() {
-                            mess_form = 'Chúng mình xin chân thành cám ơn !'
-                            $('.message-form').html(mess_form)
-                            $('button[type="submit"]').addClass('success')
-                            $('button[type="submit"]').removeClass('btn_primary')
-                            $('button[type="submit"]').attr('disabled', 'true')
-                            $('button[type="submit"]').text('Đã xác nhận')
-                            $('.message-form').fadeIn(300)
-                        },
-                        200: function() {
-                            alert('200')
-                        }
-                    }
-                })
-            })
-            return false;
-        })
-    </script>
-    <!-- END FORM XÁC NHẬN -->
-
+  
     <!-- GỬI QUÀ -->
     <section id="gift" class="section-gift" style="display:block">
         <div class="container">
