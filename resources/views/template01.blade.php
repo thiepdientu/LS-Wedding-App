@@ -459,7 +459,7 @@
     <!-- END PRELOAD --> <!-- HEADER -->
     <header>
         <section id="banner" class="banner">
-            <img src="{{ $weddingCard->banner_top }}" alt="" class="banner_top kenburns-top"
+            <img src="{{ asset($weddingCard->banner_top) }}" alt="" class="banner_top kenburns-top"
                 data-aos="fade" data-aos-duration="3000" style="object-position:center center">
             <div class="container">
                 <div class="banner-container">
@@ -515,7 +515,7 @@
             <div class="about-container">
                 <div class="about-card" style="order:1">
                     <div class="about-media">
-                        <img src="{{ $weddingCard->bride_avatar }}" alt=""
+                        <img src="{{ asset($weddingCard->bride_avatar) }}" alt=""
                             class="bride_img">
                     </div>
                     <div class="about-body" data-aos="fade-up" data-aos-duration="3000">
@@ -527,7 +527,7 @@
                 </div>
                 <div class="about-card" style="order:1">
                     <div class="about-media">
-                        <img src="{{ $weddingCard->groom_avatar }}" alt=""
+                        <img src="{{ asset($weddingCard->groom_avatar) }}" alt=""
                             class="groom_img">
                     </div>
                     <div class="about-body" data-aos="fade-up" data-aos-duration="3000">
@@ -548,7 +548,7 @@
             <!-- COUNTDOWN -->
 
             <div class="count-down section-countdown img_bg bg_overlay"
-                style="background-image:url({{ $weddingCard->banner_coundown }})">
+                style="background-image:url({{ asset($weddingCard->banner_coundown) }})">
                 <p class="subtitle">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
                 <h2 class="section-title">
                     SAVE THE DATE </h2>
@@ -600,7 +600,7 @@
                         {{ $weddingCard->message_invite }}
                     </h2>
                     <div class="invitation-card"> <img
-                            src="{{ $weddingCard->groom_avatar }}" alt="">
+                            src="{{ asset($weddingCard->groom_avatar) }}" alt="">
                         <h3 class="card-title uk-margin-remove">{{ $weddingCard->groom_eating_title }}</h3>
                         <address class="uk-margin-remove">
                             <p>
@@ -649,7 +649,7 @@
 
                     </div>
                     <div class="invitation-card"> <img
-                            src="{{ $weddingCard->bride_avatar }}" alt="">
+                            src="{{ asset($weddingCard->bride_avatar) }}" alt="">
                         <h3 class="card-title uk-margin-remove">{{ $weddingCard->bride_eating_title }}</h3>
                         <address class="uk-margin-remove">
                             <p>{{ $weddingCard->address_bride }}</p>
@@ -996,9 +996,9 @@
                 <div class="gift-container" id="gift-container">
                     <div class="gift-card">
                         <div class="gift-qr">
-                            <img src="{{ $weddingCard->groom_qr }}" alt=""
+                            <img src="{{ asset($weddingCard->groom_qr) }}" alt=""
                                 class="groom_qr" style="max-width:100%">
-                            <img src="{{ $weddingCard->bride_qr }}" alt=""
+                            <img src="{{ asset($weddingCard->bride_qr) }}" alt=""
                                 class="groom_qr" style="max-width:100%">
                         </div>
                         <div class="gift-body">
@@ -1018,7 +1018,7 @@
     <!-- THANK YOU -->
     <section id="thankyou" class="section-thankyou bg_overlay uk-position-z-index">
         <div class="uk-overlay uk-overlay-primary uk-position-cover"> </div>
-        <img src="{{ $weddingCard->banner_thanks }}" alt=""
+        <img src="{{ asset($weddingCard->banner_thanks) }}" alt=""
             class="thankyou-bg thankyou_img" style="object-position:">
         <div class="thankyou-body container uk-position-relative uk-position-z-index">
             <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-down"
