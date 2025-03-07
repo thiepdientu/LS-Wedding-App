@@ -314,11 +314,11 @@ class WeddingCardController extends Controller
                   $path = $image->store("weddings/$weddingId", 'public');
                   $imagePaths[] = Storage::url($path);
               }
+              // 4️⃣ Cập nhật đường dẫn ảnh vào database
+             $weddingCard->update(['album' => json_encode($imagePaths)]);
           }
       
-          // 4️⃣ Cập nhật đường dẫn ảnh vào database
-          $weddingCard->update(['album' => json_encode($imagePaths)]);
-
+        
         // return redirect()->route('wedding.edit', $key)->with('success', 'Cập nhật thiệp cưới thành công!');
         return response()->json([
             'message' => 'Cập nhật thiệp cưới thành công!'
