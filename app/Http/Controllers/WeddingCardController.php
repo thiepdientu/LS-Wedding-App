@@ -24,7 +24,7 @@ class WeddingCardController extends Controller
         $weddingCard = WeddingCard::where('id', $key)->first();
 
         if (!$weddingCard) {
-            abort(404, 'Thiệp cưới không tồn tại');
+            abort(404, 'Thiep cuoi khong ton tai');
         }
         return view('template01',compact('weddingCard')) ;
         // Trả về view wedding.blade.php với dữ liệu từ database
@@ -36,7 +36,7 @@ class WeddingCardController extends Controller
         $weddingCard = WeddingCard::where('identifyWedding', $key)->first();
 
         if (!$weddingCard) {
-            abort(404, 'Thiệp cưới không tồn tại');
+            abort(404, 'Thiep cuoi khong ton tai');
         }
         return view('template01',compact('weddingCard')) ;
         // Trả về view wedding.blade.php với dữ liệu từ database
@@ -61,7 +61,7 @@ class WeddingCardController extends Controller
         if ($weddingCardCheck) {
           // abort(404, 'Tên Thiệp cưới đã tồn tại. Thử tên khác nhé');
            return response()->json([
-            'message' => 'Tên Thiệp cưới đã tồn tại. Thử tên khác nhé'
+            'message' => 'Ten thiep cuoi da ton tai. Thu ten khac nhe'
         ]);
         }
         $validated = $request->validate([
@@ -179,7 +179,7 @@ class WeddingCardController extends Controller
         
 
         // Trả về view với thông báo thành công
-        return redirect()->route('wedding.create')->with('success', 'Lưu thiệp cưới thành công!');
+        return redirect()->route('wedding.create')->with('success', 'Luu thiep thanh cong');
     }
 
     /**
@@ -191,7 +191,7 @@ class WeddingCardController extends Controller
       $weddingCard = DB::table('wedding_cards')->where('id', $key)->first();
 
       if (!$weddingCard) {
-          abort(404, 'Thiệp cưới không tồn tại');
+          abort(404, 'Thiep cuoi khong ton tai');
       }
       return view('template01',compact('weddingCard')) ;
     }
@@ -204,7 +204,7 @@ class WeddingCardController extends Controller
     {
         $weddingCard = WeddingCard::findOrFail($key);
         if (!$weddingCard) {
-            abort(404, 'Thiệp cưới không tồn tại');
+            abort(404, 'Thiep cuoi khong ton tai');
         }
         return view('weddingform', compact('weddingCard'));
     }
@@ -216,7 +216,7 @@ class WeddingCardController extends Controller
     {
         $weddingCard = DB::table('wedding_cards')->where('identifyWedding', $key)->first(); 
         if (!$weddingCard) {
-            abort(404, 'Thiệp cưới không tồn tại');
+            abort(404, 'Thiep cuoi khong ton tai');
         }
         return view('weddingform', compact('weddingCard'));
     }
@@ -321,7 +321,7 @@ class WeddingCardController extends Controller
         
         // return redirect()->route('wedding.edit', $key)->with('success', 'Cập nhật thiệp cưới thành công!');
         return response()->json([
-            'message' => 'Cập nhật thiệp cưới thành công!'
+            'message' => 'Cap nhat thiep cuoi thanh cong!'
         ]);
     }
 

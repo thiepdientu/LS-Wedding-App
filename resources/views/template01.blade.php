@@ -490,7 +490,7 @@
                                 <i class="ri-phone-fill"></i>
                             </a>
 
-                            <a href="{{ $weddingCard->groom_map }}" class="invi_map" target="_blank">
+                            <a href="{{ $weddingCard->address_wedding_map }}" class="invi_map" target="_blank">
                                 <i class="ri-map-2-fill"></i>
                             </a>
                         </div>
