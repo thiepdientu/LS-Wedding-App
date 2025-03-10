@@ -38,7 +38,7 @@ class WeddingCardController extends Controller
         if (!$weddingCard) {
             abort(404, 'Thiep cuoi khong ton tai');
         }
-        return view('template01',compact('weddingCard')) ;
+        return view('template02',compact('weddingCard')) ;
         // Trả về view wedding.blade.php với dữ liệu từ database
        // return view('wedding.index', compact('weddingCard'));
     }

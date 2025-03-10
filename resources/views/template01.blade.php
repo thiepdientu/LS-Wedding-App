@@ -430,10 +430,7 @@
             clip: rect(1px, 1px, 1px, 1px);
         }
     </style>
-    <link rel="icon" href="images/cropped-logo-favicon-32x32.png" sizes="32x32">
-    <link rel="icon" href="images/cropped-logo-favicon-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="images/cropped-logo-favicon-180x180.png">
-    
+
     <link rel="stylesheet" href="{{ asset('template01/css/style.css') }}">
     <script src="{{ asset('template01/js/wp-emoji-release.min.js') }}" defer=""></script>
 </head>
