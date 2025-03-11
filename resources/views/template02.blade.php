@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <meta property="og:image" content="https://i.postimg.cc/9fWRH0S6/d979837deb53550d0c428.jpg">
+    <meta property="og:image" content="{{ asset($weddingCard->banner_coundown) }}">
 
     <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
     <title>{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }} - Thiệp cưới online</title>
     <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
-    <link rel="canonical" href="https://sontit1999.github.io/thuhoang/">
+    <link rel="canonical" href="{{ url()->current() }}">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:type" content="article">
     <meta property="og:title"
         content="{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }} - Thiệp cưới online">
-    <meta property="og:url" content="https://sontit1999.github.io/bacquynh-wedding/">
+    <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:site_name"
         content="{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }} - Thiệp cưới online">
     <meta property="og:updated_time" content="2024-03-27T02:16:16+00:00">
-    <meta property="og:image" content="https://i.postimg.cc/9fWRH0S6/d979837deb53550d0c428.jpg">
-    <meta property="og:image:secure_url" content="https://i.postimg.cc/9fWRH0S6/d979837deb53550d0c428.jpg">
+    <meta property="og:image" content="{{ asset($weddingCard->banner_coundown) }}">
+    <meta property="og:image:secure_url" content="{{ asset($weddingCard->banner_coundown) }}">
     <meta property="og:image:width" content="1080">
     <meta property="og:image:height" content="1440">
     <meta property="og:image:alt"
@@ -29,17 +29,12 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title"
         content="{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }} - Thiệp cưới online">
-    <meta name="twitter:image" content="https://i.postimg.cc/9fWRH0S6/d979837deb53550d0c428.jpg">
+    <meta name="twitter:image" content="{{ asset($weddingCard->banner_coundown) }}">
     <!-- /Rank Math WordPress SEO plugin -->
 
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="//unpkg.com">
-    <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Thiệp cưới online »"
-        href="https://thiepdientu.com.vn/feed/">
-    <link rel="alternate" type="application/rss+xml" title="Thiệp cưới online » Dòng bình luận"
-        href="https://thiepdientu.com.vn/comments/feed/">
-    <link rel="alternate" type="application/rss+xml" title="Thiệp cưới online » Mẫu Thiệp Hiện Đại Dòng bình luận"
-        href="https://sontit1999.github.io/bacquynh-wedding/feed/">
+
     <script>
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
@@ -81,7 +76,7 @@
                             n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e,
                                 "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
                                 "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
-                                );
+                            );
                     case "emoji":
                         return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
                 }
@@ -550,11 +545,7 @@
         href="https://thiepdientu.com.vn/wp-json/wp/v2/mau-thiep/1045">
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thiepdientu.com.vn/xmlrpc.php?rsd">
     <meta name="generator" content="WordPress 6.6.1">
-    <link rel="shortlink" href="https://thiepdientu.com.vn/?p=1045">
-    <link rel="alternate" title="oNhúng (JSON)" type="application/json+oembed"
-        href="https://thiepdientu.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthiepdientu.com.vn%2Fmau-thiep%2Fmau-thiep-hien-dai%2F">
-    <link rel="alternate" title="oNhúng (XML)" type="text/xml+oembed"
-        href="https://thiepdientu.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthiepdientu.com.vn%2Fmau-thiep%2Fmau-thiep-hien-dai%2F&amp;format=xml">
+
     <style type="text/css">
         .site-title,
         .site-description {
@@ -565,8 +556,7 @@
     <link rel="icon" href="images/cropped-logo-favicon-32x32.png" sizes="32x32">
     <link rel="icon" href="images/cropped-logo-favicon-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="images/cropped-logo-favicon-180x180.png">
-    <meta name="msapplication-TileImage"
-        content="https://thiepdientu.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2024/03/26115441/cropped-logo-favicon-270x270.png">
+
     <link rel="stylesheet" href="{{ asset('template02/css/style.css') }}">
     <script src="{{ asset('template02/js/wp-emoji-release.min.js') }}" defer=""></script>
 </head>
@@ -600,20 +590,34 @@
                 <p>Save The Date</p>
             </h1>
             <div class="invitation-body" style="background: transparent;">
-                <h3 class="invitation-title" style="font-size:30px">Lễ Thành Hôn</h3>
+                <h3 class="invitation-title" style="font-size:30px">{{ $weddingCard->wedding_message }}</h3>
                 <h3 class="invitation-title" style="font-size:20px">Tại</h3>
-                <h4 class="" style="font-size: 15px;font-weight: bold;">Nhà hàng tiệc cưới Hoàng Anh Hotel
+                <h4 class="" style="font-size: 15px;font-weight: bold;">{{ $weddingCard->name_place_wedding }}
                     <br />
-                    Khu 5 - TT Thọ Xuân -Thọ Xuân - Thanh Hóa</h4>
+                    {{ $weddingCard->address_wedding }}
+                </h4>
                 <p style="font-size: 17px;font-weight: 500;"> Vào lúc <b style="font-size:20px">10h</b> </p>
-                <p style="font-size: 17px;">Thứ Bảy, Ngày <b style="font-size:20px">01/03/2025</b> </p>
-                <p style="font-size: 15px;"> Tức ngày 02 tháng 02 năm Ất Tỵ (Âm Lịch)</p>
+                @php
+                    \Carbon\Carbon::setLocale('vi'); // Đặt ngôn ngữ tiếng Việt
+                    $date = \Carbon\Carbon::parse($weddingCard->wedding_date);
+                    $weekdayWedding = ucwords($date->translatedFormat('l')); // Viết hoa chữ cái đầu của mỗi từ // Viết hoa chữ cái đầu // Lấy thứ tiếng Việt
+                @endphp
 
+                <p style="font-size: 17px;"> {{ $weekdayWedding }} , Ngày <b
+                        style="font-size:20px">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}/{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->month }}/{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->year }}</b>
+                </p>
+                {{-- <p style="font-size: 15px;"> Tức ngày 02 tháng 02 năm Ất Tỵ (Âm Lịch)</p> --}}
+                <div class="social-link">
+                    <a href="tel:(+84){{ $weddingCard->groom_phone }}" class="phone_number">
+                        <i class="ri-phone-fill"></i>
+                    </a>
 
-                <p></p>
+                    <a href="{{ $weddingCard->address_wedding_map }}" class="invi_map" target="_blank">
+                        <i class="ri-map-2-fill"></i>
+                    </a>
+                </div>
             </div>
-            <span class="slogan" data-aos="fade-up" data-aos-duration="3000">
-            </span>
+
         </div>
     </section>
     <!-- END BANNER -->
@@ -630,11 +634,11 @@
                     {{ $weddingCard->bride_name }} </h2>
             </div>
             <div class="time" data-aos="fade-up" data-aos-duration="3000">
-                <span class="invitation_day">01</span>
-                .
-                <span class="invitation_month">03</span>
-                .
-                <span class="invitation_year">2025</span>
+                <span class="invitation_day">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}</span>
+                /
+                <span class="invitation_month">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->month }}</span>
+                /
+                <span class="invitation_year">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->year }}</span>
             </div>
 
         </div>
@@ -729,24 +733,25 @@
     <section id="album" class="uk-section" data-aos="fade-up" data-aos-duration="3000">
         <div class="section-heading">
             <p class="subtitle"></p>
-            <h2 class="uk-heading-small uk-text-center">
-                ALBUM ẢNH </h2>
+            <h2 class="uk-heading-small uk-text-center script-font">
+                Album Ảnh </h2>
         </div>
         <div class="album container">
             @php
-            $album = !empty($weddingCard->album) ? json_decode($weddingCard->album, true) : [];
-        @endphp
+                $album = !empty($weddingCard->album) ? json_decode($weddingCard->album, true) : [];
+
+            @endphp
             @if (!empty($album))
-            @foreach (json_decode($weddingCard->album, true) as $image)
-            <div class="album-item">
-                <a data-fancybox="gallery" href="{{ asset($image) }}">
-                    <img src="{{ asset($image) }}" alt="">
-                </a>
-            </div>
-                
-            @endforeach
-        @endif
-            
+
+                @foreach (json_decode($weddingCard->album, true) as $image)
+                    <div class="album-item " data-aos="fade-left" data-aos-duration="1000">
+                        <a data-fancybox="gallery" href="{{ asset($image) }}">
+                            <img src="{{ asset($image) }}" alt="">
+                        </a>
+                    </div>
+                @endforeach
+            @endif
+
         </div>
     </section>
     <!-- END ALBUM -->
@@ -797,49 +802,69 @@
             <div class="uk-section">
                 <div class="uk-grid uk-child-width-1-2@m" uk-grid="">
                     <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up"
-                        data-aos-duration="2000" style="color:black;">Trân trọng kính mời</h2>
+                        data-aos-duration="2000" style="color:black;">{{ $weddingCard->message_invite }}</h2>
                     <div class="invitation-card">
                         <div class="invitation-media">
-                            <img src="images/3def0bbc6492dacc83839.jpg" alt="">
+                            <img src="{{ asset($weddingCard->bride_avatar) }}" alt="">
                         </div>
                         <div class="invitation-body" style="background: #FFFF;color:black;">
-                            <h3 class="invitation-title" style="font-size:40px">Tiệc cưới nhà gái</h3>
-                            <h3 class="" style="font-size: 18px;font-weight: bold;">Tại: Số nhà 750 Lê Thái Tổ,
-                                Thị Trấn Triệu Sơn - H. Triệu Sơn - Thanh Hóa</h3>
-
-                            <p style="font-size: 17px;">Thứ Sáu, Ngày <b style="font-size:20px">28/02/2025</b> </p>
-                            <p style="font-size: 15px;"> Tức ngày 01 tháng 02 năm Ất Tỵ (Âm Lịch)</p>
+                            <h3 class="invitation-title" style="font-size:40px">
+                                {{ $weddingCard->bride_eating_title }}</h3>
+                            <h3 class="" style="font-size: 18px;font-weight: bold;">
+                                {{ $weddingCard->address_bride }}</h3>
+                            <p style="font-size: 17px;font-weight: 500;"> Vào lúc <b style="font-size:20px">
+                                    {{ $weddingCard->time_bride }}</b>
+                            <p style="font-size: 17px;"> @php
+                                \Carbon\Carbon::setLocale('vi'); // Đặt ngôn ngữ tiếng Việt
+                                $date = \Carbon\Carbon::parse($weddingCard->bride_eating_date);
+                                $weekdayBride = ucwords($date->translatedFormat('l')); // Viết hoa chữ cái đầu của mỗi từ // Viết hoa chữ cái đầu // Lấy thứ tiếng Việt
+                            @endphp
+                                {{ $weekdayBride }}, Ngày <b
+                                    style="font-size:20px">{{ \Carbon\Carbon::parse($weddingCard->bride_eating_date)->day }}/{{ \Carbon\Carbon::parse($weddingCard->bride_eating_date)->month }}/{{ \Carbon\Carbon::parse($weddingCard->bride_eating_date)->year }}</b>
+                            </p>
+                            <p style="font-size: 15px;"> {{ $weddingCard->time_bride_al }}</p>
 
 
                             <p></p>
                             <div class="uk-dark">
-                                <!-- <a href="tel:929053065" class="uk-icon-button uk-margin-small-right" target="_blank" uk-icon="receiver"></a> -->
-                                <a href="https://maps.app.goo.gl/hv3GqH4TQ6He7U9Y6"
-                                    class="uk-icon-button  uk-margin-small-right" target="_blank"
-                                    uk-icon="location"></a>
+                                <a href="tel:{{ $weddingCard->bride_phone }}"
+                                    class="uk-icon-button uk-margin-small-right" target="_blank"
+                                    uk-icon="receiver"></a>
+                                <a href="{{ $weddingCard->bride_map }}" class="uk-icon-button  uk-margin-small-right"
+                                    target="_blank" uk-icon="location"></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="invitation-card">
                         <div class="invitation-media">
-                            <img src="images/2feabc8ed3a06dfe34b110.jpg" alt="">
+                            <img src="{{ asset($weddingCard->groom_avatar) }}" alt="">
                         </div>
                         <div class="invitation-body" style="background: #FFFF;color:black;">
-                            <h3 class="invitation-title" style="font-size:40px">Tiệc cưới nhà trai</h3>
-                            <h3 class="" style="font-size: 18px;font-weight: bold;">Tại: Nhà hàng tiệc cưới
-                                Hoàng Anh Hotel <br /> Khu 5 - Thị Trấn Thọ Xuân- H. Thọ Xuân - Thanh Hóa</h3>
-                            <p style="font-size: 17px;font-weight: 500;"> Vào lúc <b style="font-size:20px">10h00</b>
+                            <h3 class="invitation-title" style="font-size:40px">
+                                {{ $weddingCard->groom_eating_title }}</h3>
+                            <h3 class="" style="font-size: 18px;font-weight: bold;">
+                                {{ $weddingCard->address_groom }}</h3>
+                            <p style="font-size: 17px;font-weight: 500;"> Vào lúc <b style="font-size:20px">
+                                    {{ $weddingCard->time_groom }}</b>
                             </p>
-                            <p style="font-size: 17px;">Thứ Bảy, Ngày <b style="font-size:20px">01-03-2025</b> </p>
-                            <p style="font-size: 15px;"> Tức ngày 2 tháng 2 năm Ất Tỵ (Âm Lịch)</p>
+                            <p style="font-size: 17px;"> @php
+                                \Carbon\Carbon::setLocale('vi'); // Đặt ngôn ngữ tiếng Việt
+                                $date = \Carbon\Carbon::parse($weddingCard->groom_eating_date);
+                                $weekdayGroom = ucwords($date->translatedFormat('l')); // Viết hoa chữ cái đầu của mỗi từ // Viết hoa chữ cái đầu // Lấy thứ tiếng Việt
+                            @endphp
+                                {{ $weekdayGroom }}, Ngày <b style="font-size:20px">
+                                    {{ \Carbon\Carbon::parse($weddingCard->groom_eating_date)->day }}/{{ \Carbon\Carbon::parse($weddingCard->groom_eating_date)->month }}/
+                                    {{ \Carbon\Carbon::parse($weddingCard->groom_eating_date)->year }}</b> </p>
+                            <p style="font-size: 15px;"> {{ $weddingCard->time_groom_al }}</p>
 
                             <p></p>
                             <div class="uk-dark">
-                                <!-- <a href="tel:838686833" class="uk-icon-button uk-margin-small-right" target="_blank" uk-icon="receiver"></a> -->
-                                <a href="https://maps.app.goo.gl/hMaPFKrHcvc6dYRS6"
-                                    class="uk-icon-button  uk-margin-small-right" target="_blank"
-                                    uk-icon="location"></a>
+                                <a href="tel:{{ $weddingCard->groom_phone }}"
+                                    class="uk-icon-button uk-margin-small-right" target="_blank"
+                                    uk-icon="receiver"></a>
+                                <a href="{{ $weddingCard->groom_map }}" class="uk-icon-button  uk-margin-small-right"
+                                    target="_blank" uk-icon="location"></a>
                             </div>
                         </div>
                     </div>
@@ -855,22 +880,22 @@
     <!-- COUNT DOWN -->
 
     <section id="countdown-secton" class="uk-background-cover uk-section uk-section-large uk-text-center uk-light"
-        style="background-image:url(images/3358f3a89b8625d87c977.jpg); margin-top: 200px;padding-top: 200px;">
+        style="background-image:url({{ asset($weddingCard->banner_coundown) }}); margin-top: 200px;padding-top: 200px;">
         <div class="uk-container">
             <p class="uk-text-center">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
             <h2 class="uk-heading-small uk-text-center ">
                 SAVE THE DATE </h2>
             <svg class="heartbeat" width="64" height="64" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
-                <path fill="red"
+                <path fill="#ff087c"
                     d="M16.5 13.287c-2.475-2.716-5.5-.712-5.5 2.112c0 2.56 1.814 4.035 3.358 5.292l.044.036l.427.35c.571.475 1.121.923 1.671.923s1.1-.448 1.671-.923C19.789 19.73 22 18.224 22 15.399c0-.927-.326-1.767-.853-2.38c-1.075-1.251-2.985-1.556-4.647.268Z">
                 </path>
-                <path fill="#f1ebe4"
+                <path fill="white"
                     d="M8.106 18.247C5.298 16.083 2 13.542 2 9.137C2 4.274 7.5.825 12 5.501C16.5.825 22 4.274 22 9.137c0 .834-.118 1.6-.329 2.31a4.203 4.203 0 0 0-2.619-.947c-.89-.005-1.758.274-2.553.81c-1.39-.933-2.956-1.058-4.33-.395c-1.635.79-2.669 2.556-2.669 4.484c0 2.306 1.149 3.923 2.342 5.095c-.948-.076-1.897-.808-2.88-1.583c-.277-.219-.564-.44-.856-.664Z">
                 </path>
             </svg>
             <div class="uk-grid-small uk-child-width-1-4 uk-flex-center uk-margin-large-top" uk-grid=""
-                uk-countdown="date: 2025-02-27 15:30:00">
+                uk-countdown="date: {{ $weddingCard->date_coundown }}">
                 <div>
                     <div
                         class="uk-countdown-number uk-countdown-days uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
@@ -940,64 +965,7 @@
       </div>
     </section> -->
     <!-- END TIN NHẮN -->
-    <script>
-        fetch('/wp-json/wp/v2/comments?post=1045&per_page=100', {
-                method: 'GET',
-            })
 
-            .then(response => response.json())
-            .then(data => {
-                mess_item = ''
-                for (let i in data) {
-                    if (!i) {
-                        $('.list_message').attr('class', 'hidden')
-                    }
-                    c_author = data[i].author_name
-                    c_content = data[i].content.rendered
-
-                    mess_item +=
-                        '<div class="blur-bg uk-padding-small uk-border-rounded uk-light"> <h3 class="user_message">' +
-                        c_author + '</h3> <p class="message_body">' + c_content + '</p> </div>'
-                }
-                $('.list_message').html(mess_item)
-            })
-
-        //FORM
-        $('#messageForm').submit(function(e) {
-            e.preventDefault();
-            const postId = $(this).find('#postId').val()
-            const name = $(this).find('#m_name').val()
-            const mess = $(this).find('#m_text').val()
-            const data = JSON.stringify({
-                post: postId,
-                author_name: name,
-                content: mess,
-            });
-            ACTION_URL = '/wp-json/wp/v2/comments'
-            fetch(ACTION_URL, {
-                    method: 'post',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: data,
-                })
-                .then((response) => {
-                    if (response.ok === true) {
-                        mess_new =
-                            '<div class=" uk-light blur-bg uk-padding-small uk-border-rounded" data-aos="fade-up" data-aos-duration="2000"> <i class="bx bxs-quote-alt-left"></i> <h3 class="user_message">' +
-                            name + '</h3> <p class="message_body">' + mess + '</p> </div>'
-                        $('.list_message').prepend(mess_new)
-                        $('#messageForm')[0].reset()
-                    }
-                    return response.json();
-                })
-                .then((object) => {
-                    // Comment submission failed.
-                    // Output `object.message` to see the error message.
-                })
-                .catch(error => console.error('Error:', error));
-        });
-    </script>
     <!-- END LỜI CHÚC -->
     <!-- FORM XÁC NHẬN -->
     <!-- FROM XÁC NHẬN -->
@@ -1060,58 +1028,13 @@
   </div>
 </section> -->
 
-    <script>
-        //XỬ LÝ FORM
-        $(document).ready(function() {
-            $('.message-form').fadeOut(300)
-            $('#form').on('submit', function(e) {
-                e.preventDefault();
-                f_userName = "{{ $weddingCard->groom_name }} -{{ $weddingCard->bride_name }}"
-                f_check = $('input[type="radio"]:checked').val()
-                f_name = $(this).find('#f_name').val()
-                f_numUser = $('#num_user').find('option:selected').val()
-                f_select = $('#wedding-select').find('option:selected').val()
-                f_text = $(this).find('#f_text').val()
-                var form_data = {
-                    'entry.737056527': f_userName,
-                    'entry.642873731': f_check,
-                    'entry.1699210899': f_name,
-                    'entry.369695229': f_numUser,
-                    'entry.1528762541': f_select,
-                    'entry.1679764871': f_text,
-                }
-                $('.wedding-submit[type="submit"]').text('Đang gửi ...')
-                $.ajax({
-                    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdD9g3WsFXklx1iJ2WTwnaKq7qXDh8fLcOetjSV8GMatzoWaA/formResponse",
-                    type: "POST",
-                    data: form_data,
-                    dataType: "xml",
-                    statusCode: {
-                        0: function() {
-                            mess_form = 'Chúng mình xin chân thành cám ơn !'
-                            $('.message-form').html(mess_form)
-                            $('button[type="submit"]').addClass('success')
-                            $('button[type="submit"]').removeClass('btn_primary')
-                            $('button[type="submit"]').attr('disabled', 'true')
-                            $('button[type="submit"]').text('Đã xác nhận')
-                            $('.message-form').fadeIn(300)
-                        },
-                        200: function() {
-                            alert('200')
-                        }
-                    }
-                })
-            })
-            return false;
-        })
-    </script>
-    <!-- END FORM XÁC NHẬN -->
 
     <!-- GỬI QUÀ -->
     <section id="gift" class="section-gift" style="display:block">
         <div class="container">
             <p class="subtitle"></p>
-            <h2 class="uk-heading-small uk-text-center uk-text-cappercase">GỬI QUÀ ĐẾN CÔ DÂU VÀ CHÚ RỂ</h2>
+            <h2 class="uk-heading-small uk-text-center uk-text-cappercase script-font">
+                {{ $weddingCard->message_gift }}</h2>
             <a href="#box-gift" data-fancybox="" class="btn btn-primary">
                 <svg width="54" height="54" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                     <g fill="#fff">
@@ -1127,9 +1050,9 @@
                 <div class="gift-container" id="gift-container">
                     <div class="gift-card">
                         <div class="gift-qr">
-                            <img src="images/f49a3208492ef370aa3f.jpg" alt="" class="groom_qr"
+                            <img src="{{ asset($weddingCard->groom_qr) }}" alt="" class="groom_qr"
                                 style="max-width:100%">
-                            <img src="images/cb278422c0047a5a2315.jpg" alt="" class="groom_qr"
+                            <img src="{{ asset($weddingCard->bride_qr) }}" alt="" class="groom_qr"
                                 style="max-width:100%">
                         </div>
                         <div class="gift-body">
@@ -1149,13 +1072,13 @@
     <!-- THANK YOU -->
     <section id="thankyou" class="section-thankyou bg_overlay uk-position-z-index">
         <div class="uk-overlay uk-overlay-primary uk-position-cover"> </div>
-        <img src="images/a4a64cc837e689b8d0f7.jpg" alt="" class="thankyou-bg thankyou_img"
+        <img src="{{ asset($weddingCard->banner_thanks) }}" alt="" class="thankyou-bg thankyou_img"
             style="object-position:">
         <div class="thankyou-body container uk-position-relative uk-position-z-index">
             <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up"
                 data-aos-duration="2000">Thank you!</h2>
             <p class="thankyou-des" data-aos="fade" data-aos-duration="3000"></p>
-            <p>Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi. Cảm ơn mọi người !</p>
+            <p>{{ $weddingCard->message_thanks }}</p>
             <p></p>
 
         </div>

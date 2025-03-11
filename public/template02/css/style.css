@@ -149,7 +149,6 @@ html {
     margin: 0 auto;
     padding: 0 24px;
     width: 100%;
-    margin-top: 80px;
     margin-bottom: 80px;
     text-align: center;
 }
@@ -247,7 +246,7 @@ hr {
 /* ========= THEMES ========== */
 body {
     font-family: var(--main-font);
-    background-image: url(../images/paper-texture.png);
+    background-image: url(../images/paper-texture2.png);
 }
 .container {
     max-width: 1200px;
