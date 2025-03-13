@@ -125,9 +125,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 {{ $weddingCard->bride_name }}  </p>
               </div>
                 <div class="banner-date">
-          <span class="day_name" data-aos="fade-right" data-aos-duration="3000">THỨ 6</span>
-          <span class="banner_date" data-aos="fade" data-aos-duration="3000">13</span>
-          <span class="banner_month" data-aos="fade-left" data-aos-duration="3000">T12</span>
+          <span class="day_name" data-aos="fade-right" data-aos-duration="3000">  @php
+            \Carbon\Carbon::setLocale('vi'); // Đặt ngôn ngữ tiếng Việt
+            $date = \Carbon\Carbon::parse($weddingCard->wedding_date);
+            $weddingDay = ucwords($date->translatedFormat('l')); // Viết hoa chữ cái đầu của mỗi từ // Viết hoa chữ cái đầu // Lấy thứ tiếng Việt
+        @endphp
+        {{ $weddingDay }}</span>
+          <span class="banner_date" data-aos="fade" data-aos-duration="3000">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}</span>
+          <span class="banner_month" data-aos="fade-left" data-aos-duration="3000">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->month }}</span>
          
         </div>
          <center>
