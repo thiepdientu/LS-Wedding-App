@@ -25,6 +25,14 @@
         @csrf
         <label>Tên thiệp</label>
         <input type="text" name="identifyWedding" value="{{ old('identifyWedding', $weddingCard->identifyWedding ?? '') }}" required><br>
+
+        <label>Mẫu thiệp</label>
+        <input type="text" name="template" value="{{ old('template', $weddingCard->template ?? '') }}" required><br>
+
+        <label>Banner Preview:</label>
+        <input type="file" name="banner_preview_image"  {{ !isset($weddingCard) ? 'required' : '' }} >
+        <input type="text" name="banner_preview" value="{{ old('banner_preview', $weddingCard->banner_preview ?? '') }}"><br>
+
         <label>Cô Dâu:</label>
         <input type="text" name="bride_name" value="{{ old('bride_name', $weddingCard->bride_name ?? '') }}" required><br>
 

@@ -38,9 +38,17 @@ class WeddingCardController extends Controller
         if (!$weddingCard) {
             abort(404, 'Thiep cuoi khong ton tai');
         }
-        return view('template02',compact('weddingCard')) ;
-        // Trả về view wedding.blade.php với dữ liệu từ database
-       // return view('wedding.index', compact('weddingCard'));
+
+        switch ($weddingCard->template) {
+            case "1":
+                return view('template01', compact('weddingCard'));
+            case "2":
+                return view('template02', compact('weddingCard'));
+            case "3":
+                 return view('template03', compact('weddingCard'));
+            default:
+                return view('welcome');
+        }
     }
 
     /**
@@ -66,6 +74,8 @@ class WeddingCardController extends Controller
         }
         $validated = $request->validate([
                 'identifyWedding' => 'required|string|max:255',
+                'template' => 'required|string|max:255',
+                'banner_preview' => 'required|string|max:1000',
                 'bride_name' => 'required|string|max:255',
                 'groom_name' => 'required|string|max:255',
                 'banner_top' => 'required|string|max:1000',
@@ -109,6 +119,7 @@ class WeddingCardController extends Controller
         $weddingId = $weddingCard->id; // Lấy ID của thiệp vừa tạo
     
         $realPathBannerTop = "";
+        $realPathBannerPreview = "";
         $realPathAvatarGroom = "";
         $realPathAvatarBride = "";
         $realPathGroomQr = "";
@@ -118,6 +129,11 @@ class WeddingCardController extends Controller
         if ($request->hasFile('banner_top_image')) {
             $path = $request->file('banner_top_image')->store("weddings/$weddingId", 'public');
             $realPathBannerTop = Storage::url($path);
+        }
+
+        if ($request->hasFile('banner_preview_image')) {
+            $path = $request->file('banner_preview_image')->store("weddings/$weddingId", 'public');
+            $realPathBannerPreview = Storage::url($path);
         }
 
         if ($request->hasFile('banner_coundown_image')) {
@@ -170,6 +186,7 @@ class WeddingCardController extends Controller
 
          // 4️⃣ Cập nhật image
          $weddingCard->update(['banner_top' => $realPathBannerTop]);
+         $weddingCard->update(['banner_preview' => $realPathBannerPreview]);
          $weddingCard->update(['groom_avatar' => $realPathAvatarGroom]);
          $weddingCard->update(['bride_avatar' => $realPathAvatarBride]);
          $weddingCard->update(['banner_coundown' => $realPathBannerCoundown]);
@@ -228,6 +245,8 @@ class WeddingCardController extends Controller
     {
         $data = $request->validate([
                'identifyWedding' => 'required|string|max:255',
+               'template' => 'required|string|max:255',
+               'banner_preview' => 'required|string|max:1000',
                'bride_name' => 'required|string|max:255',
                 'groom_name' => 'required|string|max:255',
                 'banner_top' => 'required|string|max:255',
@@ -272,6 +291,12 @@ class WeddingCardController extends Controller
         if ($request->hasFile('banner_top_image')) {
             $path = $request->file('banner_top_image')->store("weddings/$weddingId", 'public');
             $weddingCard->update(['banner_top' => Storage::url($path)]);
+        }
+
+
+        if ($request->hasFile('banner_preview_image')) {
+            $path = $request->file('banner_preview_image')->store("weddings/$weddingId", 'public');
+            $weddingCard->update(['banner_preview' => Storage::url($path)]);
         }
 
         if ($request->hasFile('banner_coundown_image')) {

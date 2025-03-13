@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('wedding_cards', function (Blueprint $table) {
             $table->id();
             $table->string('identifyWedding'); // tên thiệp
+            $table->string('template'); // mẫu thiệp
+            $table->string('banner_preview'); // banner preview
             $table->string('bride_name'); // tên cô dâu
             $table->string('groom_name'); // tên chú rể
             $table->longText('banner_top'); // banner ảnh top
