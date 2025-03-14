@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <meta property="og:image" content="{{ asset($weddingCard->banner_coundown) }}">
+    <meta property="og:image" content="{{ asset($weddingCard->banner_preview) }}">
 
     <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
     <title>{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }} - Thiệp cưới online</title>
