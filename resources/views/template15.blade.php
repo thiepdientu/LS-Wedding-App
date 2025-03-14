@@ -7,17 +7,17 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Thiệp mời tới dự hôn lễ của chúng mình!">
     <meta property="og:description" content="Trân trọng kính mời bạn  đến tham dự!">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpeg">
-    <meta property="og:image:url" content="images/thumb.jpeg">
-    <meta property="og:image" content="images/thumb.jpeg">
-    <meta property="og:image:secure_url" content="images/thumb.jpeg">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('template15/images/favicon.jpeg') }}">
+    <meta property="og:image:url" content="{{ asset('template15/images/thumb.jpeg') }}">
+    <meta property="og:image" content="{{ asset('template15/images/thumb.jpeg') }}">
+    <meta property="og:image:secure_url" content="{{ asset('template15/images/thumb.jpeg') }}">
     <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/libs.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('template15/css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('template15/css/libs.css') }}">
+    <link rel="stylesheet" href="{{ asset('template15/css/style.css') }}">
     <script type="text/javascript">
         var photoGalleries = [];
     </script>
@@ -53,9 +53,9 @@
                 </div>
                 <div class="main_image_area pt-4 pb-8">
                     <div class="main_image">
-                        <img src="images/bia.jpeg" alt="">
+                        <img src="{{ asset('template15/images/bia.jpeg') }}" alt="">
                     </div>
-                    <img class="bg-title" src="images/main_title.png" alt="">
+                    <img class="bg-title" src="{{ asset('template15/images/main_title.png') }}" alt="">
                     <div class="wrap-name pt-7 px-5 title">Minh Quân <small>&amp;</small> Hồng Nhung</div>
                 </div>
             </div>
@@ -66,19 +66,19 @@
                                     <div class="col-sm-4">
                     <a href="#wishes" class="w-100 mb-1 px-2 accessibility-btn btn btn-secondary">
                         <span class="content-button">
-                            <img class="access-section-icon" src="images/wishes.png" alt="access-btn"> Gửi lời chúc                            </span>
+                            <img class="access-section-icon" src="{{ asset('template15/images/wishes.png') }}" alt="access-btn"> Gửi lời chúc                            </span>
                     </a>
                 </div>
                                                         <div class="col-sm-4">
                     <a href="#wishes" class="w-100 mb-1 px-2 accessibility-btn btn btn-secondary">
                         <span class="content-button">
-                            <img class="access-section-icon" src="images/rsvp4.png" alt="access-btn"> Xác nhận tham dự                            </span>
+                            <img class="access-section-icon" src="{{ asset('template15/images/rsvp4.png') }}" alt="access-btn"> Xác nhận tham dự                            </span>
                     </a>
                 </div>
                                                         <div class="col-sm-4">
                     <a href="javascript:void(0)" class="w-100 mb-1 accessibility-btn btn btn-secondary buttonDonate">
                         <span class="content-button">
-                            <img class="access-section-icon" src="images/money_bag.png" alt="access-btn"> Mừng cưới                            </span>
+                            <img class="access-section-icon" src="{{ asset('template15/images/money_bag.png') }}" alt="access-btn"> Mừng cưới                            </span>
                     </a>
                 </div>
                                 </div>
@@ -91,43 +91,43 @@
                 <div class="row gx-2" id="photoGalleryContainer">
                                                 <script type="text/javascript">
                             photoGalleries.push({
-                                src : "upload/hinhcuoi1.jpeg?v=20240812211121",
-                                thumb: "upload/hinhcuoi1.jpeg?v=20240812211121",
+                                src : "upload/hinhcuoi1.jpeg') }}?v=20240812211121",
+                                thumb: "upload/hinhcuoi1.jpeg') }}?v=20240812211121",
                                 subHtml: `<div class="lg-sub-html"><h4>Tình yêu là điều kiện trong đó hạnh phúc của người khác là điều cần thiết cho chính bạn</h4></div>`
                             });
                         </script>
                                                         <div class="col-6 gallery-item section-sub-title mb-2 btn-see-more-gallery" data-index="0">
-                                <img src="images/hinhcuoi1.jpeg">
+                                <img src="{{ asset('template15/images/hinhcuoi1.jpeg') }}">
                             </div>
                                                                             <script type="text/javascript">
                             photoGalleries.push({
-                                src : "upload/hinhcuoi2.jpeg?v=20240812211121",
-                                thumb: "upload/hinhcuoi2.jpeg?v=20240812211121",
+                                src : "upload/hinhcuoi2.jpeg') }}?v=20240812211121",
+                                thumb: "upload/hinhcuoi2.jpeg') }}?v=20240812211121",
                                 subHtml: `<div class="lg-sub-html"><h4>Tình yêu không chỉ là một danh từ - nó là một động từ; nó còn hơn cả một cảm giác - đó là sự quan tâm, chia sẻ, giúp đỡ, hy sinh</h4></div>`
                             });
                         </script>
                                                         <div class="col-6 gallery-item section-sub-title mb-2 btn-see-more-gallery" data-index="0">
-                                <img src="images/hinhcuoi2.jpeg">
+                                <img src="{{ asset('template15/images/hinhcuoi2.jpeg') }}">
                             </div>
                                                                             <script type="text/javascript">
                             photoGalleries.push({
-                                src : "upload/hinhcuoi3.jpeg?v=20240812211121",
-                                thumb: "upload/hinhcuoi3.jpeg?v=20240812211121",
+                                src : "upload/hinhcuoi3.jpeg') }}?v=20240812211121",
+                                thumb: "upload/hinhcuoi3.jpeg') }}?v=20240812211121",
                                 subHtml: `<div class="lg-sub-html"><h4>Vì vậy, để được ai đó nhìn thấy đầy đủ và được yêu mến dù thế nào đi nữa - đây là một sự dâng hiến của con người có thể là điều kỳ diệu</h4></div>`
                             });
                         </script>
                                                         <div class="col-6 gallery-item section-sub-title mb-2 btn-see-more-gallery" data-index="0">
-                                <img src="images/hinhcuoi3.jpeg">
+                                <img src="{{ asset('template15/images/hinhcuoi3.jpeg') }}">
                             </div>
                                                                             <script type="text/javascript">
                             photoGalleries.push({
-                                src : "upload/hinhcuoi4.jpeg?v=20240812211121",
-                                thumb: "upload/hinhcuoi4.jpeg?v=20240812211121",
+                                src : "upload/hinhcuoi4.jpeg') }}?v=20240812211121",
+                                thumb: "upload/hinhcuoi4.jpeg') }}?v=20240812211121",
                                 subHtml: `<div class="lg-sub-html"><h4>Tình yêu không làm cho thế giới quay tròn. Tình yêu là những gì làm cho chuyến đi đáng giá</h4></div>`
                             });
                         </script>
                                                         <div class="col-6 gallery-item section-sub-title mb-2 btn-see-more-gallery" data-index="0">
-                                <img src="images/hinhcuoi4.jpeg">
+                                <img src="{{ asset('template15/images/hinhcuoi4.jpeg') }}">
                             </div>
                                                                     </div>
                 <div class="text-center">
@@ -182,7 +182,7 @@
                                                                             <p>Yêu nhau, vun vén hạnh phúc v�&nbsp; cùng nỗ lực vượt qua những khó khăn trong cuộc sống. Chúng ta từ 2 con người xa lạ m�&nbsp; bước v�&nbsp;o cuộc đời nhau. V�&nbsp; giờ đây chúng ta tiếp tục cùng nhau sang trang mới. Giây phút anh ngỏ lời “L�&nbsp;m vợ anh nhé!”, em đã nguyện ý đời n�&nbsp;y, đi đâu cũng được, miễn l�&nbsp; cùng anh.</p>
                                     
                                     <div class="img-holder">
-                                        <img src="images/chuyentinhyeu1.jpeg" alt="">
+                                        <img src="{{ asset('template15/images/chuyentinhyeu1.jpeg') }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -195,7 +195,7 @@
                                                                             <p>“Tiếng trái tim đôi ta đập thật nhanh. Thì thầm lời yêu thương. Ng�&nbsp;y tình về chung đôi...” Sau bao nhiêu chờ đợi, cuối cùng ng�&nbsp;y vui của chúng ta cũng tới rồi. Cảm ơn vì mình đã luôn l�&nbsp; một phần trong cuộc sống của nhau. Em v�&nbsp; anh không chỉ l�&nbsp; người yêu m�&nbsp; chúng ta còn l�&nbsp; tri kỷ. Ng�&nbsp;y hôm nay, em sẽ l�&nbsp; cô dâu của anh v�&nbsp; sau n�&nbsp;y sẽ l�&nbsp; mẹ của các con anh.</p>
                                     
                                     <div class="img-holder">
-                                        <img src="images/chuyentinhyeu2.jpeg" alt="">
+                                        <img src="{{ asset('template15/images/chuyentinhyeu2.jpeg') }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@ Biết rằng mọi người rất bận rộn với công việc v�&nbsp; gia
 Nhưng tất cả đã có mặt hôm nay để chúc mừng tình yêu v�&nbsp; hạnh phúc của chúng mình.
 Một lần nữa chân th�&nbsp;nh cảm ơn tất cả!</div>
                         <div class="couple-img mb-5">
-                                                            <img src="images/loingo.jpg" alt="">
+                                                            <img src="{{ asset('template15/images/loingo.jpg') }}" alt="">
                                                         </div>
                         <div class="section-title invitation-couple text-center my-5 fs-4">
                             <p>*Chú rể/ <span> Minh Quân</span>
@@ -234,7 +234,7 @@ Một lần nữa chân th�&nbsp;nh cảm ơn tất cả!</div>
                 <h2 class="section-title text-center">Sự Kiện Cưới</h2>
                 <h3 class="section-sub-title mb-4 text-center">...tình yêu không phải l�&nbsp; nhìn v�&nbsp;o nhau, m�&nbsp; l�&nbsp; nhìn về chung một hướng...</h3>
                                         <div class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
-                        <div class="image-wrap" style="background-image: url(images/sukien1.jpg);"></div>
+                        <div class="image-wrap" style="background-image: url({{ asset('template15/images/sukien1.jpg') }});"></div>
                         <div class="info-wrap p-3">
                             <h5 class="section-sub-title">Tiệc Cưới Nh�&nbsp; Trai</h5>
                             <strong><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i> 10:00 18/03/2024</strong>
@@ -243,7 +243,7 @@ Một lần nữa chân th�&nbsp;nh cảm ơn tất cả!</div>
                                                         </div>
                     </div>
                                             <div class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden">
-                        <div class="image-wrap" style="background-image: url(images/sukien2.jpg);"></div>
+                        <div class="image-wrap" style="background-image: url({{ asset('template15/images/sukien2.jpg') }});"></div>
                         <div class="info-wrap p-3">
                             <h5 class="section-sub-title">Tiệc Cưới Nh�&nbsp; Gái</h5>
                             <strong><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i> 10:00 18/03/2024</strong>
@@ -260,7 +260,7 @@ Một lần nữa chân th�&nbsp;nh cảm ơn tất cả!</div>
                 <div class="section-title wrap-people mt-5">
                     <div class="member member-groom mb-5">
                         <div class="member-image animation mb-3 text-center">
-                                                            <img src="images/chure.jpg">
+                                                            <img src="{{ asset('template15/images/chure.jpg') }}">
                                                         </div>
                         <div class="d-flex justify-content-center">
                             <span class="member-name m-0">Minh Quân</span>
@@ -268,7 +268,7 @@ Một lần nữa chân th�&nbsp;nh cảm ơn tất cả!</div>
                     </div>
                     <div class="member member-bride mt-5">
                         <div class="member-image animation mb-3 text-center">
-                                                            <img src="images/codau.jpg" alt="">
+                                                            <img src="{{ asset('template15/images/codau.jpg') }}" alt="">
                                                         </div>
                         <div class="d-flex justify-content-center">
                             <span class="member-name m-0">Hồng Nhung</span>
@@ -318,7 +318,7 @@ Một lần nữa chân th�&nbsp;nh cảm ơn tất cả!</div>
                                                     <div class="col-6 mb-4 donate-wrap">
                             <div class="donate-card p-3 px-3 rounded text-center">
                                 <strong class="d-block sub-title mb-2 text-uppercase">Mừng cưới đến chú rể</strong>
-                                <img class="qr-code-image m-auto mb-2" src="images/qrchure.jpg">
+                                <img class="qr-code-image m-auto mb-2" src="{{ asset('template15/images/qrchure.jpg') }}">
                                 <p class="mb-1">Ngân h�&nbsp;ng: <strong>CBBank</strong>
                                 </p>
                                 <p class="mb-1"> Tên t�&nbsp;i khoản: <strong>TRINH VAN QUAN</strong>
@@ -330,7 +330,7 @@ Một lần nữa chân th�&nbsp;nh cảm ơn tất cả!</div>
                                                                                 <div class="col-6 donate-wrap">
                             <div class="donate-card p-3 px-4 rounded text-center">
                                 <strong class="d-block sub-title mb-2 text-uppercase">Mừng cưới đến cô dâu</strong>
-                                <img class="qr-code-image m-auto mb-2" src="images/qrcodau.jpg">
+                                <img class="qr-code-image m-auto mb-2" src="{{ asset('template15/images/qrcodau.jpg') }}">
                                 <p class="mb-1">Ngân h�&nbsp;ng: <strong>PVcomBank</strong>
                                 </p>
                                 <p class="mb-1"> Tên t�&nbsp;i khoản: <strong>VU THI HONG NHUNG</strong>
@@ -360,7 +360,7 @@ Một lần nữa chân th�&nbsp;nh cảm ơn tất cả!</div>
                                             <div class="col-6 px-4 mb-4">
                         <div class="donate-card p-4 rounded text-center">
                             <strong class="d-block sub-title mb-2 text-uppercase">Mừng cưới đến chú rể</strong>
-                            <img class="qr-code-image m-auto mb-2" src="images/qrchure.jpg">
+                            <img class="qr-code-image m-auto mb-2" src="{{ asset('template15/images/qrchure.jpg') }}">
                             <p class="mb-1">Ngân h�&nbsp;ng: <strong>CBBank</strong>
                             </p>
                             <p class="mb-1">Tên t�&nbsp;i khoản: <strong>TRINH VAN QUAN</strong>
@@ -372,7 +372,7 @@ Một lần nữa chân th�&nbsp;nh cảm ơn tất cả!</div>
                                                                     <div class="col-6 px-4">
                         <div class="donate-card p-4 rounded text-center">
                             <strong class="d-block sub-title mb-2 text-uppercase">Mừng cưới đến cô dâu</strong>
-                            <img class="qr-code-image m-auto mb-2" src="images/qrcodau.jpg">
+                            <img class="qr-code-image m-auto mb-2" src="{{ asset('template15/images/qrcodau.jpg') }}">
                             <p class="mb-1">Ngân h�&nbsp;ng: <strong>PVcomBank</strong>
                             </p>
                             <p class="mb-1">Tên t�&nbsp;i khoản: <strong>VU THI HONG NHUNG</strong>
@@ -515,11 +515,11 @@ Một lần nữa chân th�&nbsp;nh cảm ơn tất cả!</div>
                 )
                         };
     </script>
-    <script src="js/libs.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/megahai.js"></script>
-            <link rel="stylesheet" type="text/css" href="css/bgm.css">
-    <script language="javascript" type="text/javascript" src="js/bgm.js"></script>
+    <script src="{{ asset('template15/js/libs.js') }}"></script>
+    <script src="{{ asset('template15/js/script.js') }}"></script>
+    <script src="{{ asset('template15/js/megahai.js') }}"></script>
+            <link rel="stylesheet" type="text/css" href="{{ asset('template15/css/bgm.css') }}">
+    <script language="javascript" type="text/javascript" src="{{ asset('template15/js/bgm.js') }}"></script>
     <div id="bgm" class="bottom_object">
         <div id="bgm_pp_btn">
             <div class="bgm_pp_btn_syms_wrapper">
@@ -541,10 +541,10 @@ Một lần nữa chân th�&nbsp;nh cảm ơn tất cả!</div>
             <audio id="mcard_bgm">
                 <source src="media/1.mp3" data-sseq="1"> Your browser does not support HTML5 audio.
             </audio>
-            <song src="bgmusic/1.mp3" data-cover="bgmusic/1.jpg?v=20240812211121" data-sseq="1"></song>
+            <song src="bgmusic/1.mp3" data-cover="bgmusic/1.jpg') }}?v=20240812211121" data-sseq="1"></song>
         </div>
         <div id="bgm_cover">
-            <img id="bgm_cover_img" src="images/1.jpg">
+            <img id="bgm_cover_img" src="{{ asset('template15/images/1.jpg') }}">
         </div>
     </div>
         

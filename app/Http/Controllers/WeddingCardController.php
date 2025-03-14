@@ -88,6 +88,58 @@ class WeddingCardController extends Controller
         }
     }
 
+    public function showTemplate($key)
+    {
+        // Tìm thiệp cưới theo name
+        $weddingCard = DB::table('wedding_cards')->first();
+
+        switch ($key) {
+            case "1":
+                return view('template01', compact('weddingCard'));
+            case "2":
+                return view('template02', compact('weddingCard'));
+            case "3":
+                return view('template03', compact('weddingCard'));
+            case "4":
+                return view('template04', compact('weddingCard'));
+            case "5":
+                return view('template05', compact('weddingCard'));
+            case "6":
+                return view('template06', compact('weddingCard'));
+            case "7":
+                return view('template07', compact('weddingCard'));
+            case "8":
+                return view('template08', compact('weddingCard'));
+            case "9":
+                return view('template09', compact('weddingCard'));
+            case "10":
+                return view('template10', compact('weddingCard'));
+            case "11":
+                return view('template11', compact('weddingCard'));
+            case "12":
+                return view('template12', compact('weddingCard'));
+            case "13":
+                return view('template13', compact('weddingCard'));
+            case "14":
+                return view('template14', compact('weddingCard'));
+            case "15":
+                return view('template15', compact('weddingCard'));
+            case "16":
+                return view('template16', compact('weddingCard'));
+            case "17":
+                return view('template17', compact('weddingCard'));
+            case "18":
+                return view('template18', compact('weddingCard'));
+            case "19":
+                return view('template19', compact('weddingCard'));
+            case "20":
+                return view('template20', compact('weddingCard'));
+
+            default:
+                return view('welcome');
+        }
+    }
+
     /**
      * Show the form for creating a new resource.
      */

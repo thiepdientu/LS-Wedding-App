@@ -6,7 +6,7 @@
 
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-		<meta property="og:image" content="images/A880B420-A055-415D-8520-D4255085591F-683x1024.jpeg">
+		<meta property="og:image" content="{{ asset('template14/images/A880B420-A055-415D-8520-D4255085591F-683x1024.jpeg') }}">
 	
 	
 <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
@@ -19,24 +19,24 @@
 <meta property="og:url" content="https://thiepdientu.com.vn/mau-thiep/mau-thiep-co-dien/">
 <meta property="og:site_name" content="Thiệp cưới online">
 <meta property="og:updated_time" content="2024-03-13T11:56:04+00:00">
-<meta property="og:image" content="images/A880B420-A055-415D-8520-D4255085591F.jpeg">
-<meta property="og:image:secure_url" content="images/A880B420-A055-415D-8520-D4255085591F.jpeg">
+<meta property="og:image" content="{{ asset('template14/images/A880B420-A055-415D-8520-D4255085591F.jpeg') }}">
+<meta property="og:image:secure_url" content="{{ asset('template14/images/A880B420-A055-415D-8520-D4255085591F.jpeg') }}">
 <meta property="og:image:width" content="854">
 <meta property="og:image:height" content="1280">
 <meta property="og:image:alt" content="Mẫu Thiệp Cổ Điển">
 <meta property="og:image:type" content="image/jpeg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mẫu Thiệp Cổ Điển - Thiệp cưới online">
-<meta name="twitter:image" content="https://thiepdientu.com.vn/wp-content/uploads/2024/01/A880B420-A055-415D-8520-D4255085591F.jpeg">
+<meta name="twitter:image" content="https://thiepdientu.com.vn/wp-content/uploads/2024/01/A880B420-A055-415D-8520-D4255085591F.jpeg') }}">
 <!-- /Rank Math WordPress SEO plugin -->
 
-<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="//cdn.js') }}delivr.net">
 <link rel="dns-prefetch" href="//unpkg.com">
 <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Thiệp cưới online »" href="https://thiepdientu.com.vn/feed/">
 <link rel="alternate" type="application/rss+xml" title="Thiệp cưới online » Dòng bình luận" href="https://thiepdientu.com.vn/comments/feed/">
 <link rel="alternate" type="application/rss+xml" title="Thiệp cưới online » Mẫu Thiệp Cổ Điển Dòng bình luận" href="https://thiepdientu.com.vn/mau-thiep/mau-thiep-co-dien/feed/">
 <script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thiepdientu.com.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"}};
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png') }}","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thiepdientu.com.vn\/wp-includes\/js\/wp-emoji-release.min.js') }}?ver=6.6.1"}};
 /*! This file is auto-generated */
 !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
 </script>
@@ -54,7 +54,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		padding: 0 !important;
 	}
 </style>
-<link rel="stylesheet" id="wp-block-library-css" href="css/style.min.css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="{{ asset('template14/css/style.min.css') }}" media="all">
 <style id="rank-math-toc-block-style-inline-css">
 .wp-block-rank-math-toc-block nav ol{counter-reset:item}.wp-block-rank-math-toc-block nav ol li{display:block}.wp-block-rank-math-toc-block nav ol li:before{content:counters(item, ".") ". ";counter-increment:item}
 
@@ -69,21 +69,21 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel="stylesheet" id="uikit-css" href="css/uikit.min.css" media="all">
-<link rel="stylesheet" id="reset uikit-css" href="css/reset1.css" media="all">
-<link rel="stylesheet" id="remixicon-css" href="css/remixicon.css" media="all">
-<link rel="stylesheet" id="preload-css" href="css/preload.css" media="all">
-<link rel="stylesheet" id="wedding reset-css" href="css/reset-wedding.css" media="all">
-<link rel="stylesheet" id="fancybox-css" href="css/fancybox.css" media="all">
-<link rel="stylesheet" id="swiper slide-css" href="css/swiper-bundle.min.css" media="all">
-<link rel="stylesheet" id="animation-css" href="css/animation.css" media="all">
-<link rel="stylesheet" id="aos style-css" href="css/aos.css" media="all">
-<link rel="stylesheet" id="footer style-css" href="css/footer.css" media="all">
-<link rel="stylesheet" id="wedding style-css" href="css/wedding.css" media="all">
-<link rel="stylesheet" id="theme-css" href="css/theme.css" media="all">
-<script src="js/jquery.min.js" id="jquery-core-js"></script>
-<script src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-<script src="js/jquery.min_1.js" id="Jquery-js"></script>
+<link rel="stylesheet" id="uikit-css" href="{{ asset('template14/css/uikit.min.css') }}" media="all">
+<link rel="stylesheet" id="reset uikit-css" href="{{ asset('template14/css/reset1.css') }}" media="all">
+<link rel="stylesheet" id="remixicon-css" href="{{ asset('template14/css/remixicon.css') }}" media="all">
+<link rel="stylesheet" id="preload-css" href="{{ asset('template14/css/preload.css') }}" media="all">
+<link rel="stylesheet" id="wedding reset-css" href="{{ asset('template14/css/reset-wedding.css') }}" media="all">
+<link rel="stylesheet" id="fancybox-css" href="{{ asset('template14/css/fancybox.css') }}" media="all">
+<link rel="stylesheet" id="swiper slide-css" href="{{ asset('template14/css/swiper-bundle.min.css') }}" media="all">
+<link rel="stylesheet" id="animation-css" href="{{ asset('template14/css/animation.css') }}" media="all">
+<link rel="stylesheet" id="aos style-css" href="{{ asset('template14/css/aos.css') }}" media="all">
+<link rel="stylesheet" id="footer style-css" href="{{ asset('template14/css/footer.css') }}" media="all">
+<link rel="stylesheet" id="wedding style-css" href="{{ asset('template14/css/wedding.css') }}" media="all">
+<link rel="stylesheet" id="theme-css" href="{{ asset('template14/css/theme.css') }}" media="all">
+<script src="{{ asset('template14/js/jquery.min.js') }}" id="jquery-core-js"></script>
+<script src="{{ asset('template14/js/jquery-migrate.min.js') }}" id="jquery-migrate-js"></script>
+<script src="{{ asset('template14/js/jquery.min_1.js') }}" id="Jquery-js"></script>
 <link rel="https://api.w.org/" href="https://thiepdientu.com.vn/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://thiepdientu.com.vn/wp-json/wp/v2/mau-thiep/1058"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thiepdientu.com.vn/xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.6.1">
 <link rel="shortlink" href="https://thiepdientu.com.vn/?p=1058">
@@ -96,14 +96,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				clip: rect(1px, 1px, 1px, 1px);
 				}
 					</style>
-		<link rel="icon" href="images/cropped-logo-favicon-32x32.png" sizes="32x32">
-<link rel="icon" href="images/cropped-logo-favicon-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="images/cropped-logo-favicon-180x180.png">
-<meta name="msapplication-TileImage" content="https://thiepdientu.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2024/03/26115441/cropped-logo-favicon-270x270.png">
+		<link rel="icon" href="{{ asset('template14/images/cropped-logo-favicon-32x32.png') }}" sizes="32x32">
+<link rel="icon" href="{{ asset('template14/images/cropped-logo-favicon-192x192.png') }}" sizes="192x192">
+<link rel="apple-touch-icon" href="{{ asset('template14/images/cropped-logo-favicon-180x180.png') }}">
+<meta name="msapplication-TileImage" content="https://thiepdientu.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2024/03/26115441/cropped-logo-favicon-270x270.png') }}">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('template14/css/style.css') }}">
 
-<script src="js/wp-emoji-release.min.js" defer=""></script></head>
+<script src="{{ asset('template14/js/wp-emoji-release.min.js') }}" defer=""></script></head>
 
 <body class="mau-thiep-template mau-thiep-template-templates mau-thiep-template-codien2 mau-thiep-template-templatescodien2-php single single-mau-thiep postid-1058 no-sidebar">
 
@@ -114,7 +114,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <div id="preloader" class="uk-position-fixed uk-background-muted uk-position-z-index" style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
         
         <div class="uk-position-center uk-text-center">
-           <img src="images/logo-doc3.png" alt="" style="max-width: 150px;" class="uk-animation-slide-top">
+           <img src="{{ asset('template14/images/logo-doc3.png') }}" alt="" style="max-width: 150px;" class="uk-animation-slide-top">
           
             <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
                Mẫu Thiệp Cổ Điển</h2>
@@ -127,11 +127,11 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
  <div id="banner" class="section-banner">
 
-    <img src="images/leaf1.png" alt="" class="bg-top-left" data-aos="fade-right" data-aos-duration="2000">
+    <img src="{{ asset('template14/images/leaf1.png') }}" alt="" class="bg-top-left" data-aos="fade-right" data-aos-duration="2000">
 
-    <img src="images/leaf1.png" alt="" class="bg-top-right">
+    <img src="{{ asset('template14/images/leaf1.png') }}" alt="" class="bg-top-right">
 
-    <img src="images/sun.png" alt="" class="bg-sun" data-aos="fade-left" data-aos-duration="2000">
+    <img src="{{ asset('template14/images/sun.png') }}" alt="" class="bg-sun" data-aos="fade-left" data-aos-duration="2000">
 
     <div class="banner container">
 
@@ -160,16 +160,16 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
             <div class="banner-media swiper banner-slide">
         <div class="swiper-wrapper">
                   <div class="swiper-slide">
-            <img src="images/B4E770F8-DBCC-4030-88B0-B404758E50F6.jpeg">
+            <img src="{{ asset('template14/images/B4E770F8-DBCC-4030-88B0-B404758E50F6.jpeg') }}">
           </div>
                   <div class="swiper-slide">
-            <img src="images/2D5FF753-A804-4FA1-BDBE-7553131ED693.jpeg">
+            <img src="{{ asset('template14/images/2D5FF753-A804-4FA1-BDBE-7553131ED693.jpeg') }}">
           </div>
                   <div class="swiper-slide">
-            <img src="images/A880B420-A055-415D-8520-D4255085591F.jpeg">
+            <img src="{{ asset('template14/images/A880B420-A055-415D-8520-D4255085591F.jpeg') }}">
           </div>
                   <div class="swiper-slide">
-            <img src="images/83998C00-B860-4F90-8704-0335A59032BB-e1705071790284.jpeg">
+            <img src="{{ asset('template14/images/83998C00-B860-4F90-8704-0335A59032BB-e1705071790284.jpeg') }}">
           </div>
                 </div>
         
@@ -204,7 +204,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
           <div class="about-img">
 
-            <img src="images/9F051D30-60FD-4251-BEEA-D25101B80EFC-e1705071555184.jpeg" alt="" class="groom_img">
+            <img src="{{ asset('template14/images/9F051D30-60FD-4251-BEEA-D25101B80EFC-e1705071555184.jpeg') }}" alt="" class="groom_img">
 
           </div>
 
@@ -226,7 +226,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
           <div class="about-img">
 
-            <img src="images/4651C337-2197-41F3-8AE7-9E3DD09D38AC.jpeg" alt="" class="bride_img">
+            <img src="{{ asset('template14/images/4651C337-2197-41F3-8AE7-9E3DD09D38AC.jpeg') }}" alt="" class="bride_img">
 
           </div>
 
@@ -251,7 +251,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   <!-- TIMELINE -->
 
 
-<section id="time-line" class="time-line-section img_bg bg_overlay" style="background-image:url(images/A2E72DF2-6B86-4766-8FE9-C04DF9A7B5B7.jpeg)">
+<section id="time-line" class="time-line-section img_bg bg_overlay" style="background-image:url({{ asset('template14/images/A2E72DF2-6B86-4766-8FE9-C04DF9A7B5B7.jpeg') }})">
 
 <div class="time-line container">
 
@@ -276,7 +276,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
     <div class="timeline-media"> 
 
-        <img src="images/E669BFB4-1211-4DF2-B81D-75A1740FEDDE.jpeg" alt="" class="timline-img"> 
+        <img src="{{ asset('template14/images/E669BFB4-1211-4DF2-B81D-75A1740FEDDE.jpeg') }}" alt="" class="timline-img"> 
 
     </div> 
 
@@ -298,7 +298,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
     <div class="timeline-media"> 
 
-        <img src="images/B4E770F8-DBCC-4030-88B0-B404758E50F6.jpeg" alt="" class="timline-img"> 
+        <img src="{{ asset('template14/images/B4E770F8-DBCC-4030-88B0-B404758E50F6.jpeg') }}" alt="" class="timline-img"> 
 
     </div> 
 
@@ -320,7 +320,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
     <div class="timeline-media"> 
 
-        <img src="images/23AEF284-B9B0-4ABB-8AA9-0E329D9341FF.jpeg" alt="" class="timline-img"> 
+        <img src="{{ asset('template14/images/23AEF284-B9B0-4ABB-8AA9-0E329D9341FF.jpeg') }}" alt="" class="timline-img"> 
 
     </div> 
 
@@ -342,7 +342,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
     <div class="timeline-media"> 
 
-        <img src="images/D6E135F6-494E-4ACF-A802-926FB29A0AB1.jpeg" alt="" class="timline-img"> 
+        <img src="{{ asset('template14/images/D6E135F6-494E-4ACF-A802-926FB29A0AB1.jpeg') }}" alt="" class="timline-img"> 
 
     </div> 
 
@@ -381,83 +381,83 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
           </div>
     <div class="album container">
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/32F0DC7B-D4FB-48C8-A2A0-6F11CC45BDAE.jpeg">
-                <img src="images/32F0DC7B-D4FB-48C8-A2A0-6F11CC45BDAE.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/32F0DC7B-D4FB-48C8-A2A0-6F11CC45BDAE.jpeg') }}">
+                <img src="{{ asset('template14/images/32F0DC7B-D4FB-48C8-A2A0-6F11CC45BDAE.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/9F051D30-60FD-4251-BEEA-D25101B80EFC-e1705071555184.jpeg">
-                <img src="images/9F051D30-60FD-4251-BEEA-D25101B80EFC-e1705071555184.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/9F051D30-60FD-4251-BEEA-D25101B80EFC-e1705071555184.jpeg') }}">
+                <img src="{{ asset('template14/images/9F051D30-60FD-4251-BEEA-D25101B80EFC-e1705071555184.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/E669BFB4-1211-4DF2-B81D-75A1740FEDDE.jpeg">
-                <img src="images/E669BFB4-1211-4DF2-B81D-75A1740FEDDE.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/E669BFB4-1211-4DF2-B81D-75A1740FEDDE.jpeg') }}">
+                <img src="{{ asset('template14/images/E669BFB4-1211-4DF2-B81D-75A1740FEDDE.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/471B39FE-1825-444D-88F5-9AD45B12C763.jpeg">
-                <img src="images/471B39FE-1825-444D-88F5-9AD45B12C763.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/471B39FE-1825-444D-88F5-9AD45B12C763.jpeg') }}">
+                <img src="{{ asset('template14/images/471B39FE-1825-444D-88F5-9AD45B12C763.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/AA8C8E04-0BA2-4E20-8AE8-C8CB3D051B9B.jpeg">
-                <img src="images/AA8C8E04-0BA2-4E20-8AE8-C8CB3D051B9B.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/AA8C8E04-0BA2-4E20-8AE8-C8CB3D051B9B.jpeg') }}">
+                <img src="{{ asset('template14/images/AA8C8E04-0BA2-4E20-8AE8-C8CB3D051B9B.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/23AEF284-B9B0-4ABB-8AA9-0E329D9341FF.jpeg">
-                <img src="images/23AEF284-B9B0-4ABB-8AA9-0E329D9341FF.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/23AEF284-B9B0-4ABB-8AA9-0E329D9341FF.jpeg') }}">
+                <img src="{{ asset('template14/images/23AEF284-B9B0-4ABB-8AA9-0E329D9341FF.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/7D76E311-431D-4771-A983-86960AC7FA0E.jpeg">
-                <img src="images/7D76E311-431D-4771-A983-86960AC7FA0E.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/7D76E311-431D-4771-A983-86960AC7FA0E.jpeg') }}">
+                <img src="{{ asset('template14/images/7D76E311-431D-4771-A983-86960AC7FA0E.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/A6DCE732-7C04-4DA8-9B44-B730013219E6.jpeg">
-                <img src="images/A6DCE732-7C04-4DA8-9B44-B730013219E6.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/A6DCE732-7C04-4DA8-9B44-B730013219E6.jpeg') }}">
+                <img src="{{ asset('template14/images/A6DCE732-7C04-4DA8-9B44-B730013219E6.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/83998C00-B860-4F90-8704-0335A59032BB-e1705071790284.jpeg">
-                <img src="images/83998C00-B860-4F90-8704-0335A59032BB-e1705071790284.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/83998C00-B860-4F90-8704-0335A59032BB-e1705071790284.jpeg') }}">
+                <img src="{{ asset('template14/images/83998C00-B860-4F90-8704-0335A59032BB-e1705071790284.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/D6E135F6-494E-4ACF-A802-926FB29A0AB1.jpeg">
-                <img src="images/D6E135F6-494E-4ACF-A802-926FB29A0AB1.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/D6E135F6-494E-4ACF-A802-926FB29A0AB1.jpeg') }}">
+                <img src="{{ asset('template14/images/D6E135F6-494E-4ACF-A802-926FB29A0AB1.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/A880B420-A055-415D-8520-D4255085591F.jpeg">
-                <img src="images/A880B420-A055-415D-8520-D4255085591F.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/A880B420-A055-415D-8520-D4255085591F.jpeg') }}">
+                <img src="{{ asset('template14/images/A880B420-A055-415D-8520-D4255085591F.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/2D5FF753-A804-4FA1-BDBE-7553131ED693.jpeg">
-                <img src="images/2D5FF753-A804-4FA1-BDBE-7553131ED693.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/2D5FF753-A804-4FA1-BDBE-7553131ED693.jpeg') }}">
+                <img src="{{ asset('template14/images/2D5FF753-A804-4FA1-BDBE-7553131ED693.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/B4E770F8-DBCC-4030-88B0-B404758E50F6.jpeg">
-                <img src="images/B4E770F8-DBCC-4030-88B0-B404758E50F6.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/B4E770F8-DBCC-4030-88B0-B404758E50F6.jpeg') }}">
+                <img src="{{ asset('template14/images/B4E770F8-DBCC-4030-88B0-B404758E50F6.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/A2E72DF2-6B86-4766-8FE9-C04DF9A7B5B7.jpeg">
-                <img src="images/A2E72DF2-6B86-4766-8FE9-C04DF9A7B5B7.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/A2E72DF2-6B86-4766-8FE9-C04DF9A7B5B7.jpeg') }}">
+                <img src="{{ asset('template14/images/A2E72DF2-6B86-4766-8FE9-C04DF9A7B5B7.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/4651C337-2197-41F3-8AE7-9E3DD09D38AC.jpeg">
-                <img src="images/4651C337-2197-41F3-8AE7-9E3DD09D38AC.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/4651C337-2197-41F3-8AE7-9E3DD09D38AC.jpeg') }}">
+                <img src="{{ asset('template14/images/4651C337-2197-41F3-8AE7-9E3DD09D38AC.jpeg') }}" alt="">
             </a>
         </div>
                 <div class="album-item">
-            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/3EA53B7E-5531-44DE-B40A-7CB83FD777B0.jpeg">
-                <img src="images/3EA53B7E-5531-44DE-B40A-7CB83FD777B0.jpeg" alt="">
+            <a data-fancybox="gallery" href="https://thiepdientu.com.vn/wp-content/uploads/2024/01/3EA53B7E-5531-44DE-B40A-7CB83FD777B0.jpeg') }}">
+                <img src="{{ asset('template14/images/3EA53B7E-5531-44DE-B40A-7CB83FD777B0.jpeg') }}" alt="">
             </a>
         </div>
             </div>
@@ -599,7 +599,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <!-- COUNT DOWN -->
 
 
-<section id="countdown-secton" class="uk-background-cover uk-section uk-section-large uk-text-center uk-light" style="background-image:url(images/A2E72DF2-6B86-4766-8FE9-C04DF9A7B5B7.jpeg)">
+<section id="countdown-secton" class="uk-background-cover uk-section uk-section-large uk-text-center uk-light" style="background-image:url({{ asset('template14/images/A2E72DF2-6B86-4766-8FE9-C04DF9A7B5B7.jpeg') }})">
     <div class="uk-container">
     <p class="uk-text-center">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
         <h2 class="uk-heading-small uk-text-center script-font">
@@ -643,7 +643,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <!-- FROM XÁC NHẬN -->
 <section id="form" class="form" style="display:block">
   <div class="container">
-    <form action="" method="post" id="form-wedding" style="background-image:url(images/paper-cut-sweet-pink-envelope-and-heart-with-copy-space-for-design-valentine-s-day-or-love-day-background-concept-send-a-letter-to-a-lover-couple-free-vector.jpg)">
+    <form action="" method="post" id="form-wedding" style="background-image:url({{ asset('template14/images/paper-cut-sweet-pink-envelope-and-heart-with-copy-space-for-design-valentine-s-day-or-love-day-background-concept-send-a-letter-to-a-lover-couple-free-vector.jpg') }})">
       <h2 class="section-title">Xác nhận tham dự</h2>
       <p class="sub-title">Hãy cho chúng tôi biết bạn sẽ đến tham dự nhé!</p>
       <div class="form-container">
@@ -753,7 +753,7 @@ $(document).ready(function(){
 <!-- LỜI CHÚC -->
 
 <!-- TIN NHẮN -->
-<section id="message" class="section-message uk-background-cover uk-section" style="background-image:url(images/32F0DC7B-D4FB-48C8-A2A0-6F11CC45BDAE.jpeg); display:block">
+<section id="message" class="section-message uk-background-cover uk-section" style="background-image:url({{ asset('template14/images/32F0DC7B-D4FB-48C8-A2A0-6F11CC45BDAE.jpeg') }}); display:block">
 	<div class="uk-position-cover uk-overlay uk-overlay-primary" style="opacity:.5"> </div>
       <div class="message-container container uk-position-relative uk-position-z-index">
         <h2 class="section-title uk-light" style="color:white">
@@ -796,7 +796,7 @@ fetch('/wp-json/wp/v2/comments?post=1058&per_page=100',
     }
     )
     
-  .then(response => response.json())
+  .then(response => response.js') }}on())
   .then(data => {
     mess_item = ''
     for(let i in data){
@@ -836,7 +836,7 @@ fetch('/wp-json/wp/v2/comments?post=1058&per_page=100',
         $('.list_message').prepend(mess_new)
         $('#messageForm')[0].reset()
       }
-      return response.json();
+      return response.js') }}on();
     })
     .then((object) => {
       // Comment submission failed.
@@ -868,7 +868,7 @@ fetch('/wp-json/wp/v2/comments?post=1058&per_page=100',
         <div class="gift-container" id="gift-container">
                                 <div class="gift-card">
                     <div class="gift-qr">
-                        <img src="images/z5062484714460_86b92a8805a1d69892e3ad506673b204-4-e1705072064295.jpg" alt="" class="groom_qr" style="max-width:100%">
+                        <img src="{{ asset('template14/images/z5062484714460_86b92a8805a1d69892e3ad506673b204-4-e1705072064295.jpg') }}" alt="" class="groom_qr" style="max-width:100%">
                     </div>
                     <div class="gift-body">
                                         </div>
@@ -888,11 +888,11 @@ fetch('/wp-json/wp/v2/comments?post=1058&per_page=100',
 
 <div id="text" class="section-text">
 
-  <img src="images/leaf1.png" alt="" class="bg-top-left" data-aos="fade-right" data-aos-duration="1000">
+  <img src="{{ asset('template14/images/leaf1.png') }}" alt="" class="bg-top-left" data-aos="fade-right" data-aos-duration="1000">
 
-    <img src="images/leaf1.png" alt="" class="bg-top-right">
+    <img src="{{ asset('template14/images/leaf1.png') }}" alt="" class="bg-top-right">
 
-    <img src="images/sun.png" alt="" class="bg-sun" data-aos="fade-left" data-aos-duration="1000">
+    <img src="{{ asset('template14/images/sun.png') }}" alt="" class="bg-sun" data-aos="fade-left" data-aos-duration="1000">
 
   <div class="container">
 
@@ -912,7 +912,7 @@ fetch('/wp-json/wp/v2/comments?post=1058&per_page=100',
 <!-- THANK YOU -->
 <section id="thankyou" class="section-thankyou bg_overlay uk-position-z-index">
 	<div class="uk-overlay uk-overlay-primary uk-position-cover"> </div>
-      <img src="images/83998C00-B860-4F90-8704-0335A59032BB-e1705071790284.jpeg" alt="" class="thankyou-bg thankyou_img" style="object-position:">
+      <img src="{{ asset('template14/images/83998C00-B860-4F90-8704-0335A59032BB-e1705071790284.jpeg') }}" alt="" class="thankyou-bg thankyou_img" style="object-position:">
       <div class="thankyou-body container uk-position-relative uk-position-z-index">
         <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up" data-aos-duration="2000">Thank you!</h2>
         <p class="thankyou-des" data-aos="fade" data-aos-duration="3000"></p><p>Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám ơn !</p>
@@ -940,11 +940,11 @@ fetch('/wp-json/wp/v2/comments?post=1058&per_page=100',
 
 <script>
 
- $(':root').css('--primary-color', '');
+ $(':root').css') }}('--primary-color', '');
 
- $(':root').css('--secondary-color', '');
+ $(':root').css') }}('--secondary-color', '');
 
- $(':root').css('--bg', '');
+ $(':root').css') }}('--bg', '');
 
 </script>
 
@@ -963,15 +963,15 @@ fetch('/wp-json/wp/v2/comments?post=1058&per_page=100',
 </button>
     <!-- END FOOTER -->
 
-    <script src="js/fancybox.umd.js" id="fancybox js-js"></script>
-<script src="js/uikit.min.js" id="uikit js-js"></script>
-<script src="js/uikit-icons.min.js" id="uikit icon-js"></script>
-<script src="js/preloader.js" id="preloader js-js"></script>
-<script src="js/aos.js" id="aos js-js"></script>
-<script src="js/swiper-bundle.min.js" id="swiper slide-js"></script>
-<script src="js/scrollreveal.min.js" id="scrollrevea-js"></script>
-<script src="js/main-wedding.js" id="main wedding-js"></script>
-<script src="js/comment-reply.min.js" id="comment-reply-js" async="" data-wp-strategy="async"></script>
+    <script src="{{ asset('template14/js/fancybox.umd.js') }}" id="fancybox js-js"></script>
+<script src="{{ asset('template14/js/uikit.min.js') }}" id="uikit js-js"></script>
+<script src="{{ asset('template14/js/uikit-icons.min.js') }}" id="uikit icon-js"></script>
+<script src="{{ asset('template14/js/preloader.js') }}" id="preloader js-js"></script>
+<script src="{{ asset('template14/js/aos.js') }}" id="aos js-js"></script>
+<script src="{{ asset('template14/js/swiper-bundle.min.js') }}" id="swiper slide-js"></script>
+<script src="{{ asset('template14/js/scrollreveal.min.js') }}" id="scrollrevea-js"></script>
+<script src="{{ asset('template14/js/main-wedding.js') }}" id="main wedding-js"></script>
+<script src="{{ asset('template14/js/comment-reply.min.js') }}" id="comment-reply-js" async="" data-wp-strategy="async"></script>
     
 
 

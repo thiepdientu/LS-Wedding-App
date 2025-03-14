@@ -41,3 +41,5 @@ Route::get('admin/editByName/{id}', [WeddingCardController::class, 'editByName']
 Route::post('/update/{id}', [WeddingCardController::class, 'update'])->name('wedding.update');
 Route::get('admin/create', [WeddingCardController::class, 'create'])->name('wedding.create');
 Route::post('/wedding-cards/store', [WeddingCardController::class, 'store'])->name('wedding.store');
+// Route điều hướng user đến template thiệp
+Route::get('/template/{key}', [WeddingCardController::class, 'showTemplate']);
