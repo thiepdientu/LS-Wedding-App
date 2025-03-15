@@ -90,6 +90,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				position: absolute;
 				clip: rect(1px, 1px, 1px, 1px);
 				}
+        .banner-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
 					</style>
 		<link rel="icon" href="{{ asset('template06/images/cropped-logo-favicon-32x32.png') }}" sizes="32x32">
 <link rel="icon" href="{{ asset('template06/images/cropped-logo-favicon-192x192.png') }}" sizes="192x192">
@@ -103,8 +110,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <div id="preloader" class="uk-position-fixed uk-background-muted uk-position-z-index" style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
         
         <div class="uk-position-center uk-text-center">
-           <img src="{{ asset('template06/images/logo-doc3.png') }}" alt="" style="max-width: 150px;" class="uk-animation-slide-top">
-          
+
             <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
                Mẫu Thiệp Xanh Lá</h2>
           
@@ -112,15 +118,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 </div>
 <!-- END PRELOAD --> <!-- BANNER -->
- <section id="banner" class="section-banner">
-    <img src="{{ asset('template06/images/top-right.png') }}" alt="" class="bg-right" data-aos="fade-left" data-aos-duration="2000">
-    <img src="{{ asset('template06/images/leaf-top.png') }}" alt="" class="bg-top" data-aos="fade-down-left" data-aos-duration="2000">
-    <img src="{{ asset('template06/images/bottom-left.png') }}" alt="" class="bg-bottom-left" data-aos="fade-up-right" data-aos-duration="2000">
-   <div class="banner-container container">
-    <img src="{{ asset('template06/images/leaf1.png') }}" alt="" class="leaf-1">
-    <img src="{{ asset('template06/images/leaf2.png') }}" alt="" class="leaf-2">
-    <h1 class="banner-title">SAVE THE DATE</h1>
-    <div class="banner-name uk-position-relative uk-position-z-index">
+ <section id="banner" class="section-banner" style="color:white;  object-fit: cover;
+    object-position: center;" >
+    <img src="{{ asset('template06/images/9E2D097B-4E2F-4FF2-9F6F-3D1BEC1955B6-e1705078033877.jpeg') }}" alt="" class="banner-bg"
+    style="object-position:center center; ">
+    <div class="banner-container container" style="background-color: #00000063;">
+    <h1 class="banner-title" data-aos="fade-down" data-aos-duration="3000">SAVE THE DATE</h1>
+    <div data-aos="fade-up" data-aos-duration="3000" class="banner-name uk-position-relative uk-position-z-index">
     Công Thành<br>
        &amp;<br>
 Phương Ánh    </div>
@@ -163,26 +167,26 @@ Phương Ánh    </div>
             </div>
     <div class="about-container container">
       <div class="about-card" style="order:1">
-        <div class="about-media" data-aos="fade-left" data-aos-duration="3000">
+        <div class="about-media" data-aos="fade-up" data-aos-duration="3000">
           <img src="{{ asset('template06/images/7C1BAA19-C248-4E3A-922B-F1A23538EB6A-e1705077793236.jpeg') }}" alt="" class="bride_img">
         </div>
-        <div class="about-data" data-aos="fade-right" data-aos-duration="3000">
-          <p class="title">Cô dâu</p>
+        <div class="about-data uk-text-left" data-aos="fade-down" data-aos-duration="1000">
+        
           <h3 class="bride_name">Phương Ánh</h3>
-          <p class="bride_birthday">20/12/2001</p>
+        
           <p class="bride_des">Cô dâu thuộc tuýp người hướng nội . Sở thích nấu nướng và đi du lịch cùng gia đình.</p>   
           <hr>
                   </div>
         
       </div>
       <div class="about-card" style="order:1">
-        <div class="about-media" data-aos="fade-right" data-aos-duration="3000">
+        <div class="about-media" data-aos="fade-up" data-aos-duration="3000">
           <img src="{{ asset('template06/images/25607D30-089A-41E0-8D7A-42616F8FDAC0-e1705077734385.jpeg') }}" alt="" class="groom_img">
         </div>
-        <div class="about-data" data-aos="fade-left" data-aos-duration="3000">
-          <p class="title">Chú rể</p>
+        <div class="about-data uk-text-right" data-aos="fade-down" data-aos-duration="1000">
+        
           <h3 class="groom_name">Công Thành</h3>
-          <p class="groom_birthday">12/12/1998</p>
+      
           <p class="groom_des">Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại.</p>
           <hr>
                   </div>
@@ -314,7 +318,7 @@ Phương Ánh    </div>
     <div class="section-heading">
     <p class="subtitle"></p>
       <h2 class="uk-heading-small uk-text-center script-font">
-      ALBUM ẢNH      </h2>
+      Album Ảnh      </h2>
           </div>
     <div class="album container">
                 <div class="album-item">
@@ -407,13 +411,13 @@ Phương Ánh    </div>
 
 <!-- COUNT DOWN -->
 
-<section id="countdown-secton" class="uk-background-cover uk-section uk-section-large uk-text-center uk-light" style="background-image:url({{ asset('template06/images/25607D30-089A-41E0-8D7A-42616F8FDAC0-e1705077734385.jpeg') }})">
+<section  data-aos="fade" data-aos-duration="3000" id="countdown-secton" class="uk-background-cover uk-section uk-section-large uk-text-center uk-light" style="background-image:url({{ asset('template06/images/25607D30-089A-41E0-8D7A-42616F8FDAC0-e1705077734385.jpeg') }})">
     <div class="uk-container">
-    <p class="uk-text-center">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
+   
         <h2 class="uk-heading-small uk-text-center script-font">
-        SAVE THE DATE        </h2>
+        Cùng đếm ngược thời gian        </h2>
         <svg class="heartbeat" width="64" height="64" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path fill="red" d="M16.5 13.287c-2.475-2.716-5.5-.712-5.5 2.112c0 2.56 1.814 4.035 3.358 5.292l.044.036l.427.35c.571.475 1.121.923 1.671.923s1.1-.448 1.671-.923C19.789 19.73 22 18.224 22 15.399c0-.927-.326-1.767-.853-2.38c-1.075-1.251-2.985-1.556-4.647.268Z"></path>
+        <path fill="#ed444f" d="M16.5 13.287c-2.475-2.716-5.5-.712-5.5 2.112c0 2.56 1.814 4.035 3.358 5.292l.044.036l.427.35c.571.475 1.121.923 1.671.923s1.1-.448 1.671-.923C19.789 19.73 22 18.224 22 15.399c0-.927-.326-1.767-.853-2.38c-1.075-1.251-2.985-1.556-4.647.268Z"></path>
         <path fill="#f1ebe4" d="M8.106 18.247C5.298 16.083 2 13.542 2 9.137C2 4.274 7.5.825 12 5.501C16.5.825 22 4.274 22 9.137c0 .834-.118 1.6-.329 2.31a4.203 4.203 0 0 0-2.619-.947c-.89-.005-1.758.274-2.553.81c-1.39-.933-2.956-1.058-4.33-.395c-1.635.79-2.669 2.556-2.669 4.484c0 2.306 1.149 3.923 2.342 5.095c-.948-.076-1.897-.808-2.88-1.583c-.277-.219-.564-.44-.856-.664Z"></path>
         </svg>
        <div class="uk-grid-small uk-child-width-1-4 uk-flex-center uk-margin-large-top" uk-grid="" uk-countdown="date: 2024-10-19 17:00:00">
@@ -448,19 +452,19 @@ Phương Ánh    </div>
     <div class="container">
       <div class="section-heading">
         <h2 class="section-title">
-        <p>Trân trọng kình mời</p>
+        <p class="script-font">Trân trọng kính mời</p>
         </h2>
       </div>
           <div class="invitation">
             <div class="invitation-container">
                         <div class="invitation-card"> <img src="{{ asset('template06/images/9E2D097B-4E2F-4FF2-9F6F-3D1BEC1955B6-e1705078033877.jpeg') }}" alt=""> 
-                <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ GÁI</h3>
+                <h3 class="card-title uk-margin-remove uk-text-bold">TƯ GIA NHÀ GÁI</h3>
                 <address class="uk-margin-remove">
                     <p>ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
                 </address> 
                 				                <div class="invitation-body"> <div class="invi_time">
                     <p class="fw-bold">Vào lúc 
-                        <span class="invi_hours">
+                        <span class="uk-text-bold invi_hours">
                         10:00                        </span>
                     </p> 
                     <div class="invi_group_time"> 
@@ -483,9 +487,7 @@ Phương Ánh    </div>
                     <a href="tel:(+84)981742365" class="phone_number"> 
                     <i class="ri-phone-fill"></i> 
                     </a>
-                    <a href="" class="phone_number" data-fancybox=""> 
-                    <i class="ri-image-circle-fill"></i>
-                    </a> 
+                  
                                         <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map" target="_blank"> 
                     <i class="ri-map-2-fill"></i>
                     </a> 
@@ -494,13 +496,13 @@ Phương Ánh    </div>
            
         </div>
                     <div class="invitation-card"> <img src="{{ asset('template06/images/3BC80F6B-B4DE-49FC-8F23-046ADBBC4F05-e1705078098829.jpeg') }}" alt=""> 
-                <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
+                <h3 class="card-title uk-margin-remove uk-text-bold">TƯ GIA NHÀ TRAI</h3>
                 <address class="uk-margin-remove">
                     <p>ẤP HÀ;, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
                 </address> 
                 				                <div class="invitation-body"> <div class="invi_time">
                     <p class="fw-bold">Vào lúc 
-                        <span class="invi_hours">
+                        <span class="uk-text-bold invi_hours">
                         10:00                        </span>
                     </p> 
                     <div class="invi_group_time"> 
@@ -523,9 +525,7 @@ Phương Ánh    </div>
                     <a href="tel:(+84)981742365" class="phone_number"> 
                     <i class="ri-phone-fill"></i> 
                     </a>
-                    <a href="" class="phone_number" data-fancybox=""> 
-                    <i class="ri-image-circle-fill"></i>
-                    </a> 
+                 
                                         <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map" target="_blank"> 
                     <i class="ri-map-2-fill"></i>
                     </a> 
@@ -637,7 +637,7 @@ fetch('/wp-json/wp/v2/comments?post=1138&per_page=100',
 <!-- END LỜI CHÚC -->
 <!-- FORM XÁC NHẬN -->
 <!-- FROM XÁC NHẬN -->
-<section id="form" class="form" style="display:block">
+{{-- <section id="form" class="form" style="display:block">
   <div class="container">
     <form action="" method="post" id="form-wedding" style="background-image:url({{ asset('template06/images/paper-cut-sweet-pink-envelope-and-heart-with-copy-space-for-design-valentine-s-day-or-love-day-background-concept-send-a-letter-to-a-lover-couple-free-vector.jpg') }})">
       <h2 class="section-title">Xác nhận tham dự</h2>
@@ -740,22 +740,22 @@ $(document).ready(function(){
   })
   return false;
 })
-</script>
+</script> --}}
 <!-- END FORM XÁC NHẬN -->
 
 <!-- GỬI QUÀ -->
 <section id="gift" class="section-gift" style="display:block">
       <div class="container">
         <p class="subtitle"></p>
-        <h2 class="uk-heading-small uk-text-center  uk-text-cappercase">GỬI QUÀ ĐẾN CÔ DÂU VÀ CHÚ RỂ</h2>
-                <a href="#box-gift" data-fancybox="" class="btn btn-primary">
+        <h2 class="uk-heading-small uk-text-center  uk-text-cappercase"></h2>
+                <a href="#box-gift" data-fancybox="" class="btn btn-primary ">
           <svg width="54" height="54" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
             <g fill="#fff">
                 <path d="M208 128v72a8 8 0 0 1-8 8H56a8 8 0 0 1-8-8v-72Z" opacity=".2"></path>
                 <path d="M216 72h-35.08c.39-.33.79-.65 1.17-1A29.53 29.53 0 0 0 192 49.57A32.62 32.62 0 0 0 158.44 16A29.53 29.53 0 0 0 137 25.91a54.94 54.94 0 0 0-9 14.48a54.94 54.94 0 0 0-9-14.48A29.53 29.53 0 0 0 97.56 16A32.62 32.62 0 0 0 64 49.57A29.53 29.53 0 0 0 73.91 71c.38.33.78.65 1.17 1H40a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16v64a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16v-64a16 16 0 0 0 16-16V88a16 16 0 0 0-16-16m-67-35.49a13.69 13.69 0 0 1 10-4.5h.49A16.62 16.62 0 0 1 176 49.08a13.69 13.69 0 0 1-4.5 10c-9.49 8.4-25.24 11.36-35 12.4c1.2-10.59 4.5-25.98 12.5-34.97m-64.09.36A16.63 16.63 0 0 1 96.59 32h.49a13.69 13.69 0 0 1 10 4.5c8.39 9.48 11.35 25.2 12.39 34.92c-9.72-1-25.44-4-34.92-12.39a13.69 13.69 0 0 1-4.5-10a16.6 16.6 0 0 1 4.82-12.16ZM40 88h80v32H40Zm16 48h64v64H56Zm144 64h-64v-64h64Zm16-80h-80V88h80z"></path>
             </g>
         </svg>
-          
+          <span  style="color:white">GỬI QUÀ ĐẾN CÔ DÂU VÀ CHÚ RỂ</span>
         </a>
         <div id="box-gift">
         <div class="gift-container" id="gift-container">
@@ -783,8 +783,8 @@ $(document).ready(function(){
       <img src="{{ asset('template06/images/27353812-11C2-4816-BC4F-FD6B025EBDD3-e1705078223213.jpeg') }}" alt="" class="thankyou-bg thankyou_img" style="object-position:">
       <div class="thankyou-body container uk-position-relative uk-position-z-index">
         <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up" data-aos-duration="2000">Thank you!</h2>
-        <p class="thankyou-des" data-aos="fade" data-aos-duration="3000"></p><p>Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám ơn !</p>
-<p></p>
+        <p class="thankyou-des" data-aos="fade-down" data-aos-duration="2000">Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám ơn !</p>
+      </p></p>
         
     </div></section>
     <!-- END THANK YOU --><!-- END THANKYOU -->
@@ -800,7 +800,7 @@ $(document).ready(function(){
 <!-- END AUDIO --> <!-- FOOTER -->
  <footer>
         <div class="footer-bottom">
-            <p>Bản quyền 2023 thuộc về Tit Wedding <a href="https://www.facebook.com/profile.php?id=61564156101208" class="facebook">
+            <p>Bản quyền 2025 thuộc về LS Wedding <a href="https://www.facebook.com/profile.php?id=61564156101208" class="facebook">
                 <i class="ri-facebook-fill"></i>
             </a></p>
         </div>

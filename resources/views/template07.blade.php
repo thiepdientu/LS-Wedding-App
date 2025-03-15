@@ -102,9 +102,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <!-- PRELOAD -->
 <div id="preloader" class="uk-position-fixed uk-background-muted uk-position-z-index" style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
         
-        <div class="uk-position-center uk-text-center">
-           <img src="{{ asset('template07/images/logo-doc3.png') }}" alt="" style="max-width: 150px;" class="uk-animation-slide-top">
-          
+        <div class="uk-position-center uk-text-center">      
             <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
                Mẫu Thiệp Cô Ba Sài Gòn</h2>
           
@@ -115,12 +113,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <section id="banner" class="section-banner">
     <img src="{{ asset('template07/images/E8683EBF-2F9A-401A-89A4-A8A9392150FB.jpeg') }}" alt="" class="banner-img kenburns-top banner_top" style="object-position:center center">
     <div class="banner-container container">
-      <div class="banner-content">
-        <h1 class="banner-text" data-aos="fade-up" data-aos-duration="2000">
-            <p>CÔ BA ĐI LẤY CHỒNG</p>
+      <div class="banner-content uk-text-center">
+        <h1 class="script-font text-white" data-aos="fade-up" data-aos-duration="2000">
+            <p>Save the Date </p>
         </h1>
+  
                 <div class="banner-date">
-          <span>04.02.2024</span>
+          <span class="text-white">04.02.2024</span>
         </div>
         
       </div>
@@ -130,14 +129,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   <!-- END HEADER -->
 
     <!-- ABOUT -->
-    <section id="about" class="section-about" style="background-image: url({{ asset('template07/images/bg.jpg') }})">
+    <section id="about" class="section-about">
     <div class="about-container container">
       <div class="about-card" style="order:1">
-        <div class="about-media" data-aos="fade-left" data-aos-duration="3000">
+        <div class="about-media" data-aos="fade-right" data-aos-duration="3000">
           <img src="{{ asset('template07/images/40AC5EBD-3C8E-4F6C-841F-F07575E4D6C1.jpeg') }}" alt="" class="bride_img">
         </div>
-        <div class="about-data" data-aos="fade-right" data-aos-duration="3000">
-          <p class="title">Cô dâu</p>
+        <div class="about-data" data-aos="fade-left" data-aos-duration="3000" style="color: #5b5b5b">
+       
           <h3 class="bride_name">Phương Ánh</h3>
           <p class="bride_des">Cô dâu thuộc tuýp người hướng nội . Sở thích nấu nướng và đi du lịch cùng gia đình.</p>
           <hr>
@@ -145,13 +144,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
       </div>
       <div class="about-card" style="order:1">
-        <div class="about-media" data-aos="fade-right" data-aos-duration="3000">
-          <img src="{{ asset('template07/images/2A2DA651-F8B2-49DE-BEC2-827474A74581-e1705076862988.jpeg') }}" alt="" class="groom_img">
+        <div class="about-media" data-aos="fade-left" data-aos-duration="3000">
+          <img src="{{ asset('template07/images/40AC5EBD-3C8E-4F6C-841F-F07575E4D6C1.jpeg') }}" alt="" class="bride_img">
         </div>
-        <div class="about-data" data-aos="fade-left" data-aos-duration="3000">
-          <p class="title">Chú rể</p>
-          <h3 class="groom_name">Công Thành</h3>
-          <p class="groom_des">Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại.</p>
+        <div class="about-data uk-text-right" data-aos="fade-right" data-aos-duration="3000" style="color: #5b5b5b">
+       
+          <h3 class="bride_name">Công Thành</h3>
+          <p class="bride_des">Cô dâu thuộc tuýp người hướng nội . Sở thích nấu nướng và đi du lịch cùng gia đình.</p>
           <hr>
                   </div>
 
@@ -197,7 +196,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
         <span class="title">Lần đầu gặp gỡ</span> 
 
-        <p class="timeline-des uk-margin-remove"></p><p>Ngày ấy vu vơ đăng một dòng status trên facebook than thở, vu vơ đùa giỡn nói chuyện với một người xa lạ chưa từng quen.</p>
+      <p class="main-font">Ngày ấy vu vơ đăng một dòng status trên facebook than thở, vu vơ đùa giỡn nói chuyện với một người xa lạ chưa từng quen.</p>
 <p></p> 
 
     </div> 
@@ -219,7 +218,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
         <span class="title">Hẹn hò</span> 
 
-        <p class="timeline-des uk-margin-remove"></p><p>ỗi chiều cuối tuần thường chạy xe vòng quanh qua những con phố, len lỏi trong từng dòng người tấp nập</p>
+      <p class="main-font">Mỗi chiều cuối tuần thường chạy xe vòng quanh qua những con phố, len lỏi trong từng dòng người tấp nập</p>
 <p></p> 
 
     </div> 
@@ -241,7 +240,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
         <span class="title">Đính hôn</span> 
 
-        <p class="timeline-des uk-margin-remove"></p><p>Chúng ta từ 2 con người xa lạ mà bước vào cuộc đời nhau. Và giờ đây chúng ta tiếp tục cùng nhau sang trang mới.</p>
+        <p class="main-font">Chúng ta từ 2 con người xa lạ mà bước vào cuộc đời nhau. Và giờ đây chúng ta tiếp tục cùng nhau sang trang mới.</p>
 <p></p> 
 
     </div> 
@@ -263,7 +262,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
         <span class="title">Thành hôn</span> 
 
-        <p class="timeline-des uk-margin-remove"></p><p>Em và anh không chỉ là người yêu mà chúng ta còn là tri kỷ. Ngày hôm nay, em sẽ là cô dâu của anh</p>
+     <p class="main-font">Em và anh không chỉ là người yêu mà chúng ta còn là tri kỷ. Ngày hôm nay, em sẽ là cô dâu của anh</p>
 <p></p> 
 
     </div> 
@@ -283,8 +282,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <section id="album" class="uk-section" data-aos="fade-up" data-aos-duration="3000">
     <div class="section-heading">
     <p class="subtitle"></p>
-      <h2 class="uk-heading-small uk-text-center script-font">
-      ALBUM ẢNH      </h2>
+      <h2 class=" uk-text-center script-font">
+      Album Ảnh      </h2>
           </div>
     <div class="album container">
                 <div class="album-item">
@@ -325,7 +324,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 <section id="countdown-secton" class="uk-background-cover uk-section uk-section-large uk-text-center uk-light" style="background-image:url({{ asset('template07/images/2A2DA651-F8B2-49DE-BEC2-827474A74581-e1705076862988.jpeg') }})">
     <div class="uk-container">
-    <p class="uk-text-center">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
+    
         <h2 class="uk-heading-small uk-text-center script-font">
         SAVE THE DATE        </h2>
         <svg class="heartbeat" width="64" height="64" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -370,9 +369,11 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
       
             <div class="invitation">
             <div class="invitation-container">
+              <h2 class="section-title uk-light" style="color:#5b5b5b">
+                Trân Trọng Kính Mời        </h2>
                         <div class="invitation-card"> <img src="{{ asset('template07/images/40AC5EBD-3C8E-4F6C-841F-F07575E4D6C1.jpeg') }}" alt=""> 
                 <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ GÁI</h3>
-                <address class="uk-margin-remove">
+                <address class="uk-margin-remove main-font">
                     <p>ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
                 </address> 
                 				                <div class="invitation-body"> <div class="invi_time">
@@ -399,10 +400,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                 <div class="social-link"> 
                     <a href="tel:(+84)981742365" class="phone_number"> 
                     <i class="ri-phone-fill"></i> 
-                    </a>
-                    <a href="" class="phone_number" data-fancybox=""> 
-                    <i class="ri-image-circle-fill"></i>
-                    </a> 
+                    </a>         
                                         <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map" target="_blank"> 
                     <i class="ri-map-2-fill"></i>
                     </a> 
@@ -412,7 +410,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         </div>
                     <div class="invitation-card"> <img src="{{ asset('template07/images/EAB4C87C-1DDB-4D84-A5D8-8E4FF4922477.jpeg') }}" alt=""> 
                 <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
-                <address class="uk-margin-remove">
+                <address class="uk-margin-remove main-font">
                     <p>ẤP Hà, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
                 </address> 
                 				                <div class="invitation-body"> <div class="invi_time">
@@ -439,10 +437,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                 <div class="social-link"> 
                     <a href="tel:(+84)981742365" class="phone_number"> 
                     <i class="ri-phone-fill"></i> 
-                    </a>
-                    <a href="" class="phone_number" data-fancybox=""> 
-                    <i class="ri-image-circle-fill"></i>
-                    </a> 
+                    </a>            
                                         <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map" target="_blank"> 
                     <i class="ri-map-2-fill"></i>
                     </a> 
@@ -511,7 +506,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
        
         <div class="uk-padding-small uk-border-rounded blur-bg" style="border:1px solid white">
 			
-          <h3 class="form-title" style="color:white">Gửi lời chúc</h3>
           <form action="" id="messageForm" method="POST">
 		
           <input type="hidden" id="postId" value="1122">
@@ -592,7 +586,7 @@ fetch('/wp-json/wp/v2/comments?post=1122&per_page=100',
 
 <!-- FORM XÁC NHẬN -->
 <!-- FROM XÁC NHẬN -->
-<section id="form" class="form" style="display:block">
+{{-- <section id="form" class="form" style="display:block">
   <div class="container">
     <form action="" method="post" id="form-wedding" style="background-image:url({{ asset('template07/images/paper-cut-sweet-pink-envelope-and-heart-with-copy-space-for-design-valentine-s-day-or-love-day-background-concept-send-a-letter-to-a-lover-couple-free-vector.jpg') }})">
       <h2 class="section-title">Xác nhận tham dự</h2>
@@ -695,14 +689,14 @@ $(document).ready(function(){
   })
   return false;
 })
-</script>
+</script> --}}
 <!-- END FORM XÁC NHẬN -->
 
 <!-- GỬI QUÀ -->
 <section id="gift" class="section-gift" style="display:block">
       <div class="container">
         <p class="subtitle"></p>
-        <h2 class="uk-heading-small uk-text-center script-font uk-text-cappercase">GỬI QUÀ ĐẾN CÔ DÂU VÀ CHÚ RỂ</h2>
+
                 <a href="#box-gift" data-fancybox="" class="btn btn-primary">
           <svg width="54" height="54" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
             <g fill="#fff">
@@ -710,7 +704,7 @@ $(document).ready(function(){
                 <path d="M216 72h-35.08c.39-.33.79-.65 1.17-1A29.53 29.53 0 0 0 192 49.57A32.62 32.62 0 0 0 158.44 16A29.53 29.53 0 0 0 137 25.91a54.94 54.94 0 0 0-9 14.48a54.94 54.94 0 0 0-9-14.48A29.53 29.53 0 0 0 97.56 16A32.62 32.62 0 0 0 64 49.57A29.53 29.53 0 0 0 73.91 71c.38.33.78.65 1.17 1H40a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16v64a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16v-64a16 16 0 0 0 16-16V88a16 16 0 0 0-16-16m-67-35.49a13.69 13.69 0 0 1 10-4.5h.49A16.62 16.62 0 0 1 176 49.08a13.69 13.69 0 0 1-4.5 10c-9.49 8.4-25.24 11.36-35 12.4c1.2-10.59 4.5-25.98 12.5-34.97m-64.09.36A16.63 16.63 0 0 1 96.59 32h.49a13.69 13.69 0 0 1 10 4.5c8.39 9.48 11.35 25.2 12.39 34.92c-9.72-1-25.44-4-34.92-12.39a13.69 13.69 0 0 1-4.5-10a16.6 16.6 0 0 1 4.82-12.16ZM40 88h80v32H40Zm16 48h64v64H56Zm144 64h-64v-64h64Zm16-80h-80V88h80z"></path>
             </g>
         </svg>
-          
+          <span style="color:white">GỬI QUÀ CÔ DÂU & CHÚ RỂ</span>
         </a>
         <div id="box-gift">
         <div class="gift-container" id="gift-container">
@@ -738,24 +732,9 @@ $(document).ready(function(){
       <img src="{{ asset('template07/images/2A2DA651-F8B2-49DE-BEC2-827474A74581-e1705076862988.jpeg') }}" alt="" class="thankyou-bg thankyou_img" style="object-position:">
       <div class="thankyou-body container uk-position-relative uk-position-z-index">
         <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up" data-aos-duration="2000">Thank you!</h2>
-        <p class="thankyou-des" data-aos="fade" data-aos-duration="3000"></p><p>Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám ơn !</p>
+        <p class="thankyou-des main-font" data-aos="fade-down" data-aos-duration="2000">Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám ơn !</p>
 <p></p>
-        <div class="social">
-          <h4>Chia sẻ thiệp</h4>
-          <div class="social-link">
-            <a href="#" class="facebook">
-                <i class="ri-facebook-fill"></i>
-            </a>
-            <a href="#" class="instargram">
-                <i class="ri-instagram-fill"></i>
-            </a>
-            <a href="#" class="twiter">
-                <i class="ri-twitter-x-line"></i>
-            </a>
-            <a href="#" class="pinterest">
-                <i class="ri-pinterest-fill"></i>
-            </a>
-          </div>
+      
       </div>
     </div></section>
     <!-- END THANK YOU --><!-- END THANKYOU -->
@@ -771,7 +750,9 @@ $(document).ready(function(){
 <!-- END AUDIO --> <!-- FOOTER -->
  <footer>
         <div class="footer-bottom">
-            <p>Bản quyền 2023 thuộc về Thiệp cưới điện tử®</p>
+            <p>Bản quyền 2025 thuộc về LS Wedding <a href="#" class="facebook">
+              <i class="ri-facebook-fill"></i>
+          </a></p>
         </div>
 </footer>
 <button class="toggleAudio">

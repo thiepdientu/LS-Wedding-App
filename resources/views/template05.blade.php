@@ -1388,10 +1388,8 @@ $(document).ready(function(){
         <img src="{{ asset('template05/images/D745F3CE-DC05-45C5-88F6-408A69D33377.jpeg') }}" alt=""
             class="thankyou-bg thankyou_img" style="object-position:">
         <div class="thankyou-body container uk-position-relative uk-position-z-index">
-            <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up"
-                data-aos-duration="2000">Thank you!</h2>
-            <p class="thankyou-des" data-aos="fade" data-aos-duration="3000"></p>
-            <p data-aos="fade-down" data-aos-duration="3000">Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám ơn !</p>
+            <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up" data-aos-duration="2000">Thank you!</h2>
+            <p data-aos="fade-down" data-aos-duration="2000">Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám ơn !</p>
         
         </div>
     </section>

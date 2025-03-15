@@ -384,7 +384,6 @@ body {
     font-family: var(--main-font);
 }
 .container {
-    max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -569,9 +568,9 @@ body {
    
 }
 .about-media {
-   border-radius: 999px;
-   overflow: hidden;
-   aspect-ratio: 1/1.3;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
 }
 .about-media img {
     transition: .5s;
@@ -641,17 +640,20 @@ body {
 }
 .timeline-media {
     position: relative;
+    background: white;
+    border-radius: 27px;
+    padding: 3px;
 }
 
 .timeline-media img {
     max-width: 200px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1.2;
     object-fit: cover;
     object-position: center;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border-radius: 999px 999px 12px 12px ;
+    border-radius: 22px;
 }
 .timeline-body {
     display: flex;
@@ -683,7 +685,7 @@ body {
     transition: .3s;
     object-fit: cover;
     object-position: center;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1.3;
     width: 100%;
     height: 100%;
 }
@@ -776,7 +778,7 @@ body {
 
 /* INVITATION */
 #invitation {
-    padding: 80px 0;
+    padding: 0px 0 57px 
 }
 .invitation-container {
     margin-top: 40px;
@@ -791,18 +793,18 @@ body {
     align-items: center;
     padding: 20px;
     gap: 12px;
-    background-color: var(--bg);
+    background-color: #defbd6;
     border-radius:12px;
     max-width: 100%;
     text-align: center;
 }
 .invitation-card img {
-    max-width: 120px;
-    aspect-ratio: 1/1;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    padding: 8px;
+    padding: 6px;
     background-color: var(--text-white);
-    border-radius: 50%;
+    border-radius: 16%;
 }
 .card-title {
     font-size: 24px;
