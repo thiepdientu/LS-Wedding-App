@@ -4,7 +4,7 @@
     --max-width: 1024px;
     /* color */
     --bg: #fcf5f2;
-    --primary-color: #6D3E28;
+    --primary-color: #9e3301;
     --secondary-color:#6D3E28 ;
     --text-white: #fff;
     --text-black:#000 ;
@@ -796,6 +796,7 @@ main{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 100% 100% 0px 0px;
     object-position: center top;
 }
 .about-body {
@@ -876,8 +877,8 @@ main{
     order: 1;
 }
 .timeline-media {
-    background-color: var(--primary-color);
-    padding: 8px;
+    background-color: #ffffff;
+    padding: 3px;
     border-radius: 12px;
 }
 .timeline-media img {
@@ -898,7 +899,7 @@ main{
 .timeline-body .title {
     font-family: var(--title-font);
     font-size: 20px;
-    color: var(--text-white);
+    color: #ffa02a;;
 }
 
 /* COUNTDOWN */
@@ -910,7 +911,7 @@ main{
 .count-down {
     background: var(--primary-color);
     padding: 20px;
-    border-radius: 120px 120px 0 0;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -998,13 +999,14 @@ main{
   .album-slide .swiper-slide img {
     display: block;
     width: 100%;
-    border-radius: 12px;
+    border-radius: 2px;
   }
  
 
 /* INVITATION */
 .invitation {
-    background-color: var(--bg);
+    background-color: #fde4d980;
+    border-radius: 20px;
 }
 .invitation-container {
     padding: 20px;
@@ -1035,7 +1037,7 @@ main{
     object-fit: cover;
     padding: 8px;
     background-color: var(--text-white);
-    border-radius: 999px 999px 0 0;
+    border-radius: 50%;
 }
 .card-title {
     font-size: var(--title-fs);

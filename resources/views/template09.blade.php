@@ -103,7 +103,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <div id="preloader" class="uk-position-fixed uk-background-muted uk-position-z-index" style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
         
         <div class="uk-position-center uk-text-center">
-           <img src="{{ asset('template09/images/logo-doc3.png') }}" alt="" style="max-width: 150px;" class="uk-animation-slide-top">
+           
           
             <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
                Mẫu Thiệp Lãng Mạn</h2>
@@ -123,7 +123,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
        &amp;<br>
 Phương Ánh      </div>
             <div class="time">
-        <span class="banner_time">10H00</span>
+        <span class="banner_time">10h00</span>
         <br>
         <span class="banner_date">04</span>
         .<span class="banner_month">02</span>
@@ -134,21 +134,15 @@ Phương Ánh      </div>
         <p class="location-name">Luxury Palace</p>
         <address>171 Nguyễn Thái Sơn, P8, Gò Vấp</address>
       </div>
+
+      <div class="group-button">
+        <a href="https://www.google.com/maps/place/11%C2%B051'41.9%22N+108%C2%B013'07.0%22E/@11.8616389,108.2186111,17z/data=!3m1!4b1!4m4!3m3!8m2!3d11.8616389!4d108.2186111?entry=ttu" target="_blank" class="btn btn-pri">
+          <i class="ri-map-fill"></i>
+          <span>Bản đồ</span>
+        </a>
+      </div>
     </div>
-    <div class="group-button">
-      <a href="https://www.google.com/maps/place/11%C2%B051'41.9%22N+108%C2%B013'07.0%22E/@11.8616389,108.2186111,17z/data=!3m1!4b1!4m4!3m3!8m2!3d11.8616389!4d108.2186111?entry=ttu" target="_blank" class="btn btn-pri">
-        <i class="ri-map-fill"></i>
-        <span>Bản đồ</span>
-      </a>
-      <button class="btn btn-pri" href="#form">
-        <i class="ri-send-plane-fill"></i>
-        <span>Đăng kí tham dự</span>
-      </button>
-      <button class="btn btn-pri" data-fancybox="" data-src="#gift">
-        <i class="ri-gift-fill"></i>
-        <span>Gửi quà</span>
-      </button>
-    </div>
+   
       </section>
     <!-- END BANNER -->
  <!-- ABOUT -->
@@ -158,38 +152,31 @@ Phương Ánh      </div>
       CHÚ RỂ VÀ CÔ DÂU      </h2>
           </div>
     <div class="container about">
-      <div class="about-card" data-aos="fade-left" data-aos-duration="3000" style="order:1">
+      <div class="about-card" data-aos="fade-up" data-aos-duration="3000" style="order:1">
         <div class="media">
           <img src="{{ asset('template09/images/0F3691F5-4ACA-48B8-810A-C4D0A766B998-e1705072255839.jpeg') }}" alt="" class="groom-img groom_img">
-          <span>
-            Nhà trai
-            <img src="{{ asset('template09/images/men-icon.png') }}" alt="">
-          </span>
+         
         </div>
         <div class="body">
           <h2 class="groom_name uk-margin-remove">Công Thành</h2>
           <p class="groom_birthday uk-margin-remove">12/12/1998</p>
-          <p>Ông Bà</p>
-          <h3 class="father_groom groom_father uk-margin-remove">NGUYỄN CÔNG BẰNG</h3>
-          <h3 class="mother_groom groom_mother uk-margin-remove">PHàM THỊ HOA</h3>
+          
                   </div>
       </div>
-      <div class="about-card" data-aos="fade-right" data-aos-duration="3000" style="order:1">
+
+      <div class="about-card" data-aos="fade-up" data-aos-duration="3000" style="order:1">
         <div class="media">
-          <img src="{{ asset('template09/images/680E95E0-8069-44F3-A286-4F8D81C2D425.jpeg') }}" alt="" class="groom-img bride_img">
-          <span>
-            Nhà Gái
-            <img src="{{ asset('template09/images/wm-icon.png') }}" alt="">
-          </span>
+          <img src="{{ asset('template09/images/680E95E0-8069-44F3-A286-4F8D81C2D425.jpeg') }}" alt="" class="groom-img groom_img">
+      
         </div>
         <div class="body">
-          <h2 class="groom_name bride_name uk-margin-remove">Phương Ánh</h2>
-          <p class="bride_birthday uk-margin-remove">20/12/2001</p>
-          <p>Ông Bà</p>
-          <h3 class="father_groom bride_father uk-margin-remove">PHàM VĂN THẮNG</h3>
-          <h3 class="father_groom bride_mother uk-margin-remove">TRẦN THỊ LOAN</h3>
+          <h2 class="groom_name uk-margin-remove">Phương Ánh</h2>
+          <p class="groom_birthday uk-margin-remove">12/12/1998</p>
+          
                   </div>
       </div>
+
+      
     </div>
   </section>
   <!-- END ABOUT -->
@@ -317,8 +304,8 @@ Phương Ánh      </div>
 <section id="album" class="uk-section" data-aos="fade-up" data-aos-duration="3000">
     <div class="section-heading">
     <p class="subtitle"></p>
-      <h2 class="uk-heading-small uk-text-center script-font">
-      ALBUM ẢNH      </h2>
+      <h2 class="uk-text-center " style="font-family: var(--script-font);">
+      Album Ảnh      </h2>
           </div>
     <div class="album container">
                 <div class="album-item">
@@ -437,14 +424,16 @@ Phương Ánh      </div>
       </div>
           <div class="invitation">
             <div class="invitation-container">
+              <h2 class="uk-text-center " style="font-family: var(--script-font);">
+                Trân Trọng Kính Mời      </h2>
                         <div class="invitation-card"> <img src="{{ asset('template09/images/67369EDA-AB9B-42BA-BB2C-8C1147C31E71.jpeg') }}" alt=""> 
-                <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ GÁI</h3>
+                <h3 class="card-title uk-margin-remove uk-text-bold">TƯ GIA NHÀ GÁI</h3>
                 <address class="uk-margin-remove">
                     <p>ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
                 </address> 
                 				                <div class="invitation-body"> <div class="invi_time">
                     <p class="fw-bold">Vào lúc 
-                        <span class="invi_hours">
+                        <span class="uk-text-bold invi_hours">
                         10:00                        </span>
                     </p> 
                     <div class="invi_group_time"> 
@@ -467,9 +456,7 @@ Phương Ánh      </div>
                     <a href="tel:(+84)981742365" class="phone_number"> 
                     <i class="ri-phone-fill"></i> 
                     </a>
-                    <a href="" class="phone_number" data-fancybox=""> 
-                    <i class="ri-image-circle-fill"></i>
-                    </a> 
+                  
                                         <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map" target="_blank"> 
                     <i class="ri-map-2-fill"></i>
                     </a> 
@@ -484,7 +471,7 @@ Phương Ánh      </div>
                 </address> 
                 				                <div class="invitation-body"> <div class="invi_time">
                     <p class="fw-bold">Vào lúc 
-                        <span class="invi_hours">
+                        <span class="uk-text-bold invi_hours">
                         10:00                        </span>
                     </p> 
                     <div class="invi_group_time"> 
@@ -507,9 +494,7 @@ Phương Ánh      </div>
                     <a href="tel:(+84)981742365" class="phone_number"> 
                     <i class="ri-phone-fill"></i> 
                     </a>
-                    <a href="" class="phone_number" data-fancybox=""> 
-                    <i class="ri-image-circle-fill"></i>
-                    </a> 
+                   
                                         <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map" target="_blank"> 
                     <i class="ri-map-2-fill"></i>
                     </a> 
@@ -527,9 +512,9 @@ Phương Ánh      </div>
 
 <section id="countdown-secton" class="uk-background-cover uk-section uk-section-large uk-text-center uk-light" style="background-image:url({{ asset('template09/images/FF508208-8C60-4E2D-862A-1E81D79CE9C7-e1705073693356.jpeg') }})">
     <div class="uk-container">
-    <p class="uk-text-center">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
-        <h2 class="uk-heading-small uk-text-center script-font">
-        SAVE THE DATE        </h2>
+
+        <h2 class="uk-heading-small uk-text-center" style="font-family: var(--script-font);">
+        Save The Date        </h2>
         <svg class="heartbeat" width="64" height="64" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path fill="red" d="M16.5 13.287c-2.475-2.716-5.5-.712-5.5 2.112c0 2.56 1.814 4.035 3.358 5.292l.044.036l.427.35c.571.475 1.121.923 1.671.923s1.1-.448 1.671-.923C19.789 19.73 22 18.224 22 15.399c0-.927-.326-1.767-.853-2.38c-1.075-1.251-2.985-1.556-4.647.268Z"></path>
         <path fill="#f1ebe4" d="M8.106 18.247C5.298 16.083 2 13.542 2 9.137C2 4.274 7.5.825 12 5.501C16.5.825 22 4.274 22 9.137c0 .834-.118 1.6-.329 2.31a4.203 4.203 0 0 0-2.619-.947c-.89-.005-1.758.274-2.553.81c-1.39-.933-2.956-1.058-4.33-.395c-1.635.79-2.669 2.556-2.669 4.484c0 2.306 1.149 3.923 2.342 5.095c-.948-.076-1.897-.808-2.88-1.583c-.277-.219-.564-.44-.856-.664Z"></path>
@@ -561,120 +546,46 @@ Phương Ánh      </div>
 
 <!-- END COUNT DOWN -->
 
-<!-- FORM XÁC NHẬN -->
-<!-- FROM XÁC NHẬN -->
-<section id="form" class="form" style="display:block">
+<!-- GỬI QUÀ -->
+<section id="gift" class="section-gift" style="display:block">
   <div class="container">
-    <form action="" method="post" id="form-wedding" style="background-image:url({{ asset('template09/images/paper-cut-sweet-pink-envelope-and-heart-with-copy-space-for-design-valentine-s-day-or-love-day-background-concept-send-a-letter-to-a-lover-couple-free-vector.jpg') }})">
-      <h2 class="section-title">Xác nhận tham dự</h2>
-      <p class="sub-title">Hãy cho chúng tôi biết bạn sẽ đến tham dự nhé!</p>
-      <div class="form-container">
-              <div class="group-radio">
-        
-          <label class="radio-container">TƯ GIA NHÀ GÁI            <span class="tooltip"> <p>ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
- </span>
-            <input type="radio" name="fav_language" id="nha_trai" value="TƯ GIA NHÀ GÁI">
-            <span class="checkmark"></span>
-          </label>
-          
-          <label class="radio-container">TƯ GIA NHÀ TRAI            <span class="tooltip"> <p>ẤP Hà, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
- </span>
-            <input type="radio" name="fav_language" id="nha_trai" value="TƯ GIA NHÀ TRAI">
-            <span class="checkmark"></span>
-          </label>
-                  </div>
-                <div class="group-input">
-          <label>Tên Khách Mời</label>
-          <input type="text" class="input" id="f_name" required="" placeholder="Tên Khách Mời">
-        </div>
-        
-        <div class="group-input">
-          <p class="group-title"></p>
-          <div class="group-select">
-            <select name="" id="wedding-select" class="uk-text-truncate" style="max-width:320px">
-              <option value="Có tôi sẽ đến">Có tôi sẽ đến </option>
-              <option value="Xin Lỗi tôi không tham dự được !">Xin Lỗi tôi không tham dự được ! </option>
-            </select>
-            <i class="bx bx-chevron-down"></i>
-          </div>
-          <div class="group-select">
-            <select name="" id="num_user">
-              <option value="1 Người">1 Người </option>
-              <option value="2 Người">2 Người</option>
-              <option value="3 Người">3 Người</option>
-            </select>
-            <i class="bx bx-chevron-down"></i>
-        </div>
-        </div>
-        <div class="group-input">
-          <label></label>
-          <textarea name="" id="f_text" cols="30" rows="4">          </textarea>
-        </div>
-        <div class="message-form">
-          
-        </div>
-        <div class="group-input">
-          <button type="submit" class="wedding-submit">Xác nhận</button>
-        </div>
-      </div>
-
-    </form>
+    <p class="subtitle"></p>
+    <h2 class="uk-heading-small uk-text-center script-font" style="font-family: var(--script-font);">Gửi Quà Đến Cô Dâu & Chú Rể</h2>
+            <a href="#box-gift" data-fancybox="" class="btn btn-primary">
+      <svg width="54" height="54" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#fff">
+            <path d="M208 128v72a8 8 0 0 1-8 8H56a8 8 0 0 1-8-8v-72Z" opacity=".2"></path>
+            <path d="M216 72h-35.08c.39-.33.79-.65 1.17-1A29.53 29.53 0 0 0 192 49.57A32.62 32.62 0 0 0 158.44 16A29.53 29.53 0 0 0 137 25.91a54.94 54.94 0 0 0-9 14.48a54.94 54.94 0 0 0-9-14.48A29.53 29.53 0 0 0 97.56 16A32.62 32.62 0 0 0 64 49.57A29.53 29.53 0 0 0 73.91 71c.38.33.78.65 1.17 1H40a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16v64a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16v-64a16 16 0 0 0 16-16V88a16 16 0 0 0-16-16m-67-35.49a13.69 13.69 0 0 1 10-4.5h.49A16.62 16.62 0 0 1 176 49.08a13.69 13.69 0 0 1-4.5 10c-9.49 8.4-25.24 11.36-35 12.4c1.2-10.59 4.5-25.98 12.5-34.97m-64.09.36A16.63 16.63 0 0 1 96.59 32h.49a13.69 13.69 0 0 1 10 4.5c8.39 9.48 11.35 25.2 12.39 34.92c-9.72-1-25.44-4-34.92-12.39a13.69 13.69 0 0 1-4.5-10a16.6 16.6 0 0 1 4.82-12.16ZM40 88h80v32H40Zm16 48h64v64H56Zm144 64h-64v-64h64Zm16-80h-80V88h80z"></path>
+        </g>
+    </svg>
+      
+    </a>
+    <div id="box-gift">
+    <div class="gift-container" id="gift-container">
+                            <div class="gift-card">
+                <div class="gift-qr">
+                    <img src="{{ asset('template09/images/z5062484714460_86b92a8805a1d69892e3ad506673b204-5-e1705073756331.jpg') }}" alt="" class="groom_qr" style="max-width:100%">
+                </div>
+                <div class="gift-body">
+                                    </div>
+            </div>
+                       
+    </div>
+    </div>
+    
   </div>
-</section>
 
-<script>
-  //XỬ LÝ FORM
-$(document).ready(function(){
-  $('.message-form').fadeOut(300)
-  $('#form').on('submit', function(e){
-      e.preventDefault();
-      f_userName = "Công Thành-Phương Ánh"
-      f_check = $('input[type="radio"]:checked').val()
-      f_name = $(this).find('#f_name').val()
-      f_numUser = $('#num_user').find('option:selected').val()
-      f_select = $('#wedding-select').find('option:selected').val()
-      f_text = $(this).find('#f_text').val()
-      var form_data = {
-          'entry.737056527': f_userName,
-          'entry.642873731': f_check,
-          'entry.1699210899': f_name,
-          'entry.369695229': f_numUser,
-          'entry.1528762541': f_select,
-          'entry.1679764871': f_text,
-      }
-     $('.wedding-submit[type="submit"]').text('Đang gửi ...')
-     $.ajax({
-      url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdD9g3WsFXklx1iJ2WTwnaKq7qXDh8fLcOetjSV8GMatzoWaA/formResponse",
-      type: "POST",
-      data : form_data,
-      dataType: "xml",
-      statusCode: {
-          0: function() {
-              mess_form = 'Chúng mình xin chân thành cám ơn !'
-              $('.message-form').html(mess_form)
-              $('button[type="submit"]').addClass('success')
-              $('button[type="submit"]').removeClass('btn_primary')
-              $('button[type="submit"]').attr('disabled','true')
-              $('button[type="submit"]').text('Đã xác nhận')
-              $('.message-form').fadeIn(300)
-          },
-          200: function() {
-              alert('200')
-          }
-      }
-      })
-  })
-  return false;
-})
-</script>
-<!-- END FORM XÁC NHẬN -->
+
+</section>
+<!-- END GỬI QUÀ -->
+
 
 <!-- LỜI CHÚC -->
 <!-- TIN NHẮN -->
-<section id="message" class="section-message uk-background-cover uk-section" style="background-image:url({{ asset('template09/images/FF508208-8C60-4E2D-862A-1E81D79CE9C7-e1705073693356.jpeg') }}); display:block">
+{{-- <section id="message" class="section-message uk-background-cover uk-section" style="background-image:url({{ asset('template09/images/FF508208-8C60-4E2D-862A-1E81D79CE9C7-e1705073693356.jpeg') }}); display:block">
 	<div class="uk-position-cover uk-overlay uk-overlay-primary" style="opacity:.5"> </div>
       <div class="message-container container uk-position-relative uk-position-z-index">
-        <h2 class="section-title uk-light" style="color:white">
+        <h2 class="section-title uk-light" style="color:white;font-family: var(--main-font);" >
           Gửi lời chúc đến cặp đôi        </h2>
         <div class="list_message">
           <!-- <div class="message-item" data-aos="fade-up" data-aos-duration="2000">
@@ -686,8 +597,7 @@ $(document).ready(function(){
         </div>
        
         <div class="uk-padding-small uk-border-rounded blur-bg" style="border:1px solid white">
-			
-          <h3 class="form-title" style="color:white">Gửi lời chúc</h3>
+		
           <form action="" id="messageForm" method="POST">
 		
           <input type="hidden" id="postId" value="1077">
@@ -705,7 +615,7 @@ $(document).ready(function(){
           </form>
         </div>
       </div>
-    </section>
+    </section> --}}
     <!-- END TIN NHẮN -->
 <script>
 fetch('/wp-json/wp/v2/comments?post=1077&per_page=100',
@@ -765,38 +675,6 @@ fetch('/wp-json/wp/v2/comments?post=1077&per_page=100',
  
 </script>
 <!-- END LỜI CHÚC -->
-<!-- GỬI QUÀ -->
-<section id="gift" class="section-gift" style="display:block">
-      <div class="container">
-        <p class="subtitle"></p>
-        <h2 class="uk-heading-small uk-text-center script-font uk-text-cappercase">GỬI QUÀ ĐẾN CÔ DÂU VÀ CHÚ RỂ</h2>
-                <a href="#box-gift" data-fancybox="" class="btn btn-primary">
-          <svg width="54" height="54" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-            <g fill="#fff">
-                <path d="M208 128v72a8 8 0 0 1-8 8H56a8 8 0 0 1-8-8v-72Z" opacity=".2"></path>
-                <path d="M216 72h-35.08c.39-.33.79-.65 1.17-1A29.53 29.53 0 0 0 192 49.57A32.62 32.62 0 0 0 158.44 16A29.53 29.53 0 0 0 137 25.91a54.94 54.94 0 0 0-9 14.48a54.94 54.94 0 0 0-9-14.48A29.53 29.53 0 0 0 97.56 16A32.62 32.62 0 0 0 64 49.57A29.53 29.53 0 0 0 73.91 71c.38.33.78.65 1.17 1H40a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16v64a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16v-64a16 16 0 0 0 16-16V88a16 16 0 0 0-16-16m-67-35.49a13.69 13.69 0 0 1 10-4.5h.49A16.62 16.62 0 0 1 176 49.08a13.69 13.69 0 0 1-4.5 10c-9.49 8.4-25.24 11.36-35 12.4c1.2-10.59 4.5-25.98 12.5-34.97m-64.09.36A16.63 16.63 0 0 1 96.59 32h.49a13.69 13.69 0 0 1 10 4.5c8.39 9.48 11.35 25.2 12.39 34.92c-9.72-1-25.44-4-34.92-12.39a13.69 13.69 0 0 1-4.5-10a16.6 16.6 0 0 1 4.82-12.16ZM40 88h80v32H40Zm16 48h64v64H56Zm144 64h-64v-64h64Zm16-80h-80V88h80z"></path>
-            </g>
-        </svg>
-          
-        </a>
-        <div id="box-gift">
-        <div class="gift-container" id="gift-container">
-                                <div class="gift-card">
-                    <div class="gift-qr">
-                        <img src="{{ asset('template09/images/z5062484714460_86b92a8805a1d69892e3ad506673b204-5-e1705073756331.jpg') }}" alt="" class="groom_qr" style="max-width:100%">
-                    </div>
-                    <div class="gift-body">
-                                        </div>
-                </div>
-                           
-        </div>
-        </div>
-        
-      </div>
-
-
-    </section>
-    <!-- END GỬI QUÀ -->
 
 <!-- THANKYOU -->
 <!-- THANK YOU -->
@@ -805,24 +683,9 @@ fetch('/wp-json/wp/v2/comments?post=1077&per_page=100',
       <img src="{{ asset('template09/images/D705C86D-1D18-430C-8ACD-C05F512F302F-e1705073822731.jpeg') }}" alt="" class="thankyou-bg thankyou_img" style="object-position:">
       <div class="thankyou-body container uk-position-relative uk-position-z-index">
         <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up" data-aos-duration="2000">Thank you!</h2>
-        <p class="thankyou-des" data-aos="fade" data-aos-duration="3000"></p><p>Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám ơn !</p>
+        <p class="thankyou-des" data-aos="fade-down" data-aos-duration="3000">Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám ơn !</p>
 <p></p>
-        <div class="social">
-          <h4>Chia sẻ thiệp</h4>
-          <div class="social-link">
-            <a href="#" class="facebook">
-                <i class="ri-facebook-fill"></i>
-            </a>
-            <a href="#" class="instargram">
-                <i class="ri-instagram-fill"></i>
-            </a>
-            <a href="#" class="twiter">
-                <i class="ri-twitter-x-line"></i>
-            </a>
-            <a href="#" class="pinterest">
-                <i class="ri-pinterest-fill"></i>
-            </a>
-          </div>
+        
       </div>
     </div></section>
     <!-- END THANK YOU --><!-- END THANKYOU -->
@@ -838,7 +701,9 @@ fetch('/wp-json/wp/v2/comments?post=1077&per_page=100',
 <!-- END AUDIO --> <!-- FOOTER -->
  <footer>
         <div class="footer-bottom">
-            <p>Bản quyền 2023 thuộc về Thiệp cưới điện tử®</p>
+            <p>Bản quyền 2025 thuộc về LS Wedding  <a href="#" class="facebook">
+              <i class="ri-facebook-fill"></i>
+          </a></p>
         </div>
 </footer>
 <button class="toggleAudio">

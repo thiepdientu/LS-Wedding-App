@@ -79,7 +79,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <style>
   :root {
  /* color */
- --primary-color: #fa9b9b; 
+ --primary-color: #ff3838; 
  --primary-hover: #ba6c6c;
  --soft-primary: #58caa8;
  --secondary-color:#EBBC3D ;

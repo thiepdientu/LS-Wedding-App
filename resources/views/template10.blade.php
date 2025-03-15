@@ -114,7 +114,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <div id="preloader" class="uk-position-fixed uk-background-muted uk-position-z-index" style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
         
         <div class="uk-position-center uk-text-center">
-           <img src="{{ asset('template10/images/logo-doc3.png') }}" alt="" style="max-width: 150px;" class="uk-animation-slide-top">
+    
           
             <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
                Mẫu thiệp cưới korea</h2>
@@ -138,7 +138,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
           <div class="banner-title"><p>Save  the  Date</p>
 </div>
 
-          <div class="banner-name">
+          <div data-aos="fade-up" data-aos-duration="1000" class="banner-name">
 
 		  Công Thành<br>
         &amp;<br>
@@ -150,11 +150,11 @@ Phương Ánh
 
             <div class="group-date">
 
-              <span class="day_name">Thứ 7</span>
+              <span data-aos="fade-right" data-aos-duration="2000" class="day_name">Thứ 7</span>
 
               <span class="banner_date">6</span>
 
-              <span class="banner_time">10h45</span>
+              <span data-aos="fade-left" data-aos-duration="2000" class="banner_time">10h45</span>
 
             </div>
 
@@ -168,7 +168,7 @@ Phương Ánh
 
               <p>Địa điểm tổ chức</p>
 
-              <span class="banner_location_name">Luxury Palace</span>
+              <span data-aos="zoom-in" data-aos-duration="2000" class="banner_location_name">Luxury Palace</span>
 
               <span class="banner_location_adress">171 Nguyễn Thái Sơn, P8, Gò Vấp</span>
 
@@ -184,11 +184,6 @@ Phương Ánh
 
 			</a>
 
-			<a href="#gift" class="">
-
-				<i class="ri-gift-2-fill"></i>
-
-			</a>
 
 			<a href="https://www.google.com/maps/place/11%C2%B051'41.9%22N+108%C2%B013'07.0%22E/@11.8616389,108.2186111,17z/data=!3m1!4b1!4m4!3m3!8m2!3d11.8616389!4d108.2186111?entry=ttu" target="_blank">
 
@@ -221,10 +216,6 @@ Phương Ánh
 
         <div class="section-heading">
 
-          <p class="subtitle">
-
-		  GIỚI THIỆU
-          </p>
 
           <h2 class="section-title">
 
@@ -250,39 +241,12 @@ Phương Ánh
 
               <h3 class="bride_name uk-margin-remove">Phương Ánh</h3>
 
-              <p class="bride_birthday uk-margin-remove">20/12/2001</p>
+          
 
               <p class="bride_des">cô dâu thuộc tuýp người hướng nội . Sở thích nấu nướng và đi du lịch cùng gia đình.</p>
 
               
-				<div class="social-link">
-
-						<a href="tel:+84902618766" class="gr_phone">
-
-							<i class="ri-phone-fill"></i>
-
-						</a>
-
-					
-						<a href="facebook.com" class="gr_phone" target="_blank">
-
-							<i class="ri-facebook-fill"></i>
-						</a>
-
-					
-						<a href="instagram.com" class="gr_phone" target="_blank">
-
-							<i class="ri-facebook-fill"></i>
-						</a>
-
-					
-						<a href="telegram.com" class="gr_phone" target="_blank">
-
-							<i class="ri-facebook-fill"></i>
-						</a>
-
-					
-					</div>   
+		
 
 				
             </div>
@@ -301,39 +265,12 @@ Phương Ánh
 
               <h3 class="groom_name uk-margin-remove">Công Thành</h3>
 
-              <p class="groom_birthday uk-margin-remove">12/12/1998</p>
+          
 
               <p class="groom_des">Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại.</p>
 
               
-				<div class="social-link">
-
-						<a href="tel:+84981742365" class="gr_phone">
-
-						<i class="ri-phone-fill"></i>
-
-						</a>
-
-					
-						<a href="facebook.com" class="gr_phone" target="_blank">
-
-							<i class="ri-facebook-fill"></i>
-						</a>
-
-					
-						<a href="twitter.com" class="gr_phone" target="_blank">
-
-							<i class="ri-facebook-fill"></i>
-						</a>
-
-					
-						<a href="instagram" class="gr_phone" target="_blank">
-
-							<i class="ri-facebook-fill"></i>
-						</a>
-
-					
-				</div>   
+			 
 
 			
             </div>
@@ -360,9 +297,9 @@ Phương Ánh
 
 		
 <div class="count-down section-countdown img_bg bg_overlay" style="background-image:url({{ asset('template10/images/img5.jpg') }})">
-        <p class="subtitle">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
-        <h2 class="section-title">
-        SAVE THE DATE        </h2>
+        
+        <h2 class="section-title script-font">
+        Save The Date        </h2>
         <svg class="heartbeat" width="64" height="64" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path fill="red" d="M16.5 13.287c-2.475-2.716-5.5-.712-5.5 2.112c0 2.56 1.814 4.035 3.358 5.292l.044.036l.427.35c.571.475 1.121.923 1.671.923s1.1-.448 1.671-.923C19.789 19.73 22 18.224 22 15.399c0-.927-.326-1.767-.853-2.38c-1.075-1.251-2.985-1.556-4.647.268Z"></path>
         <path fill="#f1ebe4" d="M8.106 18.247C5.298 16.083 2 13.542 2 9.137C2 4.274 7.5.825 12 5.501C16.5.825 22 4.274 22 9.137c0 .834-.118 1.6-.329 2.31a4.203 4.203 0 0 0-2.619-.947c-.89-.005-1.758.274-2.553.81c-1.39-.933-2.956-1.058-4.33-.395c-1.635.79-2.669 2.556-2.669 4.484c0 2.306 1.149 3.923 2.342 5.095c-.948-.076-1.897-.808-2.88-1.583c-.277-.219-.564-.44-.856-.664Z"></path>
@@ -398,8 +335,12 @@ Phương Ánh
 
             <div class="invitation">
             <div class="invitation-container">
+              <h2 class="section-title">
+
+                Trân Trọng Kính Mời
+                    </h2>
                         <div class="invitation-card"> <img src="{{ asset('template10/images/img5.jpg') }}" alt=""> 
-                <h3 class="card-title uk-margin-remove">TƯ GIA</h3>
+                <h3 class="card-title uk-margin-remove uk-text-bold">TƯ GIA</h3>
                 <address class="uk-margin-remove">
                     <p>ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
                 </address> 
@@ -428,18 +369,8 @@ Phương Ánh
                     <a href="tel:(+84)981742365" class="phone_number"> 
                     <i class="ri-phone-fill"></i> 
                     </a>
-                    <a href="https://thiepdientu.com.vn/wp-content/uploads/2023/12/thiep.png') }}" class="phone_number" data-fancybox=""> 
-                    <i class="ri-image-circle-fill"></i>
-                    </a> 
-                       
-                                
-                        <a href="https://www.facebook.com/" class="invi_map" target="_blank"> 
-                            <i class="bx bxl-facebook"></i>                        </a>  
-                           
-                                
-                        <a href="https://www.facebook.com/" class="invi_map" target="_blank"> 
-                            <i class="bx bx-envelope"></i>                        </a>  
-                        
+               
+          
                                             <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map" target="_blank"> 
                     <i class="ri-map-2-fill"></i>
                     </a> 
@@ -448,7 +379,7 @@ Phương Ánh
            
         </div>
                     <div class="invitation-card"> <img src="{{ asset('template10/images/img3.jpg') }}" alt=""> 
-                <h3 class="card-title uk-margin-remove">TƯ GIA</h3>
+                <h3 class="card-title uk-margin-remove uk-text-bold">TƯ GIA</h3>
                 <address class="uk-margin-remove">
                     <p>ẤP Hà, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
                 </address> 
@@ -477,16 +408,7 @@ Phương Ánh
                     <a href="tel:(+84)981742365" class="phone_number"> 
                     <i class="ri-phone-fill"></i> 
                     </a>
-                    <a href="https://thiepdientu.com.vn/wp-content/uploads/2023/12/thiep.png') }}" class="phone_number" data-fancybox=""> 
-                    <i class="ri-image-circle-fill"></i>
-                    </a> 
-                       
-                                
-                        <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map" target="_blank"> 
-                            <i class="bx bxl-facebook"></i>                        </a>  
-                           
-                                
-                        <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map" target="_blank"> 
+                   
                             <i class="bx bxl-twitter"></i>                        </a>  
                         
                                             <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map" target="_blank"> 
@@ -514,22 +436,17 @@ Phương Ánh
           <div class="dress-code-img">
             <img src="{{ asset('template10/images/dresscode-icon.png') }}" alt="">
           </div>
-          <div class="dress-code-des">
-           Mọi người hãy mặc theo quy tắc nhé !!!!          </div>
+         
                       <div class="dress-code-color uk-flex-wrap">
-            <span class="dress-for">For men</span>
+            
                             <div class="dress-color-item" style="background-color: #dd3333">
 
                 </div>
                             <div class="dress-color-item" style="background-color: #ffffff">
 
                 </div>
-                        </div>
-                                <div class="dress-code-color uk-flex-wrap">
-            <span class="dress-for">For women</span>
-                            <div class="dress-color-item" style="background-color: #dd9933">
 
-                </div>
+             
                             <div class="dress-color-item" style="background-color: #eeee22">
 
                 </div>
@@ -537,6 +454,7 @@ Phương Ánh
 
                 </div>
                         </div>
+                            
                   </div>
         </div>
                 <!-- ------------------ -->
@@ -681,8 +599,7 @@ Phương Ánh
 
 <div class="section-heading">
 
-    <p class="subtitle">CÂU CHUYỆN TÌNH YÊU</p>
-
+    
     <h2 class="section-title">
 
     Love Story
@@ -696,7 +613,7 @@ Phương Ánh
 <div class="timeline-list">
 
     
-    <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000"> 
+    <div class="timeline-item" data-aos="fade-left" data-aos-duration="1000"> 
 
     <div class="timeline-media"> 
 
@@ -718,7 +635,7 @@ Phương Ánh
 </div>
 
 
-    <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000"> 
+    <div class="timeline-item" data-aos="fade-left" data-aos-duration="1000"> 
 
     <div class="timeline-media"> 
 
@@ -740,7 +657,7 @@ Phương Ánh
 </div>
 
 
-    <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000"> 
+    <div class="timeline-item" data-aos="fade-left" data-aos-duration="1000"> 
 
     <div class="timeline-media"> 
 
@@ -762,7 +679,7 @@ Phương Ánh
 </div>
 
 
-    <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000"> 
+    <div class="timeline-item" data-aos="fade-left" data-aos-duration="1000"> 
 
     <div class="timeline-media"> 
 
@@ -799,10 +716,9 @@ Phương Ánh
 
 <section id="album">
 <div class="container">
-<p class="subtitle">
-    NHỮNG KHOẢNH KHẮC NGỌT NGÀO CỦA CHÚNG MÌNH</p>
+
 <h2 class="section-title">
-    ALBUM ẢNH</h2>
+    Album Ảnh</h2>
 </div>
 
 <div class="album-slide">
@@ -876,10 +792,9 @@ Phương Ánh
 </style>
 <section id="video">
 <div class="container">
-<p class="subtitle">
-    VIDEO</p>
-<h2 class="section-title">
-    NHŨNG KHOẢNH KHẮC CHÚNG MÌNH</h2>
+
+<h2 class="section-title ">
+    NHŨNG KHOẢNH KHẮC CỦA CHÚNG MÌNH</h2>
 </div>
 <div class="video-container">
 
@@ -947,7 +862,6 @@ $(document).ready(function(){
 <section id="gift" class="section-gift" style="display:block">
       <div class="container">
         <p class="subtitle"></p>
-        <h2 class="uk-heading-small uk-text-center script-font uk-text-cappercase">GỬI QUÀ ĐẾN CÔ DÂU VÀ CHÚ RỂ</h2>
                 <a href="#box-gift" data-fancybox="" class="btn btn-primary">
           <svg width="54" height="54" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
             <g fill="#fff">
@@ -955,7 +869,7 @@ $(document).ready(function(){
                 <path d="M216 72h-35.08c.39-.33.79-.65 1.17-1A29.53 29.53 0 0 0 192 49.57A32.62 32.62 0 0 0 158.44 16A29.53 29.53 0 0 0 137 25.91a54.94 54.94 0 0 0-9 14.48a54.94 54.94 0 0 0-9-14.48A29.53 29.53 0 0 0 97.56 16A32.62 32.62 0 0 0 64 49.57A29.53 29.53 0 0 0 73.91 71c.38.33.78.65 1.17 1H40a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16v64a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16v-64a16 16 0 0 0 16-16V88a16 16 0 0 0-16-16m-67-35.49a13.69 13.69 0 0 1 10-4.5h.49A16.62 16.62 0 0 1 176 49.08a13.69 13.69 0 0 1-4.5 10c-9.49 8.4-25.24 11.36-35 12.4c1.2-10.59 4.5-25.98 12.5-34.97m-64.09.36A16.63 16.63 0 0 1 96.59 32h.49a13.69 13.69 0 0 1 10 4.5c8.39 9.48 11.35 25.2 12.39 34.92c-9.72-1-25.44-4-34.92-12.39a13.69 13.69 0 0 1-4.5-10a16.6 16.6 0 0 1 4.82-12.16ZM40 88h80v32H40Zm16 48h64v64H56Zm144 64h-64v-64h64Zm16-80h-80V88h80z"></path>
             </g>
         </svg>
-          
+          <span style="color:rgb(255, 255, 255)">GỬI QUÀ CÔ DÂU & CHÚ RỂ</span>
         </a>
         <div id="box-gift">
         <div class="gift-container" id="gift-container">
@@ -996,25 +910,9 @@ $(document).ready(function(){
       <img src="{{ asset('template10/images/img4.jpg') }}" alt="" class="thankyou-bg thankyou_img" style="object-position:">
       <div class="thankyou-body container uk-position-relative uk-position-z-index">
         <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up" data-aos-duration="2000">Thank you</h2>
-        <p class="thankyou-des" data-aos="fade" data-aos-duration="3000"></p><p>Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám ơn !</p>
+        <p class="thankyou-des" data-aos="fade-down" data-aos-duration="3000">Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám ơn !</p>
 <p></p>
-        <div class="social">
-          <h4>Chia sẻ thiệp</h4>
-          <div class="social-link">
-            <a href="#" class="facebook">
-                <i class="ri-facebook-fill"></i>
-            </a>
-            <a href="#" class="instargram">
-                <i class="ri-instagram-fill"></i>
-            </a>
-            <a href="#" class="twiter">
-                <i class="ri-twitter-x-line"></i>
-            </a>
-            <a href="#" class="pinterest">
-                <i class="ri-pinterest-fill"></i>
-            </a>
-          </div>
-      </div>
+  
     </div></section>
     <!-- END THANK YOU -->
 <!-- END THANKYOU -->
@@ -1036,7 +934,9 @@ $(document).ready(function(){
 <!-- END AUDIO --> <!-- FOOTER -->
  <footer>
         <div class="footer-bottom">
-            <p>Bản quyền 2023 thuộc về Thiệp cưới điện tử®</p>
+            <p>Bản quyền 2025 thuộc về LS Wedding <a href="#" class="facebook">
+              <i class="ri-facebook-fill"></i>
+          </a></p>
         </div>
 </footer>
 <button class="toggleAudio">

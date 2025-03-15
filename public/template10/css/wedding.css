@@ -59,7 +59,7 @@
 
 .album img {
 
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1.3;
 
     object-fit: cover;
 
@@ -762,7 +762,7 @@ select {
 /* DRESS CODE */
 .dresscode {
     padding: 120px 0;
-    background-color: var(--primary-color);
+    background-color: #79594a;
     box-shadow: inset 9999px 9999px rgba(0, 0, 0, 0.519);
     color: wheat;
 }
@@ -905,6 +905,7 @@ aspect-ratio: 1/1;
 }
 .section-countdown {
 	padding: 120px 0;
+    margin-bottom: 40px;
 }
 /* footer */
 

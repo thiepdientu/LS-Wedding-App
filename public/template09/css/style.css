@@ -208,17 +208,13 @@ meter {
   .btn span {
     display: none;
   }
-  .btn-pri {
-    border: 1px solid var(--boder-color);
-    background-color: var(--boder-color);
-    backdrop-filter: blur(10px);
-  }
+ 
   .btn-pri:hover{
     background-color: rgba(255, 255, 255, 0.639);
     color: var(--primary-color);
   }
   .group-button {
-    display: inline-flex;
+    
     gap: 16px;
   }
   .d-none {
@@ -254,12 +250,12 @@ section {
     margin: 0 auto;
 }
 .section-title {
-    font-size: 36px;
+    font-size: 20;
     text-transform: uppercase;
     text-align: center;
     font-family: var(--title-font);
-    letter-spacing: 8px;
-    font-weight: 600;
+    letter-spacing: 1px;
+    font-weight: 300;
     color: white;
 }
 .bg_overlay {
@@ -340,7 +336,7 @@ section {
     row-gap: 20px;
     background-color: rgba(255, 255, 255, 0.145);
     padding: 80px 40px;
-    border-radius: 999px 999px 0 0;
+    border-radius: 999px;
     aspect-ratio: 1/1;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -417,7 +413,7 @@ section {
 }
 .about-card .media {
     position: relative;
-    border-radius: 8px;
+    border-radius: 20px;
     overflow: hidden;
     aspect-ratio: 1/1;
 }
@@ -507,13 +503,15 @@ section {
 
 .timeline-media img {
     max-width: 200px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
+    padding: 1px;
+    background: white;
     object-position: center;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border-radius: 999px 999px 12px 12px ;
+    border-radius: 49px;
 }
 .timeline-body {
     display: flex;
@@ -550,7 +548,7 @@ section {
     transition: .3s;
     object-fit: cover;
     object-position: center;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1.3;
 }
 .album-item:hover img {
     transform: scale(1.2);
@@ -558,7 +556,7 @@ section {
 
 /* INVITATION */
 #invitation {
-    padding: 80px 0;
+    padding-bottom: 80px;
 }
 #invitation .section-title {
     color: var(--primary-color);
@@ -576,19 +574,19 @@ section {
     align-items: center;
     padding: 20px;
     gap: 12px;
-    background-color: var(--bg);
-    border-radius:12px;
+    background-color: rgb(255 181 181 / 33%);
+    border-radius: 20px;
     max-width: 100%;
     text-align: center;
-    border: 1px solid var(--primary-color);
+    border: 1px solid rgb(251 231 231);
 }
 .invitation-card img {
-    max-width: 120px;
-    aspect-ratio: 1/1;
+    max-width: 191px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    padding: 8px;
+    padding: 3px;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 12%;
 }
 .card-title {
     font-size: 24px;
