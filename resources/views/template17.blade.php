@@ -2,16 +2,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-		<meta property="og:image" content="images/I02.png">
+		<meta property="og:image" content="{{ asset('template17/images/I02.png') }}">
 		<title>Thiệp cưới hiện đại I02 – Wedding day</title>
 <meta name="robots" content="max-image-preview:large">
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="//cdn.js') }}delivr.net">
 <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Wedding day »" href="https://weddingday.com.vn/feed/">
 <link rel="alternate" type="application/rss+xml" title="Wedding day » Dòng bình luận" href="https://weddingday.com.vn/comments/feed/">
 <script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/weddingday.com.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/weddingday.com.vn\/wp-includes\/js\/wp-emoji-release.min.js') }}?ver=6.7.1"}};
 /*! This file is auto-generated */
 !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
 </script>
@@ -29,7 +29,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		padding: 0 !important;
 	}
 </style>
-<link rel="stylesheet" id="wp-block-library-css" href="css/style.min.css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="{{ asset('template17/css/style.min.css') }}" media="all">
 <style id="classic-theme-styles-inline-css">
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -41,37 +41,37 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
 <link rel="stylesheet" id="google font-css" href="https://fonts.googleapis.com/css2?family=Reddit+Sans%3Aital%2Cwght%400%2C200..900%3B1%2C200..900&amp;display=swap&amp;ver=1733059570" media="all">
-<link rel="stylesheet" id="tabler-icons-css" href="css/tabler-icons.css" media="all">
-<link rel="stylesheet" id="uikit-css" href="css/uikit.min.css" media="all">
-<link rel="stylesheet" id="reset uikit-css" href="css/reset1.css" media="all">
-<link rel="stylesheet" id="core-css" href="css/core.css" media="all">
-<link rel="stylesheet" id="remixicon-css" href="css/remixicon.css" media="all">
-<link rel="stylesheet" id="preload-css" href="https://weddingday.com.vn/wp-content/themes/nuis-profile/css/preload.css?ver=1.0.0" media="all">
-<link rel="stylesheet" id="swiper slide-css" href="css/swiper.css" media="all">
-<link rel="stylesheet" id="ui-carousel-css" href="css/ui-carousel.css" media="all">
-<link rel="stylesheet" id="bootstrap-select-css" href="css/bootstrap-select.css" media="all">
-<link rel="stylesheet" id="wedding css v2-css" href="css/wedding.css" media="all">
-<link rel="stylesheet" id="aos-css" href="css/aos.css" media="all">
-<script src="js/jquery.min.js" id="jquery-core-js"></script>
-<script src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-<script src="js/jquery.min_1.js" id="Jquery-js"></script>
+<link rel="stylesheet" id="tabler-icons-css" href="{{ asset('template17/css/tabler-icons.css') }}" media="all">
+<link rel="stylesheet" id="uikit-css" href="{{ asset('template17/css/uikit.min.css') }}" media="all">
+<link rel="stylesheet" id="reset uikit-css" href="{{ asset('template17/css/reset1.css') }}" media="all">
+<link rel="stylesheet" id="core-css" href="{{ asset('template17/css/core.css') }}" media="all">
+<link rel="stylesheet" id="remixicon-css" href="{{ asset('template17/css/remixicon.css') }}" media="all">
+<link rel="stylesheet" id="preload-css" href="https://weddingday.com.vn/wp-content/themes/nuis-profile/{{ asset('template17/css/preload.css') }}?ver=1.0.0" media="all">
+<link rel="stylesheet" id="swiper slide-css" href="{{ asset('template17/css/swiper.css') }}" media="all">
+<link rel="stylesheet" id="ui-carousel-css" href="{{ asset('template17/css/ui-carousel.css') }}" media="all">
+<link rel="stylesheet" id="bootstrap-select-css" href="{{ asset('template17/css/bootstrap-select.css') }}" media="all">
+<link rel="stylesheet" id="wedding css v2-css" href="{{ asset('template17/css/wedding.css') }}" media="all">
+<link rel="stylesheet" id="aos-css" href="{{ asset('template17/css/aos.css') }}" media="all">
+<script src="{{ asset('template17/js/jquery.min.js') }}" id="jquery-core-js"></script>
+<script src="{{ asset('template17/js/jquery-migrate.min.js') }}" id="jquery-migrate-js"></script>
+<script src="{{ asset('template17/js/jquery.min_1.js') }}" id="Jquery-js"></script>
 <link rel="https://api.w.org/" href="https://weddingday.com.vn/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://weddingday.com.vn/wp-json/wp/v2/mau-thiepcuoi/2367"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://weddingday.com.vn/xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.7.1">
 <link rel="canonical" href="https://weddingday.com.vn/mau-thiep/thiep-cuoi-hien-dai-i02/">
 <link rel="shortlink" href="https://weddingday.com.vn/?p=2367">
 <link rel="alternate" title="oNhúng (JSON)" type="application/json+oembed" href="https://weddingday.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fweddingday.com.vn%2Fmau-thiep%2Fthiep-cuoi-hien-dai-i02%2F">
 <link rel="alternate" title="oNhúng (XML)" type="text/xml+oembed" href="https://weddingday.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fweddingday.com.vn%2Fmau-thiep%2Fthiep-cuoi-hien-dai-i02%2F&amp;format=xml">
-<link rel="icon" href="images/cropped-FAVICON-32x32.png" sizes="32x32">
-<link rel="icon" href="images/cropped-FAVICON-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="images/cropped-FAVICON-180x180.png">
-<meta name="msapplication-TileImage" content="https://weddingday.com.vn/wp-content/uploads/2024/09/cropped-FAVICON-270x270.png">
+<link rel="icon" href="{{ asset('template17/images/cropped-FAVICON-32x32.png') }}" sizes="32x32">
+<link rel="icon" href="{{ asset('template17/images/cropped-FAVICON-192x192.png') }}" sizes="192x192">
+<link rel="apple-touch-icon" href="{{ asset('template17/images/cropped-FAVICON-180x180.png') }}">
+<meta name="msapplication-TileImage" content="https://weddingday.com.vn/wp-content/uploads/2024/09/cropped-FAVICON-270x270.png') }}">
 	
-<script src="js/wp-emoji-release.min.js" defer=""></script></head>
+<script src="{{ asset('template17/js/wp-emoji-release.min.js') }}" defer=""></script></head>
 <body><div class="preload  uk-position-cover uk-position-fixed bg-white uk-position-z-index">
 	<div class="uk-position-center uk-text-center">
 		<div class="logo mx-auto p-4">
 			
-			<img src="images/FAVICON-5.png" alt="" style="max-height:140px" data-aos="fade-up">			<h3 class="title-font text-primary-color tracking-in-expand uk-heading-small mb-0">Wedding day</h3>
+			<img src="{{ asset('template17/images/FAVICON-5.png') }}" alt="" style="max-height:140px" data-aos="fade-up">			<h3 class="title-font text-primary-color tracking-in-expand uk-heading-small mb-0">Wedding day</h3>
 		</div>
 	</div>
 </div>
@@ -239,17 +239,17 @@ background-color: var(--body-bg) !important;
 </style>
 <div class="wraper uk-overflow-hidden  uk-position-relative" uk-scrollspy="cls: uk-animation-slide-bottom; target: .slide-up; delay: 200; repeat: true">
   <div class="uk-position-fixed uk-position-cover uk-cover-container " data-aos="fade">
-    <img src="images/bg.jpg" alt="" class="" uk-cover="" style="opacity: .3">
+    <img src="{{ asset('template17/images/bg.jpg') }}" alt="" class="" uk-cover="" style="opacity: .3">
   </div>
     <!-- BANNER -->
     <section id="banner" class="banner uk-position-relative " uk-height-viewport="">
       <div class="uk-position-cover uk-cover-container">
-        <img src="images/17-1-1.jpg" alt="" uk-cover="">
+        <img src="{{ asset('template17/images/17-1-1.jpg') }}" alt="" uk-cover="">
       </div>
       <div class="uk-container uk-container-xlarge uk-position-bottom-center uk-margin-large-bottom">
         <div class="banner-card bg-primary-color uk-width-xlarge uk-card-default uk-padding uk-position-relative uk-overflow-hidden" style=" border-radius: 999px 999px 0 0;)" data-aos="zoom-in">
           <div class="uk-position-cover uk-cover-container">
-            <img src="images/bg.jpg" alt="" uk-cover="" style="opacity: .2">
+            <img src="{{ asset('template17/images/bg.jpg') }}" alt="" uk-cover="" style="opacity: .2">
           </div>
           <div class="banner-header uk-height-small uk-visible@s">
 
@@ -297,7 +297,7 @@ background-color: var(--body-bg) !important;
         <div>
           
           <div class="uk-position-relative uk-cover-container uk-border-rounded" style="aspect-ratio: 1/1;">
-            <img src="images/17-17-e1727102919310.jpg" alt="" uk-cover="">
+            <img src="{{ asset('template17/images/17-17-e1727102919310.jpg') }}" alt="" uk-cover="">
             <div class="uk-position-bottom p-4 overlay-gradient uk-text-center text-white" data-aos="fade-up">
               <h2 class="script-font">The Groom</h2>
               <h3 class="uk-text-bold">Thanh Phong</h3>
@@ -309,7 +309,7 @@ background-color: var(--body-bg) !important;
         <div>
           
           <div class="uk-position-relative uk-cover-container uk-border-rounded" style="aspect-ratio: 1/1;">
-            <img src="images/17-16-e1727102953798.jpg" alt="" uk-cover="">
+            <img src="{{ asset('template17/images/17-16-e1727102953798.jpg') }}" alt="" uk-cover="">
             <div class="uk-position-bottom p-4 overlay-gradient uk-text-center text-white" data-aos="fade-up">
               <h2 class="script-font">The Bride</h2>
               <h3 class="uk-text-bold">Như Quỳnh</h3>
@@ -359,14 +359,14 @@ background-color: var(--body-bg) !important;
   <!-- END COUNTDOWN -->
   
   <!-- TIMELINE -->
-  <section id="timeline" class="timeline-content uk-section uk-position-relative uk-overflow-hidden uk-background-cover" style="background-image: url('images/17-6.jpg');">
+  <section id="timeline" class="timeline-content uk-section uk-position-relative uk-overflow-hidden uk-background-cover" style="background-image: url('{{ asset('template17/images/17-6.jpg') }}');">
     <div class="uk-position-cover uk-overlay bg-black" style="opacity: .4"></div>
     <div class="timeline-container uk-container uk-container-xlarge text-white">
       <div class="timeline-content uk-margin-large-top uk-position-relative uk-padding">
         <h2 class="title-font uk-text-center uk-position-relative">Love story        </h2>
                     <div class="timeline-items uk-text-center uk-position-relative text-white" data-aos="fade-up">
               <div class="uk-cover-container uk-border-rounded uk-width-large mx-auto mt-4" style="aspect-ratio: 4/3">
-                <img src="images/17-1.jpg" alt="" uk-cover="">
+                <img src="{{ asset('template17/images/17-1.jpg') }}" alt="" uk-cover="">
               </div>
               <div class="uk-width-large mx-auto mt-2">
                 <p class="title-font fs-3 ">09/2012</p>
@@ -377,7 +377,7 @@ background-color: var(--body-bg) !important;
             </div>
                       <div class="timeline-items uk-text-center uk-position-relative text-white" data-aos="fade-up">
               <div class="uk-cover-container uk-border-rounded uk-width-large mx-auto mt-4" style="aspect-ratio: 4/3">
-                <img src="images/17-2-e1727103524550.jpg" alt="" uk-cover="">
+                <img src="{{ asset('template17/images/17-2-e1727103524550.jpg') }}" alt="" uk-cover="">
               </div>
               <div class="uk-width-large mx-auto mt-2">
                 <p class="title-font fs-3 ">01/04/2014</p>
@@ -388,7 +388,7 @@ background-color: var(--body-bg) !important;
             </div>
                       <div class="timeline-items uk-text-center uk-position-relative text-white" data-aos="fade-up">
               <div class="uk-cover-container uk-border-rounded uk-width-large mx-auto mt-4" style="aspect-ratio: 4/3">
-                <img src="images/17-11-e1727103557324.jpg" alt="" uk-cover="">
+                <img src="{{ asset('template17/images/17-11-e1727103557324.jpg') }}" alt="" uk-cover="">
               </div>
               <div class="uk-width-large mx-auto mt-2">
                 <p class="title-font fs-3 ">27/07/2024</p>
@@ -399,7 +399,7 @@ background-color: var(--body-bg) !important;
             </div>
                       <div class="timeline-items uk-text-center uk-position-relative text-white" data-aos="fade-up">
               <div class="uk-cover-container uk-border-rounded uk-width-large mx-auto mt-4" style="aspect-ratio: 4/3">
-                <img src="images/17-10-1-e1727103165428.jpg" alt="" uk-cover="">
+                <img src="{{ asset('template17/images/17-10-1-e1727103165428.jpg') }}" alt="" uk-cover="">
               </div>
               <div class="uk-width-large mx-auto mt-2">
                 <p class="title-font fs-3 ">24-12-2024</p>
@@ -432,7 +432,7 @@ background-color: var(--body-bg) !important;
                   <h4 class="script-font">Tiệc cưới nhà gái</h4>
                 </div>
                 <div class="invi-img uk-cover-container uk-border-circle uk-width-2-3@s mx-auto mt-3" style="aspect-ratio: 1/1;">
-                  <img src="images/17-3-e1727103581597.jpg" alt="" uk-cover="" data-aos="zoom-in" class="uk-border-circle">
+                  <img src="{{ asset('template17/images/17-3-e1727103581597.jpg') }}" alt="" uk-cover="" data-aos="zoom-in" class="uk-border-circle">
                 </div>
                 <div class="invi-title mt-2 uk-position-relative">
                   <h5 class="fs-2 uk-text-bold">
@@ -526,7 +526,7 @@ background-color: var(--body-bg) !important;
                   <h4 class="script-font">Tiệc cưới nhà trai</h4>
                 </div>
                 <div class="invi-img uk-cover-container uk-border-circle uk-width-2-3@s mx-auto mt-3" style="aspect-ratio: 1/1;">
-                  <img src="images/17-6-1-e1727103610148.jpg" alt="" uk-cover="" data-aos="zoom-in" class="uk-border-circle">
+                  <img src="{{ asset('template17/images/17-6-1-e1727103610148.jpg') }}" alt="" uk-cover="" data-aos="zoom-in" class="uk-border-circle">
                 </div>
                 <div class="invi-title mt-2 uk-position-relative">
                   <h5 class="fs-2 uk-text-bold">
@@ -632,42 +632,42 @@ background-color: var(--body-bg) !important;
                     <div class="swiper-wrapper album swiper-3d-coverflow-effect" uk-lightbox="animation: fade">
                             <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom" style="aspect-ratio:1/1">
                   <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/17-7.jpg">
-                  <img src="images/17-7.jpg" class="uk-border-rounded" uk-cover="">
+                  <img src="{{ asset('template17/images/17-7.jpg') }}" class="uk-border-rounded" uk-cover="">
                   </a>
               </div>
                             <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom" style="aspect-ratio:1/1">
                   <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/17-4.jpg">
-                  <img src="images/17-4.jpg" class="uk-border-rounded" uk-cover="">
+                  <img src="{{ asset('template17/images/17-4.jpg') }}" class="uk-border-rounded" uk-cover="">
                   </a>
               </div>
                             <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom" style="aspect-ratio:1/1">
                   <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/17-5.jpg">
-                  <img src="images/17-5.jpg" class="uk-border-rounded" uk-cover="">
+                  <img src="{{ asset('template17/images/17-5.jpg') }}" class="uk-border-rounded" uk-cover="">
                   </a>
               </div>
                             <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom" style="aspect-ratio:1/1">
                   <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/17-2-1.jpg">
-                  <img src="images/17-2-1.jpg" class="uk-border-rounded" uk-cover="">
+                  <img src="{{ asset('template17/images/17-2-1.jpg') }}" class="uk-border-rounded" uk-cover="">
                   </a>
               </div>
                             <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom" style="aspect-ratio:1/1">
                   <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/17-15.jpg">
-                  <img src="images/17-15.jpg" class="uk-border-rounded" uk-cover="">
+                  <img src="{{ asset('template17/images/17-15.jpg') }}" class="uk-border-rounded" uk-cover="">
                   </a>
               </div>
                             <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom" style="aspect-ratio:1/1">
                   <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/17-14.jpg">
-                  <img src="images/17-14.jpg" class="uk-border-rounded" uk-cover="">
+                  <img src="{{ asset('template17/images/17-14.jpg') }}" class="uk-border-rounded" uk-cover="">
                   </a>
               </div>
                             <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom" style="aspect-ratio:1/1">
                   <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/17-8.jpg">
-                  <img src="images/17-8.jpg" class="uk-border-rounded" uk-cover="">
+                  <img src="{{ asset('template17/images/17-8.jpg') }}" class="uk-border-rounded" uk-cover="">
                   </a>
               </div>
                             <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom" style="aspect-ratio:1/1">
                   <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/17-9.jpg">
-                  <img src="images/17-9.jpg" class="uk-border-rounded" uk-cover="">
+                  <img src="{{ asset('template17/images/17-9.jpg') }}" class="uk-border-rounded" uk-cover="">
                   </a>
               </div>
                              
@@ -739,12 +739,12 @@ background-color: var(--body-bg) !important;
   <!-- END DRESSCODE -->
   
   <!-- WEDDING TIMELINE -->
-  <section id="wedding-timeline" class="wedding-timeline uk-background-cover uk-section uk-position-relative uk-background-cover" style="background-image: url('images/17-14-1.jpg')">
+  <section id="wedding-timeline" class="wedding-timeline uk-background-cover uk-section uk-position-relative uk-background-cover" style="background-image: url('{{ asset('template17/images/17-14-1.jpg') }}')">
     <div class=" uk-position-relative uk-container uk-width-1-2@l">
       
       <div class="bg-primary-color uk-section uk-section-xlarge uk-overflow-hidden uk-padding text-white uk-position-relative" style="min-height: 50vh; border-radius: 999px 999px 0 0">
         <div class="uk-position-cover uk-cover-container">
-          <img src="images/bg.jpg" alt="" uk-cover="" style="opacity: .4">
+          <img src="{{ asset('template17/images/bg.jpg') }}" alt="" uk-cover="" style="opacity: .4">
         </div>
         <div class="section-heading uk-text-center uk-position-relative text-black">
           <h2 class=" script-font mb-1">Wedding timeline</h2>
@@ -831,7 +831,7 @@ background-color: var(--body-bg) !important;
           <div class="uk-grid uk-child-width-1-2@m" uk-grid="">
             <div>
               <div class="gift-groom uk-text-center uk-card-default uk-padding-small">
-                <p><img fetchpriority="high" decoding="async" class="alignnone size-medium wp-image-2119" src="images/QR-300x225.webp" alt="" width="300" height="225" srcset="images/QR-300x225.webp 300w, images/QR-1024x768.webp 1024w, images/QR-768x576.webp 768w, images/QR-1536x1152.webp 1536w, images/QR-2048x1536.webp 2048w" sizes="(max-width: 300px) 100vw, 300px"></p>
+                <p><img fetchpriority="high" decoding="async" class="alignnone size-medium wp-image-2119" src="{{ asset('template17/images/QR-300x225.webp') }}" alt="" width="300" height="225" srcset="{{ asset('template17/images/QR-300x225.webp') }} 300w, {{ asset('template17/images/QR-1024x768.webp') }} 1024w, {{ asset('template17/images/QR-768x576.webp') }} 768w, {{ asset('template17/images/QR-1536x1152.webp') }} 1536w, {{ asset('template17/images/QR-2048x1536.webp') }} 2048w" sizes="(max-width: 300px) 100vw, 300px"></p>
 <p><strong>Thanh Phong</strong></p>
 <p>Ngân hàng : <strong>MBBank</strong></p>
 <p>STK : <strong>123456789</strong></p>
@@ -839,7 +839,7 @@ background-color: var(--body-bg) !important;
             </div>
             <div>
               <div class="gift-bride uk-text-center uk-card-default uk-padding-small">
-                <p><img decoding="async" class="alignnone size-medium wp-image-2119" src="images/QR-300x225.webp" alt="" width="300" height="225" srcset="images/QR-300x225.webp 300w, images/QR-1024x768.webp 1024w, images/QR-768x576.webp 768w, images/QR-1536x1152.webp 1536w, images/QR-2048x1536.webp 2048w" sizes="(max-width: 300px) 100vw, 300px"></p>
+                <p><img decoding="async" class="alignnone size-medium wp-image-2119" src="{{ asset('template17/images/QR-300x225.webp') }}" alt="" width="300" height="225" srcset="{{ asset('template17/images/QR-300x225.webp') }} 300w, {{ asset('template17/images/QR-1024x768.webp') }} 1024w, {{ asset('template17/images/QR-768x576.webp') }} 768w, {{ asset('template17/images/QR-1536x1152.webp') }} 1536w, {{ asset('template17/images/QR-2048x1536.webp') }} 2048w" sizes="(max-width: 300px) 100vw, 300px"></p>
 <p><strong>Như Quỳnh</strong></p>
 <p>Ngân hàng : <strong>MBBank</strong></p>
 <p>STK :<strong> 0935653555</strong></p>
@@ -856,7 +856,7 @@ background-color: var(--body-bg) !important;
   <!-- THANKYOU -->
   <section id="thankyou" class="thankyou uk-position-relative bg-black" uk-height-viewport="">
     <div class="uk-position-cover uk-cover-container" style="opacity:.2">
-      <img src="images/17-10-2.jpg" alt="" uk-cover="" class="uk-blend-multiply">
+      <img src="{{ asset('template17/images/17-10-2.jpg') }}" alt="" uk-cover="" class="uk-blend-multiply">
     </div>
     <div class="uk-position-center">
       <div class="uk-container uk-container-xlarge uk-text-center">
@@ -894,23 +894,23 @@ background-color: var(--body-bg) !important;
 <div class="wedding-footer bg-white px-4 py-1" uk-sticky="position: bottom">
   <div class="uk-text-center">
     <div class="uk-flex uk-flex-middle text-white uk-flex-center">
-      <img src="images/FAVICON-5.png" alt="" style="max-height:32px">      <h6 class="mb-0 text-primary-color ms-2">Wedding day</h6>
+      <img src="{{ asset('template17/images/FAVICON-5.png') }}" alt="" style="max-height:32px">      <h6 class="mb-0 text-primary-color ms-2">Wedding day</h6>
     </div>
   </div>
 </div>
 
-<script src="js/bootstrap.js" id="bootstrap-js"></script>
-<script src="js/aos.js" id="aos js-js"></script>
-<script src="js/swiper.js" id="swiper slide-js"></script>
-<script src="js/ui-carousel.js" id="ui-carousel-js"></script>
-<script src="js/imagesloaded.min.js" id="imagesloaded-js"></script>
-<script src="js/masonry.min.js" id="masonry-js"></script>
-<script src="js/typerkey.js" id="typerkey-js"></script>
-<script src="js/bootstrap-select.js" id="bootstrap-select-js"></script>
-<script src="js/uikit.min.js" id="uikit js-js"></script>
-<script src="js/uikit-icons.min.js" id="uikit icon-js"></script>
-<script src="js/main-wedding.js" id="main wedding-js"></script>
-<script src="js/main.js" id="main-js"></script>
+<script src="{{ asset('template17/js/bootstrap.js') }}" id="bootstrap-js"></script>
+<script src="{{ asset('template17/js/aos.js') }}" id="aos js-js"></script>
+<script src="{{ asset('template17/js/swiper.js') }}" id="swiper slide-js"></script>
+<script src="{{ asset('template17/js/ui-carousel.js') }}" id="ui-carousel-js"></script>
+<script src="{{ asset('template17/js/imagesloaded.min.js') }}" id="imagesloaded-js"></script>
+<script src="{{ asset('template17/js/masonry.min.js') }}" id="masonry-js"></script>
+<script src="{{ asset('template17/js/typerkey.js') }}" id="typerkey-js"></script>
+<script src="{{ asset('template17/js/bootstrap-select.js') }}" id="bootstrap-select-js"></script>
+<script src="{{ asset('template17/js/uikit.min.js') }}" id="uikit js-js"></script>
+<script src="{{ asset('template17/js/uikit-icons.min.js') }}" id="uikit icon-js"></script>
+<script src="{{ asset('template17/js/main-wedding.js') }}" id="main wedding-js"></script>
+<script src="{{ asset('template17/js/main.js') }}" id="main-js"></script>
 <script>
   window.addEventListener("load", () => {
     // Preloader
@@ -923,10 +923,10 @@ background-color: var(--body-bg) !important;
   $('head title').text('Thiệp cưới hiện đại I02')
   $(".selectpicker").selectpicker();
 </script><script>
-    $(':root').css('--primary-color', '');
-    $(':root').css('--primary-hover', '');
-    $(':root').css('--soft-primary', '');
-    $(':root').css('--secondary-color', '');
+    $(':root').css') }}('--primary-color', '');
+    $(':root').css') }}('--primary-hover', '');
+    $(':root').css') }}('--soft-primary', '');
+    $(':root').css') }}('--secondary-color', '');
 </script>
 <script>
  
