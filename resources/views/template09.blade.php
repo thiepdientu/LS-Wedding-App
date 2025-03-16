@@ -465,7 +465,7 @@ Phương Ánh      </div>
            
         </div>
                     <div class="invitation-card"> <img src="{{ asset('template09/images/BEEFADED-A61C-4802-A47C-65450136B451.jpeg') }}" alt=""> 
-                <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
+                <h3 class="card-title uk-margin-remove uk-text-bold">TƯ GIA NHÀ TRAI</h3>
                 <address class="uk-margin-remove">
                     <p>ẤP Hà, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
                 </address> 

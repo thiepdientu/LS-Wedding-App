@@ -834,11 +834,14 @@ main{
 }
 .timeline-media {
     background-color: var(--text-white);
-    padding: 8px;
+    padding: 2px;
+    max-width: 200px;
+    border-radius: 50%;
 }
 .timeline-media img {
-    aspect-ratio: 2/1;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
+    border-radius: 50%;
     max-width: 100%;
 }
 .timeline-body {
@@ -847,7 +850,8 @@ main{
 }
 .timeline-body .story-date {
     font-family: var(--primary-font);
-    font-size: var(--title-fs)
+    font-size: var(--title-fs);
+    color: #F3B8B9;
 }
 .timeline-body .title {
     font-family: var(--secondary-font);

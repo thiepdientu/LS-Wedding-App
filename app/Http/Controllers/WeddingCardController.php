@@ -47,15 +47,15 @@ class WeddingCardController extends Controller
             case "2":
                 return view('template02', compact('weddingCard'));
             case "3":
-                return view('template03', compact('weddingCard'));
-            case "4":
                 return view('template04', compact('weddingCard'));
-            case "5":
+            case "4":
                 return view('template05', compact('weddingCard'));
-            case "6":
+            case "5":
                 return view('template06', compact('weddingCard'));
-            case "7":
+            case "6":
                 return view('template07', compact('weddingCard'));
+            case "7":
+                return view('template18', compact('weddingCard'));
             case "8":
                 return view('template08', compact('weddingCard'));
             case "9":
@@ -99,15 +99,15 @@ class WeddingCardController extends Controller
             case "2":
                 return view('template02', compact('weddingCard'));
             case "3":
-                return view('template03', compact('weddingCard'));
-            case "4":
                 return view('template04', compact('weddingCard'));
-            case "5":
+            case "4":
                 return view('template05', compact('weddingCard'));
-            case "6":
+            case "5":
                 return view('template06', compact('weddingCard'));
-            case "7":
+            case "6":
                 return view('template07', compact('weddingCard'));
+            case "7":
+                return view('template18', compact('weddingCard'));
             case "8":
                 return view('template08', compact('weddingCard'));
             case "9":
@@ -164,6 +164,7 @@ class WeddingCardController extends Controller
         $validated = $request->validate([
             'identifyWedding' => 'required|string|max:255',
             'template' => 'required|string|max:255',
+            'wedding_time' => 'required|string|max:255',
             'banner_preview' => 'required|string|max:1000',
             'bride_name' => 'required|string|max:255',
             'groom_name' => 'required|string|max:255',
@@ -177,6 +178,10 @@ class WeddingCardController extends Controller
             'groom_birthday' => 'required|date',
             'bride_avatar' => 'required|string|max:5000',
             'groom_avatar' => 'required|string|max:5000',
+            'des_bride' => 'required|string|max:5000',
+            'des_groom' => 'required|string|max:5000',
+            'banner_love_story' => 'required|string|max:5000',
+            'love_story' => 'required|string|max:5000',
             'banner_coundown' => 'required|string|max:5000',
             'album' => 'required|string|max:50000',
             'date_coundown' => 'required|string|max:500',
@@ -215,6 +220,7 @@ class WeddingCardController extends Controller
         $realPathBrideQr = "";
         $realPathBannerCoundown = "";
         $realPathBannerThanks = "";
+        $realPathBannerStory = "";
         if ($request->hasFile('banner_top_image')) {
             $path = $request->file('banner_top_image')->store("weddings/$weddingId", 'public');
             $realPathBannerTop = Storage::url($path);
@@ -228,6 +234,11 @@ class WeddingCardController extends Controller
         if ($request->hasFile('banner_coundown_image')) {
             $path = $request->file('banner_coundown_image')->store("weddings/$weddingId", 'public');
             $realPathBannerCoundown = Storage::url($path);
+        }
+
+        if ($request->hasFile('banner_story_image')) {
+            $path = $request->file('banner_story_image')->store("weddings/$weddingId", 'public');
+            $realPathBannerStory = Storage::url($path);
         }
 
 
@@ -279,6 +290,7 @@ class WeddingCardController extends Controller
         $weddingCard->update(['groom_avatar' => $realPathAvatarGroom]);
         $weddingCard->update(['bride_avatar' => $realPathAvatarBride]);
         $weddingCard->update(['banner_coundown' => $realPathBannerCoundown]);
+        $weddingCard->update(['banner_love_story' => $realPathBannerStory]);
         $weddingCard->update(['banner_thanks' => $realPathBannerThanks]);
         $weddingCard->update(['groom_qr' => $realPathGroomQr]);
         $weddingCard->update(['bride_qr' => $realPathBrideQr]);
@@ -339,6 +351,7 @@ class WeddingCardController extends Controller
             'bride_name' => 'required|string|max:255',
             'groom_name' => 'required|string|max:255',
             'banner_top' => 'required|string|max:255',
+            'wedding_time' => 'required|string|max:255',
             'wedding_date' => 'required|date',
             'wedding_message' => 'required|string|max:1000',
             'address_wedding' => 'required|string|max:1000',
@@ -348,6 +361,10 @@ class WeddingCardController extends Controller
             'groom_birthday' => 'required|date',
             'bride_avatar' => 'required|string|max:5000',
             'groom_avatar' => 'required|string|max:5000',
+            'des_bride' => 'required|string|max:5000',
+            'des_groom' => 'required|string|max:5000',
+            'banner_love_story' => 'required|string|max:5000',
+            'love_story' => 'required|string|max:5000',
             'banner_coundown' => 'required|string|max:5000',
             'album' => 'required|string|max:50000',
             'date_coundown' => 'required|string|max:500',
@@ -391,6 +408,11 @@ class WeddingCardController extends Controller
         if ($request->hasFile('banner_coundown_image')) {
             $path = $request->file('banner_coundown_image')->store("weddings/$weddingId", 'public');
             $weddingCard->update(['banner_coundown' => Storage::url($path)]);
+        }
+
+        if ($request->hasFile('banner_story_image')) {
+            $path = $request->file('banner_story_image')->store("weddings/$weddingId", 'public');
+            $weddingCard->update(['banner_love_story' => Storage::url($path)]);
         }
 
         if ($request->hasFile('banner_thanks_image')) {

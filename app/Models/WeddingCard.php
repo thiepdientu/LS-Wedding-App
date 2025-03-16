@@ -13,7 +13,12 @@ class WeddingCard extends Model
         'template' ,  // mẫu thiệp
         'bride_name',           // Tên cô dâu
         'groom_name',           // Tên chú rể
+        'des_bride',
+        'des_groom',
+        'banner_love_story',
+        'love_story',
         'banner_top',           // Banner ảnh top
+        'wedding_time',
         'wedding_message', 
         'name_place_wedding',   
         'wedding_date',         // Ngày tổ chức lễ thành hôn

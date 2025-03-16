@@ -589,13 +589,14 @@
                 data-aos-duration="3000">
                 <p>Save The Date</p>
             </h1>
-            <div class="invitation-body" style="background: transparent;">
+            <div class="invitation-body" style="background: transparent;margin-top:200px;">
                 <h3 class="invitation-title" style="font-size:30px">{{ $weddingCard->wedding_message }}</h3>
                 <h3 class="invitation-title" style="font-size:20px">Tại</h3>
                 <h4 class="" style="font-size: 15px;font-weight: bold;">{{ $weddingCard->name_place_wedding }}
                     <br />
-                    {{ $weddingCard->address_wedding }}
+
                 </h4>
+                <p>{{ $weddingCard->address_wedding }}</p>
                 <p style="font-size: 17px;font-weight: 500;"> Vào lúc <b style="font-size:20px">10h</b> </p>
                 @php
                     \Carbon\Carbon::setLocale('vi'); // Đặt ngôn ngữ tiếng Việt
@@ -632,13 +633,6 @@
                 <h2 class="uk-heading-medium script-font uk-text-center uk-padding-small uk-padding-remove-vertical"
                     data-aos="fade-right" data-aos-duration="3000">
                     {{ $weddingCard->bride_name }} </h2>
-            </div>
-            <div class="time" data-aos="fade-up" data-aos-duration="3000">
-                <span class="invitation_day">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}</span>
-                /
-                <span class="invitation_month">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->month }}</span>
-                /
-                <span class="invitation_year">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->year }}</span>
             </div>
 
         </div>
@@ -681,53 +675,43 @@
   </section> -->
     <!-- END ABOUT -->
     <!-- TIMELINE -->
+    @php
+        $album = !empty($weddingCard->album) ? json_decode($weddingCard->album, true) : [];
+        $stories = [];
+        if ($weddingCard->love_story != ',') {
+            $items = explode(',', $weddingCard->love_story);
+            foreach ($items as $item) {
+                [$date, $story] = explode(':', $item);
+                $image = !empty($album) ? array_shift($album) : null; // Lấy ảnh đầu tiên và loại khỏi album
+                $stories[] = ['date' => trim($date), 'story' => trim($story), 'image' => $image];
+            }
+        }
 
-    <!-- <section id="time-line" class="time-line-section">
-      <div class="time-line container">
-        <span class="line1"></span>
-        <span class="line2"></span>
-        <h2 class="timeline-title">Love Story</h2>
-        <div class="timeline-list">
-                  <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
-            <div class="timeline-media">
-              <img src="images/39C1C000-709D-4963-8E3D-ED0C9AEF3F71.jpeg" alt="">
-            </div>
-            <div class="timeline-body">
-              <span class="date story_1">2013</span>
-              <span class="title">Lần đầu gặp gỡ</span>
-            </div>
-          </div>
-                  <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
-            <div class="timeline-media">
-              <img src="images/A75EC5AB-B03D-4D62-8766-6CBE94EDD5FD.jpeg" alt="">
-            </div>
-            <div class="timeline-body">
-              <span class="date story_1">2023</span>
-              <span class="title">Hẹn hò</span>
-            </div>
-          </div>
-                  <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
-            <div class="timeline-media">
-              <img src="images/2A0284C2-4B3B-4540-9C7B-B1366C01F2FB.jpeg" alt="">
-            </div>
-            <div class="timeline-body">
-              <span class="date story_1">24-08-2023</span>
-              <span class="title">Đính hôn</span>
-            </div>
-          </div>
-                  <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
-            <div class="timeline-media">
-              <img src="images/16E9E153-3933-4589-9A60-5282FAEB9DB8.jpeg" alt="">
-            </div>
-            <div class="timeline-body">
-              <span class="date story_1">04-02-2024</span>
-              <span class="title">Thành hôn</span>
-            </div>
-          </div>
+    @endphp
+    @if (!empty($stories))
+        <section id="time-line" class="time-line-section">
+            <div class="time-line container">
+
+                <h2 class="timeline-title">Love Story</h2>
+                <div class="timeline-list">
+                    @foreach ($stories as $story)
+                        <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="timeline-media">
+                                <img src="{{ asset($story['image']) }}" alt="">
+                            </div>
+                            <div class="timeline-body">
+                                <span class="date story_1">{{ $story['date'] }}</span>
+                                <span class="title">{{ $story['story'] }}</span>
+                            </div>
+                        </div>
+                    @endforeach
+
                 </div>
-      </div>
-    </section> -->
-    <!-- END TIMELINE -->
+            </div>
+        </section>
+        <!-- END TIMELINE -->
+    @endif
+
 
     <!-- ALBUM -->
     <section id="album" class="uk-section" data-aos="fade-up" data-aos-duration="3000">
@@ -882,9 +866,9 @@
     <section id="countdown-secton" class="uk-background-cover uk-section uk-section-large uk-text-center uk-light"
         style="background-image:url({{ asset($weddingCard->banner_coundown) }}); margin-top: 200px;padding-top: 200px;">
         <div class="uk-container">
-            <p class="uk-text-center">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
-            <h2 class="uk-heading-small uk-text-center ">
-                SAVE THE DATE </h2>
+
+            <h2 class="uk-heading-small uk-text-center script-font ">
+                Cùng Đếm Ngược Thời Gian </h2>
             <svg class="heartbeat" width="64" height="64" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill="#ff087c"
@@ -1077,9 +1061,8 @@
         <div class="thankyou-body container uk-position-relative uk-position-z-index">
             <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up"
                 data-aos-duration="2000">Thank you!</h2>
-            <p class="thankyou-des" data-aos="fade" data-aos-duration="3000"></p>
-            <p>{{ $weddingCard->message_thanks }}</p>
-            <p></p>
+            <p data-aos="fade-down" data-aos-duration="3000">{{ $weddingCard->message_thanks }}</p>
+
 
         </div>
     </section>

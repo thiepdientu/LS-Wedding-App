@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('bride_name'); // tên cô dâu
             $table->string('groom_name'); // tên chú rể
             $table->longText('banner_top'); // banner ảnh top
+            $table->string('wedding_time'); // Giờ tổ chức lễ thành hôn
             $table->date('wedding_date'); // Ngày tổ chức lễ thành hôn
             $table->longText('wedding_message'); //message lễ thành hôn
             $table->string('name_place_wedding'); // Tên nơi tổ chức lễ thành hôn
@@ -28,6 +29,10 @@ return new class extends Migration
             $table->date('groom_birthday'); // Ngày sinh chú rể
             $table->longText('bride_avatar'); // avatar cô dâu
             $table->longText('groom_avatar'); // avatar chú rể
+            $table->longText('des_bride'); // giới thiệu cô dâu
+            $table->longText('des_groom'); // giới thiệu chú rể
+            $table->longText('banner_love_story'); // banner story
+            $table->longText('love_story'); // Nội dung story
             $table->longText('banner_coundown'); // banner coundown
             $table->longText('album'); // album ảnh
             $table->string('date_coundown'); // date coundown

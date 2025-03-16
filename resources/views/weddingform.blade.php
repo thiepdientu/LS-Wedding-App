@@ -42,8 +42,11 @@
         <label>Nội dung lễ thành hôn</label>
         <input type="text" name="wedding_message" value="{{ old('wedding_message', $weddingCard->wedding_message ?? '') }}" required><br>
 
-        <label>Ngày Cưới:</label>
+        <label>Ngày Thành Hôn:</label>
         <input type="date" name="wedding_date" value="{{ old('wedding_date', $weddingCard->wedding_date ?? '') }}" required><br>
+
+        <label>Giờ lễ thành hôn </label>
+        <input type="text" name="wedding_time" value="{{ old('wedding_time', $weddingCard->wedding_time ?? '') }}" required><br>
 
         <label>Địa Chỉ Tổ Chức:</label>
         <input type="text" name="address_wedding" value="{{ old('address_wedding', $weddingCard->address_wedding ?? '') }}" required><br>
@@ -68,6 +71,13 @@
         <input type="file" name="avatar_groom"  {{ !isset($weddingCard) ? 'required' : '' }} >
         <input type="text" name="groom_avatar" value="{{ old('groom_avatar', $weddingCard->groom_avatar ?? '') }}"><br>
 
+        <label>Giới thiệu cô dâu:</label>
+        <input type="text" name="des_bride" value="{{ old('des_bride', $weddingCard->des_bride ?? '') }}"><br>
+
+        <label>Giới thiệu chú rể:</label>
+        <input type="text" name="des_groom" value="{{ old('des_groom', $weddingCard->des_groom ?? '') }}"><br>
+
+
         <label>Banner Top:</label>
         <input type="file" name="banner_top_image"  {{ !isset($weddingCard) ? 'required' : '' }} >
         <input type="text" name="banner_top" value="{{ old('banner_top', $weddingCard->banner_top ?? '') }}"><br>
@@ -76,6 +86,13 @@
         <label>Banner Countdown:</label>
         <input type="file" name="banner_coundown_image"  {{ !isset($weddingCard) ? 'required' : '' }} >
         <input type="text" name="banner_coundown" value="{{ old('banner_coundown', $weddingCard->banner_coundown ?? '') }}"><br>
+
+        <label>Banner Story:</label>
+        <input type="file" name="banner_story_image"  {{ !isset($weddingCard) ? 'required' : '' }} >
+        <input type="text" name="banner_love_story" value="{{ old('banner_love_story', $weddingCard->banner_love_story ?? '') }}"><br>
+
+        <label>Nội dung Love Story (Ví dụ: 1/2/2023:Hẹn Hò, 2/2/2024:Tỏ Tình)</label>
+        <input type="text" name="love_story" value="{{ old('love_story', $weddingCard->love_story ?? '') }}"><br>
 
         <label>Album Ảnh:</label>
         <input type="text" name="album" value="{{ old('album', $weddingCard->album ?? '') }}"><br>

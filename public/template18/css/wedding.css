@@ -212,7 +212,7 @@ background: #ffe9fb; background: -moz-linear-gradient(45deg,  #ffe9fb 0%,#e4fef6
 
 /* Boder */
 .border-primary-color {
-    border-color: var(--primary-color) !important;
+    border-color: #fff1f1;
 }
 .border-soft-primary {
     border-color: var(--soft-primary) !important;

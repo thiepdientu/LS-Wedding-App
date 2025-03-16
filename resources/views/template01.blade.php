@@ -17,21 +17,21 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:site_name" content="{{ $weddingCard->groom_name }} ❤️{{ $weddingCard->bride_name }}">
     <meta property="og:updated_time" content="2024-03-13T11:56:14+00:00">
-    <meta property="og:image" content="{{ asset($weddingCard->banner_coundown) }}">
-    <meta property="og:image:secure_url" content="{{ asset($weddingCard->banner_coundown) }}">
+    <meta property="og:image" content="{{ asset($weddingCard->banner_preview) }}">
+    <meta property="og:image:secure_url" content="{{ asset($weddingCard->banner_preview) }}">
     <meta property="og:image:width" content="961">
     <meta property="og:image:height" content="1440">
     <meta property="og:image:alt" content="Thiệp 01">
     <meta property="og:image:type" content="image/jpeg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ $weddingCard->groom_name }}❤️ {{ $weddingCard->bride_name }}">
-    <meta name="twitter:image" content="{{ asset($weddingCard->banner_coundown) }}">
+    <meta name="twitter:image" content="{{ asset($weddingCard->banner_preview) }}">
     <!-- /Rank Math WordPress SEO plugin -->
 
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="//unpkg.com">
-    
-   
+
+
     <style id="wp-emoji-styles-inline-css">
         img.wp-smiley,
         img.emoji {
@@ -408,7 +408,8 @@
     <link rel="stylesheet" id="reset uikit-css" href="{{ asset('template01/css/reset1.css') }}" media="all">
     <link rel="stylesheet" id="remixicon-css" href="{{ asset('template01/css/remixicon.css') }}" media="all">
     <link rel="stylesheet" id="preload-css" href="{{ asset('template01/css/preload.css') }}" media="all">
-    <link rel="stylesheet" id="wedding reset-css" href="{{ asset('template01/css/reset-wedding.css') }}" media="all">
+    <link rel="stylesheet" id="wedding reset-css" href="{{ asset('template01/css/reset-wedding.css') }}"
+        media="all">
     <link rel="stylesheet" id="fancybox-css" href="{{ asset('template01/css/fancybox.css') }}" media="all">
     <link rel="stylesheet" id="swiper slide-css" href="{{ asset('template01/css/swiper-bundle.min.css') }}"
         media="all">
@@ -420,9 +421,9 @@
     <script src="{{ asset('template01/js/jquery.min_1.js') }}" id="jquery-core-js"></script>
     <script src="{{ asset('template01/js/jquery-migrate.min.js') }}" id="jquery-migrate-js"></script>
     <script src="{{ asset('template01/js/jquery.min.js') }}" id="Jquery-js"></script>
-    
+
     <meta name="generator" content="WordPress 6.6.1">
-   
+
     <style type="text/css">
         .site-title,
         .site-description {
@@ -447,8 +448,8 @@
 
             <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
                 {{ $weddingCard->groom_name }}
-        ❤️
-        {{ $weddingCard->bride_name }} </h2>
+                ❤️
+                {{ $weddingCard->bride_name }} </h2>
 
         </div>
 
@@ -479,8 +480,8 @@
                     </div>
                     <div class="banner-location" data-aos="fade-up" data-aos-duration="3000">
                         <p class="script-font">{{ $weddingCard->wedding_message }}</p>
-                 
-                          <p class="banner_location_name">{{ $weddingCard->name_place_wedding }}</p> 
+
+                        <p class="banner_location_name">{{ $weddingCard->name_place_wedding }}</p>
                         <p class="banner_location_adress">{{ $weddingCard->address_wedding }}</p>
                         <div class="social-link">
                             <a href="tel:(+84){{ $weddingCard->groom_phone }}" class="phone_number">
@@ -512,25 +513,23 @@
             <div class="about-container">
                 <div class="about-card" style="order:1">
                     <div class="about-media">
-                        <img src="{{ asset($weddingCard->bride_avatar) }}" alt=""
-                            class="bride_img">
+                        <img src="{{ asset($weddingCard->bride_avatar) }}" alt="" class="bride_img">
                     </div>
                     <div class="about-body" data-aos="fade-up" data-aos-duration="3000">
                         <h3 class="bride_name"> {{ $weddingCard->bride_name }}</h3>
                         <p class="bride_birthday">
-                            {{ \Carbon\Carbon::parse($weddingCard->bride_birthday)->format('d-m-Y') }}</p>
+                           {{ $weddingCard->des_bride }} </p>
                         {{-- <p class="bride_des">Máy bay</p> --}}
                     </div>
                 </div>
                 <div class="about-card" style="order:1">
                     <div class="about-media">
-                        <img src="{{ asset($weddingCard->groom_avatar) }}" alt=""
-                            class="groom_img">
+                        <img src="{{ asset($weddingCard->groom_avatar) }}" alt="" class="groom_img">
                     </div>
                     <div class="about-body" data-aos="fade-up" data-aos-duration="3000">
                         <h3 class="groom_name">{{ $weddingCard->groom_name }}</h3>
                         <p class="groom_birthday">
-                            {{ \Carbon\Carbon::parse($weddingCard->groom_birthday)->format('d-m-Y') }}</p>
+                            {{ $weddingCard->des_groom }} </p>
                         {{-- <p class="groom_des">Phi Công</p> --}}
                     </div>
                 </div>
@@ -546,12 +545,12 @@
 
             <div class="count-down section-countdown img_bg bg_overlay"
                 style="background-image:url({{ asset($weddingCard->banner_coundown) }})">
-                <p class="subtitle">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
+
                 <h2 class="section-title">
-                    SAVE THE DATE </h2>
+                    CÙNG ĐẾM NGƯỢC THỜI GIAN </h2>
                 <svg class="heartbeat" width="64" height="64" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
-                    <path fill="red"
+                    <path fill="#ef0472"
                         d="M16.5 13.287c-2.475-2.716-5.5-.712-5.5 2.112c0 2.56 1.814 4.035 3.358 5.292l.044.036l.427.35c.571.475 1.121.923 1.671.923s1.1-.448 1.671-.923C19.789 19.73 22 18.224 22 15.399c0-.927-.326-1.767-.853-2.38c-1.075-1.251-2.985-1.556-4.647.268Z">
                     </path>
                     <path fill="#f1ebe4"
@@ -593,12 +592,11 @@
 
             <div class="invitation">
                 <div class="invitation-container">
-                    <h2 class="uk-heading-small uk-text-center card-title  uk-text-cappercase">
+                    <h2 class="uk-heading-small uk-text-center section-title  uk-text-cappercase">
                         {{ $weddingCard->message_invite }}
                     </h2>
-                    <div class="invitation-card"> <img
-                            src="{{ asset($weddingCard->groom_avatar) }}" alt="">
-                        <h3 class="card-title uk-margin-remove">{{ $weddingCard->groom_eating_title }}</h3>
+                    <div class="invitation-card"> <img src="{{ asset($weddingCard->groom_avatar) }}" alt="">
+                        <h3 class="card-title uk-margin-remove uk-text-bold">{{ $weddingCard->groom_eating_title }}</h3>
                         <address class="uk-margin-remove">
                             <p>
                             <p>{{ $weddingCard->address_groom }}</p>
@@ -645,9 +643,8 @@
 
 
                     </div>
-                    <div class="invitation-card"> <img
-                            src="{{ asset($weddingCard->bride_avatar) }}" alt="">
-                        <h3 class="card-title uk-margin-remove">{{ $weddingCard->bride_eating_title }}</h3>
+                    <div class="invitation-card"> <img src="{{ asset($weddingCard->bride_avatar) }}" alt="">
+                        <h3 class="card-title uk-margin-remove uk-text-bold">{{ $weddingCard->bride_eating_title }}</h3>
                         <address class="uk-margin-remove">
                             <p>{{ $weddingCard->address_bride }}</p>
                         </address>
@@ -700,103 +697,64 @@
     <!-- DRESS CODE -->
     <!-- END DRESS CODE -->
     <!-- TIMELINE -->
+    @php
+        $album = !empty($weddingCard->album) ? json_decode($weddingCard->album, true) : [];
+        $stories = [];
+        if ($weddingCard->love_story != ',') {
+            $test = '1/2/2023:Hẹn Hò,1/3/2025:Tỏ tình,2/04/2025:Đính Hôn, 2/05/2025:Kết Hôn';
+            $items = explode(',', $weddingCard->love_story);
+            foreach ($items as $item) {
+                [$date, $story] = explode(':', $item);
+                $image = !empty($album) ? array_shift($album) : null; // Lấy ảnh đầu tiên và loại khỏi album
+                $stories[] = ['date' => trim($date), 'story' => trim($story), 'image' => $image];
+            }
+        }
 
-    {{-- <section id="time-line" class="time-line-section img_bg bg_overlay"
-        style="background-image:url({{ asset('template01/images/5f3390b321369a68c3275.jpg') }})">
+    @endphp
 
-        <div class="time-line container">
+    @if (!empty($stories))
+    <section id="time-line" class="time-line-section img_bg bg_overlay"
+    style="background-image:url({{ asset($weddingCard->banner_love_story) }}); margin-bottom: 80px;">
 
-            <div class="section-heading">
+    <div class="time-line container">
 
-                <p class="subtitle"></p>
+        <div class="section-heading">
 
-                <h2 class="section-title">
+            <p class="subtitle"></p>
 
-                    Love Story
-                </h2>
+            <h2 class="section-title">
 
+                Love Story
+            </h2>
 
-            </div>
-
-
-
-            <div class="timeline-list">
-
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
-
-                    <div class="timeline-media">
-
-                        <img src="{{ asset('template01/images/7a1eab9f1a1aa144f80b3.jpg') }}" alt=""
-                            class="timline-img">
-
-                    </div>
-
-                    <div class="timeline-body">
-
-                        <span class="story-date"> 29/05/2023 </span>
-
-                        <span class="title">Lần đầu gặp</span>
-
-                        <!--  <p class="timeline-des uk-margin-remove"></p><p>Mỗi chiều cuối tuần thường chạy xe vòng quanh qua những con phố, len lỏi trong từng dòng người tấp nập</p> -->
-                        <p></p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
-
-                    <div class="timeline-media">
-
-                        <img src="{{ asset('template01/images/68e24c63fde646b81ff72.jpg') }}" alt=""
-                            class="timline-img">
-
-                    </div>
-
-                    <div class="timeline-body">
-
-                        <span class="story-date">3/8/2023</span>
-
-                        <span class="title">Hẹn Hò</span>
-
-                        <!--  <p class="timeline-des uk-margin-remove"></p><p>Chúng ta từ 2 con người xa lạ m�&nbsp; bước v�&nbsp;o cuộc đời nhau. V�&nbsp; giờ đây chúng ta tiếp tục cùng nhau sang trang mới.</p> -->
-                        <p></p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
-
-                    <div class="timeline-media">
-
-                        <img src="{{ asset('template01/images/265e55dfe45a5f04064b7.jpg') }}" alt=""
-                            class="timline-img">
-
-                    </div>
-
-                    <div class="timeline-body">
-
-                        <span class="story-date">21-12-2024</span>
-
-                        <span class="title">Lễ Thành Hôn</span>
-
-                        <!-- <p class="timeline-des uk-margin-remove"></p><p>Em v�&nbsp; anh không chỉ l�&nbsp; người yêu m�&nbsp; chúng ta còn l�&nbsp; tri kỷ. Ng�&nbsp;y hôm nay, em sẽ l�&nbsp; cô dâu của anh</p> -->
-                        <p></p>
-
-                    </div>
-
-                </div>
-
-
-            </div>
 
         </div>
 
-    </section> --}}
+        <div class="timeline-list">
+
+            @foreach ($stories as $story)
+                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+
+                    <div class="timeline-media">
+                        <img src="{{ asset($story['image']) }}" alt=""
+                            class="timline-img">
+                    </div>
+
+                    <div class="timeline-body">
+                        <span class="story-date script-font" style="font-size: 18px;">{{ $story['date'] }}</span>
+                        <span class="title script-font">{{ $story['story'] }}</span>
+                    </div>
+
+                </div>
+            @endforeach
+        </div>
+
+    </div>
+
+</section> 
+    @endif
+
+   
 
     <!-- END TIMELINE -->
 
@@ -970,14 +928,12 @@
     </script>
     <!-- END LỜI CHÚC -->
 
-  
+
     <!-- GỬI QUÀ -->
     <section id="gift" class="section-gift" style="display:block">
         <div class="container">
             <p class="subtitle"></p>
-            <h2 class="uk-heading-small uk-text-center script-font uk-text-cappercase">
-                {{ $weddingCard->message_gift }}
-            </h2>
+
             <a href="#box-gift" data-fancybox="" class="btn btn-primary">
                 <svg width="54" height="54" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                     <g fill="#fff">
@@ -987,16 +943,16 @@
                         </path>
                     </g>
                 </svg>
-
+                <span style="color: white;">{{ $weddingCard->message_gift }}</span>
             </a>
             <div id="box-gift">
                 <div class="gift-container" id="gift-container">
                     <div class="gift-card">
                         <div class="gift-qr">
-                            <img src="{{ asset($weddingCard->groom_qr) }}" alt=""
-                                class="groom_qr" style="max-width:100%">
-                            <img src="{{ asset($weddingCard->bride_qr) }}" alt=""
-                                class="groom_qr" style="max-width:100%">
+                            <img src="{{ asset($weddingCard->groom_qr) }}" alt="" class="groom_qr"
+                                style="max-width:100%">
+                            <img src="{{ asset($weddingCard->bride_qr) }}" alt="" class="groom_qr"
+                                style="max-width:100%">
                         </div>
                         <div class="gift-body">
                         </div>
@@ -1015,14 +971,14 @@
     <!-- THANK YOU -->
     <section id="thankyou" class="section-thankyou bg_overlay uk-position-z-index">
         <div class="uk-overlay uk-overlay-primary uk-position-cover"> </div>
-        <img src="{{ asset($weddingCard->banner_thanks) }}" alt=""
-            class="thankyou-bg thankyou_img" style="object-position:">
+        <img src="{{ asset($weddingCard->banner_thanks) }}" alt="" class="thankyou-bg thankyou_img"
+            style="object-position:">
         <div class="thankyou-body container uk-position-relative uk-position-z-index">
-            <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-down"
+            <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up"
                 data-aos-duration="2500">Thank you!</h2>
-            <p class="thankyou-des" data-aos="fade" data-aos-duration="3000"></p>
-            <p>{{ $weddingCard->message_thanks }}</p>
-            <p></p>
+            <p data-aos="fade-down" data-aos-duration="3000">{{ $weddingCard->message_thanks }}
+            </p>
+
 
         </div>
     </section>

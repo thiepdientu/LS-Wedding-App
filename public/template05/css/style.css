@@ -517,9 +517,9 @@ body {
 .banner-logo {
     width: 35%;
     max-width: 152px;
-    border: 1px solid #a05d12;
+    
     padding: 32px;
-    border-radius: 50px;
+
     position: relative;
     aspect-ratio: 1 / 1.2;
 }
@@ -658,7 +658,7 @@ body {
 }
 
 .timeline-media img {
-    max-width: 250px;
+    max-width: 150px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center;

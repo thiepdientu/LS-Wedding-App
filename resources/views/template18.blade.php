@@ -2,14 +2,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-		<meta property="og:image" content="images/I04.png">
-		<title>Thiệp cưới hiện đại I04 – Wedding day</title>
-<meta name="robots" content="max-image-preview:large">
+		<meta property="og:image" content="{{ asset($weddingCard->banner_preview) }}">
+		<title>{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }} - Thiệp cưới online</title>
+    <link rel="canonical" href="{{ url()->current() }}">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }}">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="{{ $weddingCard->groom_name }} ❤️{{ $weddingCard->bride_name }}">
+    <meta property="og:updated_time" content="2024-03-13T11:56:14+00:00">
+    <meta property="og:image" content="{{ asset($weddingCard->banner_preview) }}">
+    <meta property="og:image:secure_url" content="{{ asset($weddingCard->banner_preview) }}">
+    <meta property="og:image:width" content="961">
+    <meta property="og:image:height" content="1440">
+    <meta property="og:image:alt" content="Thiệp 01">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $weddingCard->groom_name }}❤️ {{ $weddingCard->bride_name }}">
+    <meta name="twitter:image" content="{{ asset($weddingCard->banner_preview) }}">
+    <meta name="robots" content="max-image-preview:large">
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//cdn.js') }}delivr.net">
-<link rel="alternate" type="application/rss+xml" title="Dòng thông tin Wedding day »" href="https://weddingday.com.vn/feed/">
-<link rel="alternate" type="application/rss+xml" title="Wedding day » Dòng bình luận" href="https://weddingday.com.vn/comments/feed/">
+
 <script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/weddingday.com.vn\/wp-includes\/js\/wp-emoji-release.min.js') }}?ver=6.7.1"}};
 /*! This file is auto-generated */
@@ -46,7 +61,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="stylesheet" id="reset uikit-css" href="{{ asset('template18/css/reset1.css') }}" media="all">
 <link rel="stylesheet" id="core-css" href="{{ asset('template18/css/core.css') }}" media="all">
 <link rel="stylesheet" id="remixicon-css" href="{{ asset('template18/css/remixicon.css') }}" media="all">
-<link rel="stylesheet" id="preload-css" href="https://weddingday.com.vn/wp-content/themes/nuis-profile/{{ asset('template18/css/preload.css') }}?ver=1.0.0" media="all">
+
 <link rel="stylesheet" id="swiper slide-css" href="{{ asset('template18/css/swiper.css') }}" media="all">
 <link rel="stylesheet" id="ui-carousel-css" href="{{ asset('template18/css/ui-carousel.css') }}" media="all">
 <link rel="stylesheet" id="bootstrap-select-css" href="{{ asset('template18/css/bootstrap-select.css') }}" media="all">
@@ -55,23 +70,16 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <script src="{{ asset('template18/js/jquery.min_1.js') }}" id="jquery-core-js"></script>
 <script src="{{ asset('template18/js/jquery-migrate.min.js') }}" id="jquery-migrate-js"></script>
 <script src="{{ asset('template18/js/jquery.min.js') }}" id="Jquery-js"></script>
-<link rel="https://api.w.org/" href="https://weddingday.com.vn/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://weddingday.com.vn/wp-json/wp/v2/mau-thiepcuoi/2424"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://weddingday.com.vn/xmlrpc.php?rsd">
-<meta name="generator" content="WordPress 6.7.1">
-<link rel="canonical" href="https://weddingday.com.vn/mau-thiep/thiep-cuoi-hien-dai-i04/">
-<link rel="shortlink" href="https://weddingday.com.vn/?p=2424">
-<link rel="alternate" title="oNhúng (JSON)" type="application/json+oembed" href="https://weddingday.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fweddingday.com.vn%2Fmau-thiep%2Fthiep-cuoi-hien-dai-i04%2F">
-<link rel="alternate" title="oNhúng (XML)" type="text/xml+oembed" href="https://weddingday.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fweddingday.com.vn%2Fmau-thiep%2Fthiep-cuoi-hien-dai-i04%2F&amp;format=xml">
-<link rel="icon" href="images/cropped-FAVICON-32x32.png" sizes="32x32">
-<link rel="icon" href="images/cropped-FAVICON-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="images/cropped-FAVICON-180x180.png">
-<meta name="msapplication-TileImage" content="https://weddingday.com.vn/wp-content/uploads/2024/09/cropped-FAVICON-270x270.png">
+
+<link rel="canonical" href="{{ url()->current() }}">
+
 	
 <script src="{{ asset('template18/js/wp-emoji-release.min.js') }}" defer=""></script></head>
 <body><div class="preload  uk-position-cover uk-position-fixed bg-white uk-position-z-index">
 	<div class="uk-position-center uk-text-center">
 		<div class="logo mx-auto p-4">
 			
-			<img src="images/FAVICON-5.png" alt="" style="max-height:140px" data-aos="fade-up">			<h3 class="title-font text-primary-color tracking-in-expand uk-heading-small mb-0">Wedding day</h3>
+			<img src="images/FAVICON-5.png" alt="" style="max-height:140px" data-aos="fade-up">			<h3 class="title-font text-primary-color tracking-in-expand uk-heading-small mb-0">{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }} </h3>
 		</div>
 	</div>
 </div>
@@ -79,7 +87,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <style>
   :root {
  /* color */
- --primary-color: #ff3838; 
+ --primary-color: #feabd9; 
  --primary-hover: #ba6c6c;
  --soft-primary: #58caa8;
  --secondary-color:#EBBC3D ;
@@ -149,7 +157,6 @@ background-color: var(--body-bg) !important;
 .btn-icon {
   background: var(--primary-color);
   transition: .4s;
-  border-radius: 30% 0 30% 0;
   color: var(--text-white) !important;
 }
 .btn-icon:hover{
@@ -242,33 +249,45 @@ background-color: var(--body-bg) !important;
     <!-- BANNER -->
     <section id="banner" class="banner uk-position-relative ">
       <div class="uk-position-cover  uk-cover-container">
-        <img src="{{ asset('template18/images/z5864237926649_0906cbfb1322adac0f04cc7341a83e46.jpg') }}" alt="" uk-cover="" class="uk-animation-kenburns">
+        <img src="{{ asset($weddingCard->banner_top) }}" alt="" uk-cover="" class="uk-animation-kenburns">
       </div>
       <div class="uk-position-left uk-width-1-2 " style="background: linear-gradient(to right, #000, transparent);"></div>
       <div class="uk-container  uk-container-xlarge uk-height-1-1 uk-position-relative" uk-height-viewport="">
         <div class="uk-position-center-left uk-position-small uk-width-3-5 uk-width-2-5@m pe-4">
-          <div class="banner-name text-white ">
-            <h2 class="script-font display-1" data-aos="fade-up">Thanh Phong</h2>
-            <span class="fs-1 uk-text-bold">And</span>
-            <h2 class="script-font display-1" data-aos="fade-down">Như Quỳnh</h2>
+          <div class="banner-name text-white uk-text-center">
+            <h2 class="script-font display-1" data-aos-duration="3000" data-aos="fade-left">{{ $weddingCard->groom_name }}</h2>
+            <span class="fs-1 uk-text-bold">&</span>
+            <h2 class="script-font display-1" data-aos-duration="3000" data-aos="fade-right">{{ $weddingCard->bride_name }}</h2>
           </div>
           <div class="uk-height-small"></div>
           <div class="banner-text  text-white uk-grid uk-grid-divider uk-flex-end uk-grid-small" uk-grid="">
             <div class="uk-width-1-1">
               <div class="date  title-font uk-flex uk-flex-column uk-flex-right gap-2">
-                <span data-aos="fade-left">
-                  Thứ ba                </span>
-                <span class="display-2 uk-text-bold" data-aos="zoom-in">
-                  24                </span>
                 <span data-aos="fade-right">
-                  2024                </span>
+                  @php
+                  \Carbon\Carbon::setLocale('vi'); // Đặt ngôn ngữ tiếng Việt
+                  $date = \Carbon\Carbon::parse($weddingCard->wedding_date);
+                  $weekdayGroom = ucwords($date->translatedFormat('l')); // Viết hoa chữ cái đầu của mỗi từ // Viết hoa chữ cái đầu // Lấy thứ tiếng Việt
+              @endphp
+              {{ $weekdayGroom }}                </span>
+                <span class="display-2 uk-text-bold" data-aos="zoom-in">
+                  {{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}  / {{ \Carbon\Carbon::parse($weddingCard->wedding_date)->month }}                </span>
+                  <span data-aos="fade-right">              </span>
+                <span data-aos="fade-right">
+                  {{ \Carbon\Carbon::parse($weddingCard->wedding_date)->year }}                </span>
               </div>
             </div>
             
-            <div class="uk-width-1-1">
+            <div data-aos="fade-up" class="uk-width-1-1">
               <div>
-              <p><strong>CAPELLA GALLERY HALL</strong></p>
-<p>24 Đ. 3 Tháng 2 – Phường 12 – Quận 10 – TP. HCM</p>
+                <p class="main-font">{{ $weddingCard->wedding_message }}</p>
+              <p><strong data-aos="zoom-out" data-aos-duration="3000" style="font-size: 20px">{{ $weddingCard->name_place_wedding }}</strong></p>
+<p>{{ $weddingCard->address_wedding }}</p>
+<div class="contact mt-4 uk-position-relative">
+  <a style="border-radius:50%;" class="btn-icon mx-1" href="tel:{{ $weddingCard->groom_phone }}"> <i class="ri-phone-fill"></i> </a>
+  <a style="border-radius:50%;" class="btn-icon mx-1" target="_blank" href="{{ $weddingCard->address_wedding_map }}"> <i class="ri-map-2-fill"></i> </a>                  </div>
+<div class="action mt-3 uk-position-relative">
+ 
               </div>
               
             </div>
@@ -283,30 +302,32 @@ background-color: var(--body-bg) !important;
      <div class="about-container uk-container uk-container-xlarge">
       <div class="uk-grid  uk-flex-middle" uk-grid="">
         <div class="uk-width-3-5@m">
-          <div class="uk-flex">
-            <div class="uk-cover-container uk-width-2-3 border border-primary-color border-3" style="aspect-ratio: 1/1; border-radius: 30% 0 30% 0" data-aos="fade-left">
-              <img src="{{ asset('template18/images/z5864237926858_0ebcba3f4bf3947f59735e7b8d097f11.jpg') }}" alt="" uk-cover="">
+          <div class="uk-text-left">
+            <div class="" style="aspect-ratio: 1/1; border-radius: 30%" data-aos="fade-left">
+              <img src="{{ asset($weddingCard->bride_avatar) }}" alt="" uk-cover="">
+                
             </div>
-            <div class="uk-cover-container uk-width-2-3 border border-primary-color border-3 uk-margin-large-top ms-n4" style="aspect-ratio: 1/1; border-radius: 0 30% 0 30%" data-aos="fade-right">
-              <img src="{{ asset('template18/images/z5864237934650_df67cd19b5cb922d898b0cac8bde559a-e1727199227946.jpg') }}" alt="" uk-cover="">
+            <div class="uk-text-center" style="margin-top:30px" data-aos="fade-down">
+              <h2 class="title-font text-black uk-text-bold">{{ $weddingCard->bride_name }}</h2>
+    
+              <p>{{ $weddingCard->des_bride }}</p>
+            </div>
+
+          </div>
+
+          <div class="uk-text-end" style="margin-top:20px">
+            <div class="" style="aspect-ratio: 1/1; border-radius: 30%" data-aos="fade-left">
+              <img src="{{ asset($weddingCard->groom_avatar) }}" alt="" uk-cover="">
+                
+            </div>
+            <div class="uk-text-center" style="margin-top:30px" data-aos="fade-down">
+              <h2 class="title-font text-black uk-text-bold">{{ $weddingCard->groom_name }}</h2>
+    
+              <p>{{ $weddingCard->des_groom }}</p>
             </div>
           </div>
         </div>
 
-        <div class="uk-width-2-5@m">
-          <div class="text-black" data-aos="fade-right">
-            <h4 class="script-font text-primary-color">The Groom</h4>
-            <h2 class="title-font text-black uk-text-bold">Thanh Phong</h2>
-            <p>10/09/1997</p>
-            <p>Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại.</p>
-          </div>
-          <div class="text-black mt-4 uk-text-right" data-aos="fade-left">
-            <h4 class="script-font text-primary-color">The Bride</h4>
-            <h2 class="title-font text-black uk-text-bold">Như Quỳnh</h2>
-            <p>15/06/2000</p>
-            <p>Cô dâu thuộc tuýp người hướng nội. Là cô gái dịu dàng, xinh xắn. Sở thích nấu nướng và đi du lịch cùng gia đình.</p>
-          </div>
-        </div>
       </div>
      </div>
     </section>
@@ -320,24 +341,24 @@ background-color: var(--body-bg) !important;
      
     <div class="uk-container uk-container-xlarge  uk-position-relative">
 
-      <h2 class="title-font text-primary-color uk-text-center mb-3">Đếm ngược thời gian</h2>
+      <h2 class="title-font text-primary-color uk-text-center mb-3">Save the Date</h2>
       <div class="countdown-container  mx-auto uk-position-relative " data-aos="fade-up">
-        <div class="uk-grid uk-flex-center " uk-grid="" uk-countdown="date: 2024-12-24 11:00:00">
+        <div class="uk-grid uk-flex-center " uk-grid="" uk-countdown="date: {{ $weddingCard->date_coundown }}">
           <div>         
-              <div class="uk-countdown-number title-font uk-countdown-days uk-text-center bg-primary-color p-3 text-white uk-text-bold" style="border-radius: 30% 0 30% 0"></div>
-              <div class="uk-countdown-label uk-margin-small uk-text-center">Days</div>
+              <div class="uk-countdown-number title-font uk-countdown-days uk-text-center bg-primary-color p-3 text-white uk-text-bold" style="border-radius: 10%"></div>
+              <div class="uk-countdown-label uk-margin-small uk-text-center">Ngày</div>
           </div>
           <div>              
-              <div class="uk-countdown-number title-font uk-countdown-hours uk-text-center bg-primary-color p-3 text-white uk-text-bold" style="border-radius: 30% 0 30% 0"></div>
-              <div class="uk-countdown-label uk-margin-small uk-text-center">Hours</div>             
+              <div class="uk-countdown-number title-font uk-countdown-hours uk-text-center bg-primary-color p-3 text-white uk-text-bold" style="border-radius: 10%"></div>
+              <div class="uk-countdown-label uk-margin-small uk-text-center">Giờ</div>             
           </div>
           <div>             
-              <div class="uk-countdown-number title-font uk-countdown-minutes uk-text-center bg-primary-color p-3 text-white uk-text-bold" style="border-radius: 30% 0 30% 0"></div>
-              <div class="uk-countdown-label uk-margin-small uk-text-center">Minutes</div>              
+              <div class="uk-countdown-number title-font uk-countdown-minutes uk-text-center bg-primary-color p-3 text-white uk-text-bold" style="border-radius: 10%"></div>
+              <div class="uk-countdown-label uk-margin-small uk-text-center">Phút</div>              
           </div>
           <div>            
-              <div class="uk-countdown-number title-font uk-countdown-seconds uk-text-center bg-primary-color p-3 text-white uk-text-bold" style="border-radius: 30% 0 30% 0"></div>
-              <div class="uk-countdown-label uk-margin-small uk-text-center">Seconds
+              <div class="uk-countdown-number title-font uk-countdown-seconds uk-text-center bg-primary-color p-3 text-white uk-text-bold" style="border-radius: 10%"></div>
+              <div class="uk-countdown-label uk-margin-small uk-text-center">Giây
           </div>             
           </div>
         </div>
@@ -346,110 +367,67 @@ background-color: var(--body-bg) !important;
     </div>
   </section>
   <!-- END COUNTDOWN -->
-  
-  <!-- TIMELINE -->
-  <section id="timeline" class="timeline-content uk-section uk-position-relative uk-overflow-hidden uk-background-cover" style="background-image: url('{{ asset('template18/images/z5864245101796_601b454a433c8e959f0e2f20dc119458.jpg') }}');">
-    <div class="uk-position-cover uk-overlay bg-black" style="opacity: .4"></div>
-    <div class="timeline-container uk-container uk-container-xlarge text-white">
-      <h2 class="title-font uk-text-center uk-position-relative">Love story      </h2>
-        
-      <div class="timeline-content uk-margin-large-top uk-position-relative uk-grid uk-child-width-1-1 uk-width-xlarge mx-auto">
-                    <div class="timeline-items uk-text-center uk-position-relative text-white  uk-margin-large-top " data-aos="fade-up">
-              <div>
-                <div class="uk-cover-container uk-width-4-5 border border-3 border-primary-color" style="border-radius: 0 30% 0 30%; aspect-ratio: 1/1;">
-                  <img src="{{ asset('template18/images/z5864245102834_f1e9a56cf92afbf4cb07da78f87623d5.jpg') }}" alt="" uk-cover="">
-                </div>
-              </div>
-              
-              <div class="uk-position-bottom-right bg-white uk-width-4-5 text-black uk-margin-top p-3" style="border-radius: 99px 0 99px 0; bottom: -20px">
-                <div class="uk-position-relative ">
-                  <div class="text-black">
-                    <p class="uk-text-bold">09/2012</p>
-                    
-                    <h4 class="title-font fs-4 text-primary-color">Lần đầu gặp gỡ</h4>
-                    <h6> Lần đầu gặp nhau tại bản tin trường Đại học Sư phạm, giữa ánh sáng nhẹ nhàng của buổi chiều, chúng ta đã tình cờ chạm vào nhau như hai nốt nhạc hòa quyện trong một bản giao hưởng lãng mạn, mở ra một câu chuyện tình yêu đầy hứa hẹn.</h6>
-                  </div>
-                 
-                
-                </div>
-              </div>
-              <div class="uk-height-small"></div>
-            </div>
-                      <div class="timeline-items uk-text-center uk-position-relative text-white  uk-margin-large-top " data-aos="fade-up">
-              <div>
-                <div class="uk-cover-container uk-width-4-5 border border-3 border-primary-color" style="border-radius: 0 30% 0 30%; aspect-ratio: 1/1;">
-                  <img src="{{ asset('template18/images/z5864245100813_7d5f856327a23f03467ce56786166403.jpg') }}" alt="" uk-cover="">
-                </div>
-              </div>
-              
-              <div class="uk-position-bottom-right bg-white uk-width-4-5 text-black uk-margin-top p-3" style="border-radius: 99px 0 99px 0; bottom: -20px">
-                <div class="uk-position-relative ">
-                  <div class="text-black">
-                    <p class="uk-text-bold">01/04/2014</p>
-                    
-                    <h4 class="title-font fs-4 text-primary-color">Hẹn hò</h4>
-                    <h6>10 năm 1 hành trình: từ những buổi hẹn hò đầu tiên, cho đến những chuyến du lịch, những bữa tối ấm cúng, và cả những lúc đơn giản chỉ là ngồi bên nhau và chia sẻ những câu chuyện hàng ngày – tất cả đều tạo nên một hành trình đáng nhớ.</h6>
-                  </div>
-                 
-                
-                </div>
-              </div>
-              <div class="uk-height-small"></div>
-            </div>
-                      <div class="timeline-items uk-text-center uk-position-relative text-white  uk-margin-large-top " data-aos="fade-up">
-              <div>
-                <div class="uk-cover-container uk-width-4-5 border border-3 border-primary-color" style="border-radius: 0 30% 0 30%; aspect-ratio: 1/1;">
-                  <img src="{{ asset('template18/images/z5864245106553_97580a2af7b498f1d292557319e8b2a1-e1727199260298.jpg') }}" alt="" uk-cover="">
-                </div>
-              </div>
-              
-              <div class="uk-position-bottom-right bg-white uk-width-4-5 text-black uk-margin-top p-3" style="border-radius: 99px 0 99px 0; bottom: -20px">
-                <div class="uk-position-relative ">
-                  <div class="text-black">
-                    <p class="uk-text-bold">27/07/2024</p>
-                    
-                    <h4 class="title-font fs-4 text-primary-color">Đính hôn</h4>
-                    <h6>Đính hôn không chỉ là một chiếc nhẫn, mà là một lời hứa và sự cam kết vững chắc. Kể từ hôm nay, chúng ta chính thức trở thành người một nhà và bước sang một chương tiếp theo trong cuộc sống chung của chúng ta.</h6>
-                  </div>
-                 
-                
-                </div>
-              </div>
-              <div class="uk-height-small"></div>
-            </div>
-                      <div class="timeline-items uk-text-center uk-position-relative text-white  uk-margin-large-top " data-aos="fade-up">
-              <div>
-                <div class="uk-cover-container uk-width-4-5 border border-3 border-primary-color" style="border-radius: 0 30% 0 30%; aspect-ratio: 1/1;">
-                  <img src="{{ asset('template18/images/z5864245101796_601b454a433c8e959f0e2f20dc119458-1-e1727199280251.jpg') }}" alt="" uk-cover="">
-                </div>
-              </div>
-              
-              <div class="uk-position-bottom-right bg-white uk-width-4-5 text-black uk-margin-top p-3" style="border-radius: 99px 0 99px 0; bottom: -20px">
-                <div class="uk-position-relative ">
-                  <div class="text-black">
-                    <p class="uk-text-bold">24-12-2024</p>
-                    
-                    <h4 class="title-font fs-4 text-primary-color">Thành hôn</h4>
-                    <h6>Giữa sự chứng kiến của người thân và bạn bè, chúng ta sẽ trao cho nhau không chỉ là những lời hứa, mà còn là trái tim, lòng tin và cả tương lai phía trước. Từ đây, mỗi bước đi trên con đường phía trước sẽ không còn đơn độc, mà luôn có nhau đồng hành trong mọi giây phút.</h6>
-                  </div>
-                 
-                
-                </div>
-              </div>
-              <div class="uk-height-small"></div>
-            </div>
-                </div>
-      <div class="uk-height-small"></div>
+  @php
+        $album = !empty($weddingCard->album) ? json_decode($weddingCard->album, true) : [];
+        $stories = [];
+        if ($weddingCard->love_story != ',') {
+            $test = '1/2/2023:Hẹn Hò,1/3/2025:Tỏ tình,2/04/2025:Đính Hôn, 2/05/2025:Kết Hôn';
+            $items = explode(',', $weddingCard->love_story);
+            foreach ($items as $item) {
+                [$date, $story] = explode(':', $item);
+                $image = !empty($album) ? array_shift($album) : null; // Lấy ảnh đầu tiên và loại khỏi album
+                $stories[] = ['date' => trim($date), 'story' => trim($story), 'image' => $image];
+            }
+        }
+
+    @endphp
+
+@if (!empty($stories))
+<!-- TIMELINE -->
+<section id="timeline" class="timeline-content uk-section uk-position-relative uk-overflow-hidden uk-background-cover" style="background-image: url('{{ asset($weddingCard->banner_love_story) }}');">
+  <div class="uk-position-cover uk-overlay bg-black" style="opacity: .4"></div>
+  <div class="timeline-container uk-container uk-container-xlarge text-white">
+    <h2 class="title-font uk-text-center uk-position-relative">Love story      </h2>
+      
+    @foreach ($stories as $story)
+    <div class="timeline-content uk-margin-large-top uk-position-relative uk-grid uk-child-width-1-1 uk-width-xlarge mx-auto">
+      <div class="timeline-items uk-text-center uk-position-relative text-white  uk-margin-large-top " data-aos="fade-up">
+<div>
+  <div class="uk-cover-container uk-width-4-5 border border-3 border-primary-color" style="border-radius: 20px; aspect-ratio: 1/1;">
+    <img src="{{ asset($story['image']) }}" alt="" uk-cover="">
+  </div>
+</div>
+
+<div data-aos="fade-left" class="uk-position-bottom-right bg-white uk-width-4-5 text-black uk-margin-top p-3" style="border-radius: 20px; bottom: 20%;">
+  <div class="uk-position-relative ">
+    <div class="text-black">
+      <p class="uk-text-bold">{{ $story['date'] }}</p>
+      
+      <h4 class="title-font fs-4 text-primary-color">{{ $story['story'] }}</h4>
+      
     </div>
-  </section>
-  <!-- END TIMELINE -->
+   
+  
+  </div>
+</div>
+<div class="uk-height-small"></div>
+</div>
+
+  </div>
+@endforeach
+
+  </div>
+</section>
+<!-- END TIMELINE -->
+@endif
+  
   
   <!-- INVITATION -->
     <section id="invitation" class="invitation uk-section uk-position-relative">
       <div class="uk-container uk-container-xlarge">
 
         <div class="section-heading uk-text-center">
-          <h2 class="title-font text-primary-color mb-0">Trân trọng kính mời</h2>
+          <h2 data-aos="fade-down" style="color:black" class="title-font text-primary-color mb-0 ">{{ $weddingCard->message_invite }}</h2>
           <p class="script-font uk-width-1-2@m mx-auto  text-black">          </p>
         </div>
 
@@ -457,211 +435,105 @@ background-color: var(--body-bg) !important;
           <div class="uk-grid uk-child-width-1-2@m uk-flex-center" uk-grid="">
           
                       <div>
-              <div class="invitation-item bg-black text-white  uk-width-1-1 border border-primary-color uk-position-relative uk-card-body  uk-border-rounded  uk-background-cover uk-card-default uk-overflow-hidden" data-aos="fade-up" style="border-radius: 99px 0 99px 0">
+              <div class="invitation-item bg-black text-white  uk-width-1-1 border border-primary-color uk-position-relative uk-card-body  uk-border-rounded  uk-background-cover uk-card-default uk-overflow-hidden" data-aos="fade-up" style="border-radius: 10px">
                 <div class="invi-img uk-cover-container uk-position-cover">
-                  <img src="{{ asset('template18/images/z5864245104380_0de8ff24a3ce7b0cd154aabcbd9268b1.jpg') }}" alt="" uk-cover="" data-aos="zoom-in">
+                  <img src="{{ asset($weddingCard->bride_avatar) }}" alt="" uk-cover="">
                 </div>
-                <div class="uk-position-cover uk-overlay-primary uk-width-4-5 border border-2 border-primary-color" style="border-radius: 0 999px 0 0; top: 40px"></div>
-                <div class="uk-width-4-5" style="border-radius: 0 99px 0 0">
+                <div class="uk-position-cover uk-overlay-primary uk-width-5-5 border border-2 border-primary-color" style="border-radius: 20px;"></div>
+                <div class="uk-width-5-5" style="border-radius: 0 99px 0 0">
                   <div class="uk-height-small"></div>
                   <div class="invi-top uk-position-relative">
-                    <h4 class="script-font">Tiệc cưới nhà gái</h4>
+                 
                   </div>
                   <div class="uk-height-small"></div>
                   <div class="invi-title mt-2 uk-position-relative">
                     <h5 class="fs-2 uk-text-bold">
-                      TƯ GIA NHÀ GÁI                    </h5>
-                    <p>Tại Gia - Ấp 2 - Xã An Hòa<br>Huyện Tam Nông - Tỉnh Đồng Tháp                    </p>
+                      {{ $weddingCard->bride_eating_title }}                </h5>
+                    <p>{{ $weddingCard->address_bride }}                 </p>
                   </div>
                   <div class="invi-date mt-3 uk-position-relative">
                     <div class="uk-grid uk-grid-divider uk-flex-middle">
                       <div class="uk-width-auto">
-                        <p class="uk-text-bold uk-h2">11:00</p>
-                        <p>Thứ hai</p>
-                        <div class="date uk-heading-small uk-text-bold  text-primary-color" data-aos="zoom-in">23</div>
+                        <p data-aos="fade-left" class="uk-text-bold uk-h2">{{ $weddingCard->time_bride }}</p>
+                        <p data-aos="fade-left"> @php
+                          \Carbon\Carbon::setLocale('vi'); // Đặt ngôn ngữ tiếng Việt
+                          $date = \Carbon\Carbon::parse($weddingCard->bride_eating_date);
+                          $weekdayBride = ucwords($date->translatedFormat('l')); // Viết hoa chữ cái đầu của mỗi từ // Viết hoa chữ cái đầu // Lấy thứ tiếng Việt
+                      @endphp
+                      {{ $weekdayBride }}</p>
+                        <div class="date uk-heading-small uk-text-bold  text-primary-color" data-aos="zoom-in">{{ \Carbon\Carbon::parse($weddingCard->bride_eating_date)->day }}</div>
                       </div>
                       <div class="uk-width-expand">
                         <div class="uk-text-bold">                
-                          <div class="day " data-aos="fade-left">Th12</div>
-                          <div class="month " data-aos="fade-right">2024</div>
+                          <div class="day " data-aos="fade-up">Th{{ \Carbon\Carbon::parse($weddingCard->bride_eating_date)->month }}</div>
+                          <div class="month " data-aos="fade-down">{{ \Carbon\Carbon::parse($weddingCard->bride_eating_date)->year }}</div>
                         </div>
                       </div>
                     </div>
-                    <p class="uk-text-italic">Nhằm ngày 23 Tháng 11 năm Giáp Thìn</p>
+                    <p class="uk-text-italic">{{ $weddingCard->time_bride_al }}</p>
                     
                     
                   </div>
 
-                  <div class="contact mt-4 uk-position-relative">
-                    <a class="btn-icon mx-1" href="tel:0981742365"> <i class="ri-phone-fill"></i> </a><a class="btn-icon mx-1" target="_blank" href="#"> <i class="ri-facebook-fill"></i> </a>                  </div>
-                  <div class="action mt-3 uk-position-relative">
-                    <a href="#" target="_blank" class="btn-theme-primary uk-button uk-border-rounded">
-                      <i class="ri-road-map-fill"></i>
-                    </a>
-                    <a href="#xacnhan_1" uk-toggle="" class="btn-theme-primary uk-button uk-border-rounded">
-                      <i class="ri-pencil-fill"></i>
-                      <span>Xác nhận</span>
-                      </a>                  
-                  </div>
-
-
+                  <div class="contact mt-4 uk-position-relative uk-text-center">
+                    <a style="border-radius:50%;" class="btn-icon mx-1" href="tel:{{ $weddingCard->bride_phone }}"> <i class="ri-phone-fill"></i> </a>
+                    <a style="border-radius:50%;" class="btn-icon mx-1" target="_blank" href="{{ $weddingCard->bride_map }}"> <i class="ri-map-2-fill"></i> </a>                  </div>
+       
                 </div>
                
               </div>
             </div>
-            
-              <!-- MODAL XÁC NHẬN THAM DỰ -->
-              <div id="xacnhan_1" uk-modal="">
-                
-<div class="uk-modal-dialog bg-white">
-
-    <button class="uk-modal-close-default" type="button" uk-close=""></button>
-
-    <div class="uk-modal-header uk-text-center">
-        <h2 class="uk-modal-title title-font text-black">Xác nhận tham dự</h2>
-    </div>
-
-    <div class="uk-modal-body" uk-overflow-auto="">
-    <form class="form-wedding">
-        <fieldset class="uk-fieldset">
-            <h4 class="title-font text-primary-color">
-                TƯ GIA NHÀ GÁI            </h4>
-            <input type="text" class="uk-hidden" id="f_location" value="TƯ GIA NHÀ GÁI">
-            <input type="text" class="uk-hidden" id="f_id" value="2424">
-            <div class="uk-margin">
-                <input class="uk-input" id="f_name" type="text" placeholder="Tên của bạn" aria-label="Input">
-            </div>
-
-            <div class="uk-margin">
-                <select class="uk-select" aria-label="Select" id="f_xn">
-                    <option>Có! Tôi sẽ đến</option>
-                    <option>Xin lỗi! Tôi không đến được</option>
-                </select>
-            </div>
-
-            <div class="uk-margin">
-                <textarea class="uk-textarea" rows="5" placeholder="Lời chúc" aria-label="Textarea"></textarea>
-            </div>
-            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-              <label class="uk-form-label uk-width-1-1">Số người tham dự</label>
-              <label><input class="uk-radio" type="radio" value="1" name="radio2" checked=""> 1</label>
-              <label><input class="uk-radio" type="radio" value="2" name="radio2"> 2</label>
-              <label><input class="uk-radio" type="radio" value="3" name="radio2"> 3</label>
-            </div>
-            <div class="uk-margin uk-text-center">
-              <button type="submit" class="btn-theme-primary uk-button">
-                Xác nhận              </button>
-            </div>
-        </fieldset>
-    </form>
-    </div>
-</div>              </div>
-              <!-- END MODAL XÁC NHẬN THAM DỰ -->
-
-                        
-                        <div>
-              <div class="invitation-item bg-black text-white  uk-width-1-1 border border-primary-color uk-position-relative uk-card-body  uk-border-rounded  uk-background-cover uk-card-default uk-overflow-hidden" data-aos="fade-up" style="border-radius: 99px 0 99px 0">
+   
+            <div>
+              <div class="invitation-item bg-black text-white  uk-width-1-1 border border-primary-color uk-position-relative uk-card-body  uk-border-rounded  uk-background-cover uk-card-default uk-overflow-hidden" data-aos="fade-up" style="border-radius: 10px">
                 <div class="invi-img uk-cover-container uk-position-cover">
-                  <img src="{{ asset('template18/images/z5864245094811_bf2915fb40546879d4c8b11deb9a4bb1.jpg') }}" alt="" uk-cover="" data-aos="zoom-in">
+                  <img src="{{ asset($weddingCard->groom_avatar) }}" alt="" uk-cover="" >
                 </div>
-                <div class="uk-position-cover uk-overlay-primary uk-width-4-5 border border-2 border-primary-color" style="border-radius: 0 999px 0 0; top: 40px"></div>
-                <div class="uk-width-4-5" style="border-radius: 0 99px 0 0">
+                <div class="uk-position-cover uk-overlay-primary uk-width-5-5 border border-2 border-primary-color" style="border-radius: 20px; "></div>
+                <div class="uk-width-5-5" style="border-radius: 0 99px 0 0">
                   <div class="uk-height-small"></div>
                   <div class="invi-top uk-position-relative">
-                    <h4 class="script-font">Tiệc cưới nhà trai</h4>
+                 
                   </div>
                   <div class="uk-height-small"></div>
                   <div class="invi-title mt-2 uk-position-relative">
                     <h5 class="fs-2 uk-text-bold">
-                      CAPELLA GALLERY HALL                     </h5>
-                    <p>24 Đ. 3 Tháng 2 - Phường 12<br> Quận 10 - TP. HCM                    </p>
+                      {{ $weddingCard->groom_eating_title }}                </h5>
+                    <p>{{ $weddingCard->address_groom }}                 </p>
                   </div>
                   <div class="invi-date mt-3 uk-position-relative">
                     <div class="uk-grid uk-grid-divider uk-flex-middle">
                       <div class="uk-width-auto">
-                        <p class="uk-text-bold uk-h2">11:00</p>
-                        <p>Thứ hai</p>
-                        <div class="date uk-heading-small uk-text-bold  text-primary-color" data-aos="zoom-in">23</div>
+                        <p data-aos="fade-left" class="uk-text-bold uk-h2">{{ $weddingCard->time_groom }}</p>
+                        <p data-aos="fade-left"> @php
+                          \Carbon\Carbon::setLocale('vi'); // Đặt ngôn ngữ tiếng Việt
+                          $date = \Carbon\Carbon::parse($weddingCard->groom_eating_date);
+                          $weekdayBride = ucwords($date->translatedFormat('l')); // Viết hoa chữ cái đầu của mỗi từ // Viết hoa chữ cái đầu // Lấy thứ tiếng Việt
+                      @endphp
+                      {{ $weekdayBride }}</p>
+                        <div class="date uk-heading-small uk-text-bold  text-primary-color" data-aos="zoom-in">{{ \Carbon\Carbon::parse($weddingCard->groom_eating_date)->day }}</div>
                       </div>
                       <div class="uk-width-expand">
                         <div class="uk-text-bold">                
-                          <div class="day " data-aos="fade-left">Th12</div>
-                          <div class="month " data-aos="fade-right">2024</div>
+                          <div class="day " data-aos="fade-up">Th{{ \Carbon\Carbon::parse($weddingCard->groom_eating_date)->month }}</div>
+                          <div class="month " data-aos="fade-down">{{ \Carbon\Carbon::parse($weddingCard->groom_eating_date)->year }}</div>
                         </div>
                       </div>
                     </div>
-                    <p class="uk-text-italic">Nhằm ngày 24 Tháng 11 năm Giáp Thìn</p>
+                    <p class="uk-text-italic">{{ $weddingCard->time_groom_al }}</p>
                     
                     
                   </div>
 
-                  <div class="contact mt-4 uk-position-relative">
-                    <a class="btn-icon mx-1" href="tel:0981742365"> <i class="ri-phone-fill"></i> </a><a class="btn-icon mx-1" target="_blank" href="#"> <i class="ri-facebook-fill"></i> </a>                  </div>
-                  <div class="action mt-3 uk-position-relative">
-                    <a href="https://maps.app.goo.gl/QU7LxY8kWxBhGqp2A" target="_blank" class="btn-theme-primary uk-button uk-border-rounded">
-                      <i class="ri-road-map-fill"></i>
-                    </a>
-                    <a href="#xacnhan_2" uk-toggle="" class="btn-theme-primary uk-button uk-border-rounded">
-                      <i class="ri-pencil-fill"></i>
-                      <span>Xác nhận</span>
-                      </a>                  
-                  </div>
-
-
+                  <div class="contact mt-4 uk-position-relative uk-text-center">
+                    <a style="border-radius:50%;" class="btn-icon mx-1" href="tel:{{ $weddingCard->groom_phone }}"> <i class="ri-phone-fill"></i> </a>
+                    <a style="border-radius:50%;" class="btn-icon mx-1" target="_blank" href="{{ $weddingCard->groom_map }}"> <i class="ri-map-2-fill"></i> </a>                  </div>
+       
                 </div>
                
               </div>
             </div>
-            
-              <!-- MODAL XÁC NHẬN THAM DỰ -->
-              <div id="xacnhan_2" uk-modal="">
-                
-<div class="uk-modal-dialog bg-white">
-
-    <button class="uk-modal-close-default" type="button" uk-close=""></button>
-
-    <div class="uk-modal-header uk-text-center">
-        <h2 class="uk-modal-title title-font text-black">Xác nhận tham dự</h2>
-    </div>
-
-    <div class="uk-modal-body" uk-overflow-auto="">
-    <form class="form-wedding">
-        <fieldset class="uk-fieldset">
-            <h4 class="title-font text-primary-color">
-                CAPELLA GALLERY HALL             </h4>
-            <input type="text" class="uk-hidden" id="f_location" value="CAPELLA GALLERY HALL ">
-            <input type="text" class="uk-hidden" id="f_id" value="2424">
-            <div class="uk-margin">
-                <input class="uk-input" id="f_name" type="text" placeholder="Tên của bạn" aria-label="Input">
-            </div>
-
-            <div class="uk-margin">
-                <select class="uk-select" aria-label="Select" id="f_xn">
-                    <option>Có! Tôi sẽ đến</option>
-                    <option>Xin lỗi! Tôi không đến được</option>
-                </select>
-            </div>
-
-            <div class="uk-margin">
-                <textarea class="uk-textarea" rows="5" placeholder="Lời chúc" aria-label="Textarea"></textarea>
-            </div>
-            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-              <label class="uk-form-label uk-width-1-1">Số người tham dự</label>
-              <label><input class="uk-radio" type="radio" value="1" name="radio2" checked=""> 1</label>
-              <label><input class="uk-radio" type="radio" value="2" name="radio2"> 2</label>
-              <label><input class="uk-radio" type="radio" value="3" name="radio2"> 3</label>
-            </div>
-            <div class="uk-margin uk-text-center">
-              <button type="submit" class="btn-theme-primary uk-button">
-                Xác nhận              </button>
-            </div>
-        </fieldset>
-    </form>
-    </div>
-</div>              </div>
-              <!-- END MODAL XÁC NHẬN THAM DỰ -->
-
-                        
+  
                       </div>
         </div>
       </div>
@@ -672,53 +544,28 @@ background-color: var(--body-bg) !important;
     
     <div class="uk-container uk-container-xlarge">
     <div class="section-heading uk-text-center">
-      <h2 class="title-font mb-1 text-primary-color">Album ảnh cưới</h2>
+      <h2 class="title-font mb-1 text-primary-color">Album ảnh </h2>
       <p class="script-font uk-width-1-2@m mx-auto  text-black">      </p>
     </div>
 
       <div class="album-container uk-margin-large-top uk-section">
+        @php
+        $album = !empty($weddingCard->album) ? json_decode($weddingCard->album, true) : [];
+    @endphp
         <div class="album-slide">
                     <div class="swiper-wrapper album swiper-3d-coverflow-effect" uk-lightbox="animation: fade">
-                            <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom uk-overflow-hidden" style="aspect-ratio:1/1; border-radius: 0 30% 0 30%">
-                  <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/z5864237915258_0fcaf9dcc23682ef71fc208fd97000c4.jpg">
-                  <img src="{{ asset('template18/images/z5864237915258_0fcaf9dcc23682ef71fc208fd97000c4.jpg') }}" class="" uk-cover="">
-                  </a>
-              </div>
-                            <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom uk-overflow-hidden" style="aspect-ratio:1/1; border-radius: 0 30% 0 30%">
-                  <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/z5864237915975_02b6b653f5b618fee8db31072a4f402b-1.jpg">
-                  <img src="{{ asset('template18/images/z5864237915975_02b6b653f5b618fee8db31072a4f402b-1.jpg') }}" class="" uk-cover="">
-                  </a>
-              </div>
-                            <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom uk-overflow-hidden" style="aspect-ratio:1/1; border-radius: 0 30% 0 30%">
-                  <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/z5864237916794_44f7a820e72da2c09dbe54ab3dce01eb-2.jpg">
-                  <img src="{{ asset('template18/images/z5864237916794_44f7a820e72da2c09dbe54ab3dce01eb-2.jpg') }}" class="" uk-cover="">
-                  </a>
-              </div>
-                            <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom uk-overflow-hidden" style="aspect-ratio:1/1; border-radius: 0 30% 0 30%">
-                  <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/z5864237918736_d0676b80a6a50bf69ac722a96ef713e7-1.jpg">
-                  <img src="{{ asset('template18/images/z5864237918736_d0676b80a6a50bf69ac722a96ef713e7-1.jpg') }}" class="" uk-cover="">
-                  </a>
-              </div>
-                            <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom uk-overflow-hidden" style="aspect-ratio:1/1; border-radius: 0 30% 0 30%">
-                  <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/z5864237919950_990f1bbcfe77b18366d3c378d0717bbd.jpg">
-                  <img src="{{ asset('template18/images/z5864237919950_990f1bbcfe77b18366d3c378d0717bbd.jpg') }}" class="" uk-cover="">
-                  </a>
-              </div>
-                            <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom uk-overflow-hidden" style="aspect-ratio:1/1; border-radius: 0 30% 0 30%">
-                  <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/z5864237926649_0906cbfb1322adac0f04cc7341a83e46-1.jpg">
-                  <img src="{{ asset('template18/images/z5864237926649_0906cbfb1322adac0f04cc7341a83e46-1.jpg') }}" class="" uk-cover="">
-                  </a>
-              </div>
-                            <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom uk-overflow-hidden" style="aspect-ratio:1/1; border-radius: 0 30% 0 30%">
-                  <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/z5864237926858_0ebcba3f4bf3947f59735e7b8d097f11-2.jpg">
-                  <img src="{{ asset('template18/images/z5864237926858_0ebcba3f4bf3947f59735e7b8d097f11-2.jpg') }}" class="" uk-cover="">
-                  </a>
-              </div>
-                            <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom uk-overflow-hidden" style="aspect-ratio:1/1; border-radius: 0 30% 0 30%">
-                  <a href="https://weddingday.com.vn/wp-content/uploads/2024/09/z5864237933071_c9bc13383db3a07951e1ac195a8085e5-2.jpg">
-                  <img src="{{ asset('template18/images/z5864237933071_c9bc13383db3a07951e1ac195a8085e5-2.jpg') }}" class="" uk-cover="">
-                  </a>
-              </div>
+                      @if (!empty($album))
+                    @foreach (json_decode($weddingCard->album, true) as $image)
+
+                        <div class="swiper-slide uk-cover-container  uk-box-shadow-bottom uk-overflow-hidden" style="aspect-ratio:1/1.3; border-radius: 5px">
+                          <a href="{{ asset($image) }}">
+                          <img src="{{ asset($image) }}" class="" uk-cover="">
+                          </a>
+                      </div>
+                    @endforeach
+                @endif
+                        
+                           
                              
           </div>
           <div class="swiper-pagination"></div>
@@ -741,15 +588,15 @@ background-color: var(--body-bg) !important;
       
             <div>
               <div class="dress-items text-black uk-text-center ">
-                <h5 class="title-font mb-3">Dành cho Nam</h5>
-                <div class="uk-grid  uk-flex-center" uk-grid="">
+             
+                <div class="uk-grid  uk-flex-center mt-3" uk-grid="">
                   
-                <div>
-                  <div class="w-px-50 h-px-50  uk-box-shadow-large" data-aos="fade-left" style="background-color:#ffffff; border-radius: 30% 0 30% 0"></div>
+                <div >
+                  <div class="w-px-50 h-px-50  uk-box-shadow-large" data-aos="fade-up" style="background-color:#ffffff; border-radius: 50%"></div>
                 </div>
                 
                 <div>
-                  <div class="w-px-50 h-px-50  uk-box-shadow-large" data-aos="fade-left" style="background-color:#000000; border-radius: 30% 0 30% 0"></div>
+                  <div class="w-px-50 h-px-50  uk-box-shadow-large" data-aos="fade-up" style="background-color:#000000; border-radius: 50%"></div>
                 </div>
                 
                 </div>
@@ -757,20 +604,7 @@ background-color: var(--body-bg) !important;
             </div>
             
             <div>
-              <div class="dress-items text-black uk-text-center ">
-                <h5 class="title-font mb-3">Dành cho Nữ</h5>
-                <div class="uk-grid  uk-flex-center" uk-grid="">
-                  
-                <div>
-                  <div class="w-px-50 h-px-50  uk-box-shadow-large" data-aos="fade-left" style="background-color:#ffffff; border-radius: 30% 0 30% 0"></div>
-                </div>
-                
-                <div>
-                  <div class="w-px-50 h-px-50  uk-box-shadow-large" data-aos="fade-left" style="background-color:#000000; border-radius: 30% 0 30% 0"></div>
-                </div>
-                
-                </div>
-              </div>
+            
             </div>
                     
        
@@ -780,10 +614,10 @@ background-color: var(--body-bg) !important;
   <!-- END DRESSCODE -->
   
   <!-- WEDDING TIMELINE -->
-  <section id="wedding-timeline" class="wedding-timeline uk-background-cover uk-section uk-position-relative uk-background-cover" style="background-image: url('{{ asset('template18/images/z5864237915975_02b6b653f5b618fee8db31072a4f402b-2.jpg') }}')">
+  {{-- <section id="wedding-timeline" class="wedding-timeline uk-background-cover uk-section uk-position-relative uk-background-cover" style="background-image: url('{{ asset('template18/images/z5864237915975_02b6b653f5b618fee8db31072a4f402b-2.jpg') }}')">
     <div class=" uk-position-relative uk-container uk-width-1-2@l">
       
-      <div class=" uk-section uk-section-xlarge uk-overflow-hidden uk-padding text-white uk-position-relative border border-primary-color border-2" style="min-height: 50vh; border-radius: 99px 0 99px 0">
+      <div class=" uk-section uk-section-xlarge uk-overflow-hidden uk-padding text-white uk-position-relative border border-primary-color border-2" style="min-height: 50vh; border-radius: 99px">
         <div class="uk-position-cover uk-overlay-primary"></div>
         
         <div class="uk-height-small"></div>
@@ -830,23 +664,11 @@ background-color: var(--body-bg) !important;
       </div>
       
     </div>
-  </section>
+  </section> --}}
   <!-- END WEDDING TIMELINE -->
-    <!-- INTRO TEXT -->
-  <section id="intro-text" class="intro-text uk-section  uk-position-relative uk-overflow-hidden">
-    
-    <div class="uk-container uk-container-xlarge uk-text-center uk-position-relative">
-      
-      <div class="intro-content title-font fs-4 uk-padding mx-auto text-black uk-text-center uk-width-2-3@m uk-width-1-2@l" data-aos="fade-up">
-        <p>Anh không dám nói rằng sẽ thích em cả đời này. Nhưng ít nhất trong những năm tháng anh có thể nhìn thấy em, anh chỉ muốn đối tốt với một mình em.</p>
-      </div>
-      
-    </div>
-    
-  </section>
-  <!-- END INTRO TEXT -->
+  
     <!-- MESSEGER -->
-  <section id="messeger" class="messeger uk-position-relative uk-section ">
+  {{-- <section id="messeger" class="messeger uk-position-relative uk-section ">
     
     <div class="uk-position-cover uk-cover-container">
       <img src="{{ asset('template18/images/z5864245094811_bf2915fb40546879d4c8b11deb9a4bb1-1.jpg') }}" alt="" uk-cover="">
@@ -951,12 +773,12 @@ background-color: var(--body-bg) !important;
       </div>
       <!-- end form messeger -->
     </div>
-  </section>
+  </section> --}}
   <!-- END MESSEGER -->
   
   <!-- GIFT -->
   <div class="uk-position-fixed uk-position-bottom-right uk-position-small" style="bottom: 4rem">
-    <a href="#modal-gift" class="btn-icon uk-icon-link uk-position-relative bg-primary-color" uk-tooltip="Gửi quà cho cặp đôi" uk-toggle="">
+    <a style="border-radius:50%;" href="#modal-gift" class="btn-icon uk-icon-link uk-position-relative bg-primary-color" uk-tooltip="Gửi quà cho cặp đôi" uk-toggle="">
       <i class="ri-gift-2-fill text-white uk-text-large"></i>
     </a>
   </div>
@@ -966,24 +788,20 @@ background-color: var(--body-bg) !important;
     <div class="uk-modal-dialog bg-white">
         <button class="uk-modal-close-default" type="button" uk-close=""></button>
         <div class="uk-modal-header uk-text-center">
-            <h4 class="title-font text-black">Gửi quà đến CDCR</h4>
+            <h4 class="title-font text-black">{{ $weddingCard->message_gift }}</h4>
         </div>
         <div class="uk-modal-body ">
           <div class="uk-grid uk-child-width-1-2@m" uk-grid="">
             <div>
               <div class="gift-groom uk-text-center uk-card-default uk-padding-small">
-                <p><img fetchpriority="high" decoding="async" class="alignnone size-medium wp-image-2119" src="{{ asset('template18/images/QR-300x225.webp') }}" alt="" width="300" height="225" srcset="{{ asset('template18/images/QR-300x225.webp') }} 300w, {{ asset('template18/images/QR-1024x768.webp') }} 1024w, {{ asset('template18/images/QR-768x576.webp') }} 768w, {{ asset('template18/images/QR-1536x1152.webp') }} 1536w, {{ asset('template18/images/QR-2048x1536.webp') }} 2048w" sizes="(max-width: 300px) 100vw, 300px"></p>
-<p><strong>Thanh Phong</strong></p>
-<p>Ngân hàng : <strong>MBBank</strong></p>
-<p>STK : <strong>123456789</strong></p>
+                <p><img fetchpriority="high" decoding="async" class="alignnone size-medium wp-image-2119" src="{{ asset($weddingCard->groom_qr) }}" alt="" width="300" height="225" ></p>
+<p><strong>{{ $weddingCard->groom_name }}</strong></p>
               </div>
             </div>
             <div>
-              <div class="gift-bride uk-text-center uk-card-default uk-padding-small">
-                <p><img decoding="async" class="alignnone size-medium wp-image-2119" src="{{ asset('template18/images/QR-300x225.webp') }}" alt="" width="300" height="225" srcset="{{ asset('template18/images/QR-300x225.webp') }} 300w, {{ asset('template18/images/QR-1024x768.webp') }} 1024w, {{ asset('template18/images/QR-768x576.webp') }} 768w, {{ asset('template18/images/QR-1536x1152.webp') }} 1536w, {{ asset('template18/images/QR-2048x1536.webp') }} 2048w" sizes="(max-width: 300px) 100vw, 300px"></p>
-<p><strong>Như Quỳnh</strong></p>
-<p>Ngân hàng : <strong>MBBank</strong></p>
-<p>STK :<strong> 0935653555</strong></p>
+              <div class="gift-groom uk-text-center uk-card-default uk-padding-small">
+                <p><img fetchpriority="high" decoding="async" class="alignnone size-medium wp-image-2119" src="{{ asset($weddingCard->bride_qr) }}" alt="" width="300" height="225" ></p>
+<p><strong>{{ $weddingCard->bride_name }}</strong></p>
               </div>
             </div>
           </div>
@@ -997,15 +815,14 @@ background-color: var(--body-bg) !important;
   <!-- THANKYOU -->
   <section id="thankyou" class="thankyou uk-position-relative bg-black" uk-height-viewport="">
     <div class="uk-position-cover uk-cover-container" style="opacity:.2">
-      <img src="{{ asset('template18/images/z5864245101796_601b454a433c8e959f0e2f20dc119458-2.jpg') }}" alt="" uk-cover="" class="uk-blend-multiply">
+      <img src="{{ asset($weddingCard->banner_thanks) }}" alt="" uk-cover="" class="uk-blend-multiply">
     </div>
     <div class="uk-position-center">
       <div class="uk-container uk-container-xlarge uk-text-center">
-          <h2 class="script-font display-1 text-white" data-aos="fade-up">
+          <h2 class="script-font display-1 text-white" data-aos-duration="3000" data-aos="fade-up">
            Thank you!          </h2>
-          <div data-aos="fade-up" class="text-white 
-          ">
-            <p>Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi. Chân thành cám ơn!</p>
+          <div class="text-white ">
+            <p data-aos-duration="3000" data-aos="fade-down">{{ $weddingCard->message_thanks }}</p>
           </div>
           
       </div>
@@ -1020,7 +837,7 @@ background-color: var(--body-bg) !important;
 <!-- NHẠC NỀN -->
 <div class="audio-play d-none">
 <audio id="audio_play" controls="" autoplay="" preload="auto">
-  <source src="media/The-perfect-wedding-song-mashup-Ni-Co-cover.mp3" type="audio/mpeg">
+  <source src="{{ asset('template18/media/The-perfect-wedding-song-mashup-Ni-Co-cover.mp3') }}" type="audio/mpeg">
 </audio>
 </div>
 <div class="uk-position-fixed uk-position-top-right uk-position-small" style="top: 4rem">
@@ -1030,15 +847,6 @@ background-color: var(--body-bg) !important;
 <!-- END NHẠC NỀN -->
 
 
-
-
-<div class="wedding-footer bg-white px-4 py-1" uk-sticky="position: bottom">
-  <div class="uk-text-center">
-    <div class="uk-flex uk-flex-middle text-white uk-flex-center">
-      <img src="images/FAVICON-5.png" alt="" style="max-height:32px">      <h6 class="mb-0 text-primary-color ms-2">Wedding day</h6>
-    </div>
-  </div>
-</div>
 
 <script src="{{ asset('template18/js/bootstrap.js') }}" id="bootstrap-js"></script>
 <script src="{{ asset('template18/js/aos.js') }}" id="aos js-js"></script>
@@ -1061,7 +869,7 @@ background-color: var(--body-bg) !important;
     }, 400)
   })
   $('head link[rel="icon"]').attr('href','https://weddingday.com.vn/wp-content/uploads/2024/09/FAVICON-5.png')
-  $('head title').text('Thiệp cưới hiện đại I04')
+  $('head title').text('{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }}')
   $(".selectpicker").selectpicker();
 </script><script>
     $(':root').css') }}('--primary-color', '');

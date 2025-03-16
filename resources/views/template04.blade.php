@@ -76,7 +76,7 @@
                             n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e,
                                 "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
                                 "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
-                                );
+                            );
                     case "emoji":
                         return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
                 }
@@ -570,7 +570,6 @@
         style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
 
         <div class="uk-position-center uk-text-center">
-            <img src="images/logo-doc3.png" alt="" style="max-width: 150px;" class="uk-animation-slide-top">
 
             <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
                 Thiệp Cưới {{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }}</h2>
@@ -580,78 +579,39 @@
     </div>
     <!-- END PRELOAD -->
     <main>
-        <!-- BANNER -->
-        <section id="banner" class="section-banner">
-            @php
-                $album = !empty($weddingCard->album) ? json_decode($weddingCard->album, true) : [];
-            @endphp
-            <div class="banner-container">
-                <img src="images/bg-banner.png" alt="" class="banner-bg">
-                <div class="banner-slide swiper">
-                    <div class="swiper-wrapper">
-                        @if (!empty($album))
-                            @foreach (json_decode($weddingCard->album, true) as $image)
-                                <div class="swiper-slide">
-                                    <img src="{{ asset($image) }}">
-                                </div>
-                            @endforeach
-                        @endif
+        <section id="thankyou" class="section-thankyou bg_overlay uk-position-z-index">
+            <div class="uk-overlay uk-overlay-primary uk-position-cover"> </div>
+            <img src="{{ asset($weddingCard->banner_thanks) }}" alt="" class="thankyou-bg thankyou_img"
+                style="object-position:">
+            <div class="thankyou-body container uk-position-relative uk-position-z-index">
+                <h2 class="uk-heading-small script-font uk-text-center uk-padding-small" data-aos="fade-up"
+                    data-aos-duration="3000">
+                    {{ $weddingCard->groom_name }} </h2>
+                <span class="a">&amp;</span>
+                <h2 class="uk-heading-small script-font uk-text-center uk-padding-small" data-aos="fade-down"
+                    data-aos-duration="3000">
+                    {{ $weddingCard->bride_name }} </h2>
 
+                <div class="date-group" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="banner-date">
+                        {{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}.{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->month }}.{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->year }}
                     </div>
-                </div>
-                <div class="banner-name-left">
-                    <h2 class="groom_name" data-aos="fade-right" data-aos-duration="3000">
-                        {{ $weddingCard->groom_name }}</h2>
-                </div>
-                <div class="banner-name-right">
-                    <h2 class="bride_name" data-aos="fade-left" data-aos-duration="3000">
-                        {{ $weddingCard->bride_name }}</h2>
-                </div>
 
-            </div>
-            <div class="date-group" data-aos="fade-up" data-aos-duration="2000">
-                <div class="banner-date">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}</div>
-                <div class="banner-date">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->month }}</div>
-                <div class="banner-date">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->year }}</div>
+                </div>
             </div>
         </section>
-        <!-- END BANNER -->
-        <!-- NAME -->
-        <section id="name" class="section-name">
-            <div class="container name uk-width-1-1">
-                <div class="group-name">
-                    <h2 class="uk-heading-small script-font uk-text-center uk-padding-small" data-aos="fade-up"
-                        data-aos-duration="3000">
-                        {{ $weddingCard->groom_name }} </h2>
-                    <span class="a">&amp;</span>
-                    <h2 class="uk-heading-small script-font uk-text-center uk-padding-small" data-aos="fade-down"
-                        data-aos-duration="3000">
-                        {{ $weddingCard->bride_name }} </h2>
-                </div>
-                <div class="time" data-aos="fade-up" data-aos-duration="3000">
-                    <span class="invitation_day">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}</span>
-                    .
-                    <span
-                        class="invitation_month">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->month }}</span>
-                    .
-                    <span class="invitation_year">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->year }}</span>
-                </div>
-
-            </div>
-        </section>
-        <!-- END NAME -->
 
         <!-- ABOUT -->
         <section id="about" class="section-about">
             <div class="section-heading">
-                <h2 class="section-title">CHÚ RỂ VÀ CÔ DÂU</h2>
+                <h2 class="section-title">Chú Rể và Cô Dâu</h2>
             </div>
             <div class="about-container container">
                 <div class="about-card" style="order:1">
-                    <div class="about-media" data-aos="fade-left" data-aos-duration="3000">
+                    <div class="about-media" data-aos="fade-up" data-aos-duration="1000">
                         <img src="{{ asset($weddingCard->bride_avatar) }}" alt="" class="">
                     </div>
-                    <div class="about-data" data-aos="fade-right" data-aos-duration="3000">
+                    <div class="about-data" data-aos="fade-down" data-aos-duration="1000">
                         <p class="title">Cô dâu</p>
                         <h3 class="bride_name">{{ $weddingCard->bride_name }}</h3>
                         <!--  <p class="bride_birthday">01/11/2000</p>
@@ -661,10 +621,10 @@
 
                 </div>
                 <div class="about-card" style="order:1">
-                    <div class="about-media" data-aos="fade-right" data-aos-duration="3000">
+                    <div class="about-media" data-aos="fade-up" data-aos-duration="1000">
                         <img src="{{ asset($weddingCard->groom_avatar) }}" alt="" class="">
                     </div>
-                    <div class="about-data" data-aos="fade-left" data-aos-duration="3000">
+                    <div class="about-data" data-aos="fade-down" data-aos-duration="1000">
                         <p class="title">Chú rể</p>
                         <h3 class="groom_name"> {{ $weddingCard->groom_name }}</h3>
                         <!-- <p class="groom_birthday">20/08/1993</p>
@@ -677,65 +637,49 @@
         </section>
         <!-- END ABOUT -->
         <!-- TIMELINE -->
+        @php
+            $album = !empty($weddingCard->album) ? json_decode($weddingCard->album, true) : [];
+            $stories = [];
+            if ($weddingCard->love_story != ',') {
+                $items = explode(',', $weddingCard->love_story);
+                foreach ($items as $item) {
+                    [$date, $story] = explode(':', $item);
+                    $image = !empty($album) ? array_shift($album) : null; // Lấy ảnh đầu tiên và loại khỏi album
+                    $stories[] = ['date' => trim($date), 'story' => trim($story), 'image' => $image];
+                }
+            }
 
-        <section id="time-line" class="time-line-section">
-            <div class="time-line container">
-                <span class="line1"></span>
-                <span class="line2"></span>
-                <h2 class="timeline-title">Love Story</h2>
+        @endphp
 
-                <div class="timeline-list">
-                    <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="timeline-media">
-                            <img src="{{ asset('template04/images/0d56cbc36f4bd115885a5.jpg') }}" alt="">
-                        </div>
-                        <div class="timeline-body">
-                            <span class="date story_1">2024</span>
-                            <span class="title">Gặp gỡ</span>
-                        </div>
-                    </div>
-                    <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="timeline-media">
-                            <img src="{{ asset('template04/images/0d56cbc36f4bd115885a5.jpg') }}" alt="">
-                        </div>
-                        <div class="timeline-body">
-                            <span class="date story_1">1/2024</span>
-                            <span class="title">Anh bắt đầu nhắn tin và dần nhận lời yêu</span>
-                        </div>
-                    </div>
-                    <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="timeline-media">
-                            <img src="{{ asset('template04/images/0d56cbc36f4bd115885a5.jpg') }}" alt="">
-                        </div>
-                        <div class="timeline-body">
-                            <span class="date story_1">16/12/2025</span>
-                            <span class="title">Dạm ngõ</span>
-                        </div>
-                    </div>
-                    <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="timeline-media">
-                            <img src="{{ asset('template04/images/0d56cbc36f4bd115885a5.jpg') }}" alt="">
-                        </div>
-                        <div class="timeline-body">
-                            <span class="date story_1">10/03/2025</span>
-                            <span class="title">Đính Hôn</span>
-                        </div>
-                    </div>
+        @if (!empty($stories))
 
-                    <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="timeline-media">
-                            <img src="{{ asset('template04/images/0d56cbc36f4bd115885a5.jpg') }}" alt="">
-                        </div>
-                        <div class="timeline-body">
-                            <span class="date story_1">Thành Hôn</span>
-                            <span class="title">11/03/2025</span>
-                        </div>
-                    </div>
+            <section id="time-line" class="time-line-section">
+                <div class="time-line container">
 
+                    <h2 class="timeline-title">Love Story</h2>
+
+                    <div class="timeline-list">
+                        @foreach ($stories as $story)
+                            <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="timeline-media">
+                                    <img src="{{ asset($story['image']) }}" alt="">
+                                </div>
+                                <div class="timeline-body">
+                                    <span class="date story_1">{{ $story['date'] }}</span>
+                                    <span class="title">{{ $story['story'] }}</span>
+                                </div>
+                            </div>
+                        @endforeach
+
+
+
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- END TIMELINE -->
+            </section>
+            <!-- END TIMELINE -->
+        @endif
+
+
 
         <!-- ALBUM -->
         <section style="margin-bottom: 0px;" id="album" class="uk-section" data-aos="fade-up"
@@ -808,21 +752,30 @@
 
                 <div class="uk-section">
                     <div class="uk-grid uk-child-width-1-2@m" uk-grid="">
+                        <h2 class="script-font uk-heading-medium uk-text-center text-black" data-aos="fade-up"
+                            data-aos-duration="2000">{{ $weddingCard->message_invite }}</h2>
                         <div class="invitation-card">
                             <div class="invitation-media">
                                 <img src="{{ asset($weddingCard->groom_avatar) }}" alt="">
                             </div>
                             <div class="invitation-body">
-                                <h3 class="invitation-title">💌{{ $weddingCard->groom_eating_title }} </h3>
-                              
-                                <p>Được tổ chức vào lúc: {{ $weddingCard->time_groom }} ngày {{ $weddingCard->groom_eating_date }}</p>
-                                <p>
-                                   ( {{ $weddingCard->time_groom_al }} )
+                                <h3 class="invitation-title">💌 {{ $weddingCard->groom_eating_title }} </h3>
+
+                                <p>Được tổ chức vào lúc <span
+                                        style="font-size: 20px;font-weight:bold">{{ $weddingCard->time_groom }}</span>
                                 </p>
-                                <p>{{ $weddingCard->address_groom }}</p>
+                                <p>Ngày <span
+                                        style="font-size: 20px;font-weight:bold">{{ \Carbon\Carbon::parse($weddingCard->groom_eating_date)->day }}/{{ \Carbon\Carbon::parse($weddingCard->groom_eating_date)->month }}/{{ \Carbon\Carbon::parse($weddingCard->groom_eating_date)->year }} </span>
+                                </p>
+                                <p>
+                                    {{ $weddingCard->time_groom_al }}
+                                </p>
+                                <p style="font-size: 20px;font-weight:bold">{{ $weddingCard->address_groom }} </p>
+
                                 <div class="uk-light">
-                                    <a href="tel:+84{{ $weddingCard->groom_phone }}" class="uk-icon-button uk-margin-small-right"
-                                        target="_blank" uk-icon="receiver"></a>
+                                    <a href="tel:+84{{ $weddingCard->groom_phone }}"
+                                        class="uk-icon-button uk-margin-small-right" target="_blank"
+                                        uk-icon="receiver"></a>
                                     <a href="{{ $weddingCard->groom_map }}"
                                         class="uk-icon-button  uk-margin-small-right" target="_blank"
                                         uk-icon="location"></a>
@@ -836,16 +789,23 @@
                                 <img src="{{ asset($weddingCard->bride_avatar) }}" alt="">
                             </div>
                             <div class="invitation-body">
-                                <h3 class="invitation-title">💌{{ $weddingCard->bride_eating_title }} </h3>
-                            
-                                <p>Được tổ chức vào lúc : {{ $weddingCard->time_bride }} ngày {{ $weddingCard->bride_eating_date }}</p>
+                                <h3 class="invitation-title">💌 {{ $weddingCard->bride_eating_title }} </h3>
+
+                                <p>Được tổ chức vào lúc <span
+                                        style="font-size: 20px;font-weight:bold">{{ $weddingCard->time_bride }}</span>
+                                </p>
+                                <p>Ngày <span
+                                        style="font-size: 20px;font-weight:bold">{{ \Carbon\Carbon::parse($weddingCard->bride_eating_date)->day }}/{{ \Carbon\Carbon::parse($weddingCard->bride_eating_date)->month }}/{{ \Carbon\Carbon::parse($weddingCard->bride_eating_date)->year }}</span>
+                                </p>
                                 <p>
-                                  ( {{ $weddingCard->time_groom_al }} )
-                               </p>
-                                <p>{{ $weddingCard->address_bride }} </p>
+                                    {{ $weddingCard->time_bride_al }}
+                                </p>
+                                <p style="font-size: 20px;font-weight:bold">{{ $weddingCard->address_bride }} </p>
 
                                 <div class="uk-light">
-                                     <a href="tel:+84{{ $weddingCard->bride_phone }}" class="uk-icon-button uk-margin-small-right" target="_blank" uk-icon="receiver"></a> 
+                                    <a href="tel:+84{{ $weddingCard->bride_phone }}"
+                                        class="uk-icon-button uk-margin-small-right" target="_blank"
+                                        uk-icon="receiver"></a>
                                     <a href="{{ $weddingCard->bride_map }}"
                                         class="uk-icon-button  uk-margin-small-right" target="_blank"
                                         uk-icon="location"></a>
@@ -859,13 +819,22 @@
                                 <img src="{{ asset($weddingCard->banner_top) }}" alt="">
                             </div>
                             <div class="invitation-body">
-                                <!-- <h3 class="invitation-title">Đến dự bữa tiệc chung vui cùng gia đình chúng tôi tại</h3>-->
-                                <h3 class="invitation-title">{{ $weddingCard->wedding_message }}</h3>
-                                <!-- <p>DOLPHIN PALACE</p> -->
-                                <p>Được tổ chức vào lúc: 11h00 ngày {{ asset($weddingCard->wedding_date) }} </p>                          
-                                <p>{{ $weddingCard->address_wedding }} </p>
+                                <h3 class="invitation-title">💌 {{ $weddingCard->wedding_message }} </h3>
+                                <p style="font-size: 20px;font-weight:bold">{{ $weddingCard->address_wedding }} </p>
+                                {{-- <p>Được tổ chức vào lúc  <span style="font-size: 20px;font-weight:bold">{{ $weddingCard->wedding_time}}</span></p> --}}
+                                <p>Vào lúc <span
+                                    style="font-size: 20px;font-weight:bold">{{ $weddingCard->wedding_time }}</span> ngày <span
+                                        style="font-size: 20px;font-weight:bold">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}/{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->month }}/{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->year }}</span>
+                                </p>
+                                <p>
+                                    {{ $weddingCard->time_groom_al }}
+                                </p>
+
+
                                 <div class="uk-light">
-                                    <!-- <a href="tel:+84911222939" class="uk-icon-button uk-margin-small-right" target="_blank" uk-icon="receiver"></a> -->
+                                    <a href="tel:+84{{ $weddingCard->bride_phone }}"
+                                        class="uk-icon-button uk-margin-small-right" target="_blank"
+                                        uk-icon="receiver"></a>
                                     <a href="{{ $weddingCard->address_wedding_map }}"
                                         class="uk-icon-button  uk-margin-small-right" target="_blank"
                                         uk-icon="location"></a>
@@ -873,6 +842,8 @@
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
@@ -885,12 +856,12 @@
         <section id="countdown-secton" class="uk-background-cover uk-section uk-section-large uk-text-center uk-light"
             style="background-image:url({{ asset($weddingCard->banner_coundown) }})">
             <div class="uk-container">
-                <p class="uk-text-center" style="color: #FFFFF;">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
-                <h2 class="uk-heading-small uk-text-center " style="color: #FFFFF;">
-                    SAVE THE DATE </h2>
+
+                <h2 class="uk-heading-small uk-text-center script-font " style="color: #FFFFF;">
+                    Save The Date </h2>
                 <svg class="heartbeat" width="64" height="64" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
-                    <path fill="red"
+                    <path fill="#ff75a1"
                         d="M16.5 13.287c-2.475-2.716-5.5-.712-5.5 2.112c0 2.56 1.814 4.035 3.358 5.292l.044.036l.427.35c.571.475 1.121.923 1.671.923s1.1-.448 1.671-.923C19.789 19.73 22 18.224 22 15.399c0-.927-.326-1.767-.853-2.38c-1.075-1.251-2.985-1.556-4.647.268Z">
                     </path>
                     <path fill="#f1ebe4"
@@ -1095,13 +1066,8 @@
             <div class="thankyou-body container uk-position-relative uk-position-z-index">
                 <h2 class="script-font uk-heading-medium uk-text-center text-white" style="margin-top: 40px;"
                     data-aos="fade-up" data-aos-duration="2000">Thank you!</h2>
-                <p class="thankyou-des" data-aos="fade" data-aos-duration="3000"></p>
-                <p>{{ $weddingCard->message_thanks }}</p>
-                <p><img loading="lazy" decoding="async" class="aligncenter wp-image-11769 size-thumbnail"
-                        src="images/music-150x150.png" alt="" width="150" height="150"
-                        srcset="images/music-150x150.png 150w, images/music-300x300.png 300w, images/music.png 634w"
-                        sizes="(max-width: 150px) 100vw, 150px"></p>
-                <p></p>
+                <p data-aos="fade-down" data-aos-duration="3000">{{ $weddingCard->message_thanks }}</p>
+
 
             </div>
         </section>
