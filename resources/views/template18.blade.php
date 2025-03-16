@@ -25,11 +25,6 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//cdn.js') }}delivr.net">
 
-<script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/weddingday.com.vn\/wp-includes\/js\/wp-emoji-release.min.js') }}?ver=6.7.1"}};
-/*! This file is auto-generated */
-!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
-</script>
 <style id="wp-emoji-styles-inline-css">
 
 	img.wp-smiley, img.emoji {
@@ -77,10 +72,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <script src="{{ asset('template18/js/wp-emoji-release.min.js') }}" defer=""></script></head>
 <body><div class="preload  uk-position-cover uk-position-fixed bg-white uk-position-z-index">
 	<div class="uk-position-center uk-text-center">
-		<div class="logo mx-auto p-4">
-			
-			<img src="images/FAVICON-5.png" alt="" style="max-height:140px" data-aos="fade-up">			<h3 class="title-font text-primary-color tracking-in-expand uk-heading-small mb-0">{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }} </h3>
-		</div>
+		
 	</div>
 </div>
 
@@ -868,7 +860,7 @@ background-color: var(--body-bg) !important;
       $(".preload").fadeOut('slow');
     }, 400)
   })
-  $('head link[rel="icon"]').attr('href','https://weddingday.com.vn/wp-content/uploads/2024/09/FAVICON-5.png')
+  $('head link[rel="icon"]').attr('href','')
   $('head title').text('{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }}')
   $(".selectpicker").selectpicker();
 </script><script>
@@ -879,100 +871,7 @@ background-color: var(--body-bg) !important;
 </script>
 <script>
  
-  //XỬ LÝ GỬI TIN NHẮN
-  $('#messageForm').submit(function (e) { 
-    e.preventDefault();
-    $('.send_message').html('<div uk-spinner></div>')
-    var name = $(this).find('input#m_name').val(),
-    content = $(this).find('textarea#m_text').val();
-
-    var mess_new = `
-    <div class="messenger-item mt-3 uk-text-center p-4 uk-width-1-2@m mx-auto uk-position-relative" data-aos="fade-up">
-      <div class="uk-position-relative uk-text-danger">
-        <h4 class="title-font uk-text-danger mb-0">${name}</h4>
-        <div class="mb-2 uk-text-italic">
-        ${content}
-        </div>
-      </div>
-    </div>
-    `;
-    //hàm ajax xử lý thêm lời nhắn
-    var nonce = "a0296b762e" ,
-    id = "2424";
-    $.ajax({ // Hàm ajax
-      type : "post", //Phương thức truyền post hoặc get
-      dataType : "html", //Dạng dữ liệu trả về xml, json, script, or html
-      url : 'https://weddingday.com.vn/wp-admin/admin-ajax.php', // Nơi xử lý dữ liệu
-      data : {
-          action: "new_messeger", //Tên action, dữ liệu gởi lên cho server
-          id:id,
-          nonce:nonce,
-          name:name,
-          content:content,
-      },
-      beforeSend: function(){
-              
-      },
-      success: function(response) {    
-        $('.list_message').append(mess_new)
-        $('#messageForm')[0].reset()
-        $('.send_message').html('<span class="text-white">Cám ơn !</span>').addClass('bg-primary-color text-white').attr('disabled','')
-      },
-      error: function( jqXHR, textStatus, errorThrown ){
-          //Làm gì đó khi có lỗi xảy ra
-          alert('lỗi')
-      }
-    });
-    
-  });
-
-  // XỬ LÝ XÁC NHẬN THAM DỰ
   
-  $('.form-wedding').each(function(){
-    $(this).submit(function (e) { 
-      "use strict";
-      e.preventDefault();
-      $('.form-wedding').find('button').html('<div uk-spinner></div>')
-      var f_location = $(this).find('input#f_location').val(),
-      id = $(this).find('input#f_id').val(),
-      f_name = $(this).find('input#f_name').val(),
-      f_xn = $(this).find('select#f_xn').val(),
-      f_people = $(this).find('input[type="radio"]:checked').val(),
-      f_mess = $(this).find('textarea').val(),
-      nonce = "5e03cdd3c1";
-
-      $.ajax({ // Hàm ajax
-        type : "post", //Phương thức truyền post hoặc get
-        dataType : "html", //Dạng dữ liệu trả về xml, json, script, or html
-        url : 'https://weddingday.com.vn/wp-admin/admin-ajax.php', // Nơi xử lý dữ liệu
-        data : {
-            action: "new_formxn", //Tên action, dữ liệu gởi lên cho server
-            id:id,
-            nonce:nonce,
-            name:f_name,
-            diadiem:f_location,
-            songuoi:f_people,
-            xacnhan:f_xn,
-            loinhan:f_mess,
-        },
-        beforeSend: function(){
-                
-        },
-        success: function(response) {    
-          $('.form-wedding').html('<div class="uk-text-center text-black">Cám ơn bạn đã xác nhận !</div>')
-        },
-        error: function( jqXHR, textStatus, errorThrown ){
-            //Làm gì đó khi có lỗi xảy ra
-            alert('lỗi')
-        }
-      });
-      
-        
-    });
-  })
-  
-
-
 </script>
 <script>
   var myAudio = document.getElementById("audio_play");
