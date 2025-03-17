@@ -6,35 +6,33 @@
 
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-		<meta property="og:image" content="{{ asset('template10/images/MAU-KOREA.jpg') }}">
+		<meta property="og:image" content="{{ asset($weddingCard->banner_preview) }}">
 	
 	
 <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
-<title>Mẫu thiệp cưới korea - Thiệp cưới online</title>
+<title>{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }} - Thiệp cưới online</title>
 <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
-<link rel="canonical" href="https://sontit1999.github.io/wedding08/">
+<link rel="canonical" href="{{ url()->current() }}">
 <meta property="og:locale" content="vi_VN">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mẫu thiệp cưới korea - Thiệp cưới online">
-<meta property="og:url" content="https://sontit1999.github.io/wedding08/">
-<meta property="og:site_name" content="Thiệp cưới online">
+<meta property="og:title" content="{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }} - Thiệp cưới online">
+<meta property="og:url" content="{{ url()->current() }}">
+<meta property="og:site_name" content="{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }}">
 <meta property="og:updated_time" content="2024-03-26T03:37:53+00:00">
-<meta property="og:image" content="{{ asset('template10/images/MAU-KOREA.jpg') }}">
-<meta property="og:image:secure_url" content="{{ asset('template10/images/MAU-KOREA.jpg') }}">
+<meta property="og:image" content="{{ asset($weddingCard->banner_preview) }}">
+<meta property="og:image:secure_url" content="{{ asset($weddingCard->banner_preview) }}">
 <meta property="og:image:width" content="800">
 <meta property="og:image:height" content="800">
 <meta property="og:image:alt" content="Mẫu thiệp cưới korea">
 <meta property="og:image:type" content="image/jpeg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mẫu thiệp cưới korea - Thiệp cưới online">
-<meta name="twitter:image" content="https://thiepdientu.com.vn/wp-content/uploads/2023/12/MAU-KOREA.jpg') }}">
+<meta name="twitter:title" content="{{ $weddingCard->groom_name }} ❤️ {{ $weddingCard->bride_name }} - Thiệp cưới online">
+<meta name="twitter:image" content="{{ asset($weddingCard->banner_preview) }}">
 <!-- /Rank Math WordPress SEO plugin -->
 
 <link rel="dns-prefetch" href="//cdn.js') }}delivr.net">
 <link rel="dns-prefetch" href="//unpkg.com">
-<link rel="alternate" type="application/rss+xml" title="Dòng thông tin Thiệp cưới online »" href="https://thiepdientu.com.vn/feed/">
-<link rel="alternate" type="application/rss+xml" title="Thiệp cưới online » Dòng bình luận" href="https://thiepdientu.com.vn/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="Thiệp cưới online » Mẫu thiệp cưới korea Dòng bình luận" href="https://sontit1999.github.io/wedding08/feed/">
+
 <script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png') }}","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thiepdientu.com.vn\/wp-includes\/js\/wp-emoji-release.min.js') }}?ver=6.6.1"}};
 /*! This file is auto-generated */
@@ -86,9 +84,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <script src="{{ asset('template07/js/jquery.min_1.js') }}" id="Jquery-js"></script>
 <link rel="https://api.w.org/" href="https://thiepdientu.com.vn/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://thiepdientu.com.vn/wp-json/wp/v2/mau-thiep/154"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thiepdientu.com.vn/xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.6.1">
-<link rel="shortlink" href="https://thiepdientu.com.vn/?p=154">
-<link rel="alternate" title="oNhúng (JSON)" type="application/json+oembed" href="https://thiepdientu.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthiepdientu.com.vn%2Fmau-thiep%2Fmau-thiep-cuoi-korea%2F">
-<link rel="alternate" title="oNhúng (XML)" type="text/xml+oembed" href="https://thiepdientu.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthiepdientu.com.vn%2Fmau-thiep%2Fmau-thiep-cuoi-korea%2F&amp;format=xml">
+
 		<style type="text/css">
 					.site-title,
 			.site-description {
@@ -96,10 +92,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				clip: rect(1px, 1px, 1px, 1px);
 				}
 					</style>
-		<link rel="icon" href="{{ asset('template10/images/cropped-logo-favicon-32x32.png') }}" sizes="32x32">
-<link rel="icon" href="{{ asset('template10/images/cropped-logo-favicon-192x192.png') }}" sizes="192x192">
-<link rel="apple-touch-icon" href="{{ asset('template10/images/cropped-logo-favicon-180x180.png') }}">
-<meta name="msapplication-TileImage" content="https://thiepdientu.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2024/03/26115441/cropped-logo-favicon-270x270.png') }}">
+		
 
     <link rel="stylesheet" href="{{ asset('template10/css/style.css') }}">
 
