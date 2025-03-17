@@ -1182,7 +1182,7 @@ $(document).ready(function(){
         $(':root').css('--bg', '');
     </script>
     <!-- AUDIO -->
-    <audio src="media/Shane-Filan-Beautiful-In-White-Official-Video-8.mp3" controls="" autoplay=""
+    <audio src="{{ asset('template07/media/Shane-Filan-Beautiful-In-White-Official-Video.mp3') }}" controls="" autoplay=""
         id="audio">
 
     </audio>

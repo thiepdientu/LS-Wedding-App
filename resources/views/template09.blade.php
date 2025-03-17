@@ -695,7 +695,7 @@ fetch('/wp-json/wp/v2/comments?post=1077&per_page=100',
  $(':root').css('--bg', '');
 </script>
 <!-- AUDIO -->
-<audio src="media/Shane-Filan-Beautiful-In-White-Official-Video-5.mp3" controls="" autoplay="" id="audio">
+<audio src="{{ asset('template09/media/Shane-Filan-Beautiful-In-White-Official-Video.mp3') }}" controls="" autoplay="" id="audio">
 
 </audio>
 <!-- END AUDIO --> <!-- FOOTER -->

@@ -928,7 +928,7 @@ $(document).ready(function(){
 </script>
 
 <!-- AUDIO -->
-<audio src="media/Shane-Filan-Beautiful-In-White-Official-Video-1.mp3" controls="" autoplay="" id="audio">
+<audio src="{{ asset('template10/media/Shane-Filan-Beautiful-In-White-Official-Video.mp3') }}" controls="" autoplay="" id="audio">
 
 </audio>
 <!-- END AUDIO --> <!-- FOOTER -->

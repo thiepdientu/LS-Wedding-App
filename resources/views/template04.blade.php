@@ -1080,7 +1080,7 @@
     </script>
 
     <!-- AUDIO -->
-    <audio src="media/Shane-Filan-Beautiful-In-White-Official-Video-3.mp3" controls="" autoplay=""
+    <audio src="{{ asset('template04/media/Shane-Filan-Beautiful-In-White-Official-Video.mp3') }}" controls="" autoplay=""
         id="audio">
 
     </audio>

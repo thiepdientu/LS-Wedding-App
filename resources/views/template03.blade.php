@@ -1274,7 +1274,7 @@ Số 09, Chu Văn An, Yết Kiêu, Hà Đông, Hà Nội ( đón khách 16:30 - 
         $(':root').css('--bg', '');
     </script>
     <!-- AUDIO -->
-    <audio src="{{ asset('template01/media/Shane-Filan-Beautiful-In-White-Official-Video.mp3') }}" controls=""
+    <audio src="{{ asset('template03/media/Shane-Filan-Beautiful-In-White-Official-Video.mp3') }}" controls=""
         autoplay="" id="audio">
 
     </audio>

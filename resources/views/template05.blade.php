@@ -1290,7 +1290,7 @@ $(document).ready(function(){
         $(':root').css('--bg', '');
     </script>
     <!-- AUDIO -->
-    <audio src="{{ asset('template05/media/Shane-Filan-Beautiful-In-White-Official-Video-12.mp3') }}" controls="" autoplay=""
+    <audio src="{{ asset('template05/media/Shane-Filan-Beautiful-In-White-Official-Video.mp3') }}" controls="" autoplay=""
         id="audio">
 
     </audio>

@@ -1073,7 +1073,7 @@
         $(':root').css('--bg', '');
     </script>
     <!-- AUDIO -->
-    <audio src="{{ asset('template02/media/Shane-Filan-Beautiful-In-White-Official-Video-3.mp3') }}" controls=""
+    <audio src="{{ asset('template02/media/Shane-Filan-Beautiful-In-White-Official-Video.mp3') }}" controls=""
         autoplay="" id="audio">
 
     </audio>
