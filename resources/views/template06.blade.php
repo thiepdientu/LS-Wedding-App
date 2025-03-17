@@ -588,7 +588,7 @@
     <section id="banner" class="section-banner"
         style="color:white;  object-fit: cover;
     object-position: center;">
-        <img src="{{ asset('template06/images/9E2D097B-4E2F-4FF2-9F6F-3D1BEC1955B6-e1705078033877.jpeg') }}"
+        <img src="{{ asset($weddingCard->banner_top) }}"
             alt="" class="banner-bg" style="object-position:center center; ">
         <div class="banner-container container" style="background-color: #00000063;">
             <h1 class="banner-title" data-aos="fade-down" data-aos-duration="3000">SAVE THE DATE</h1>

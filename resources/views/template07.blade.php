@@ -828,7 +828,7 @@
 
                     </div>
                     <div class="invitation-card"> <img
-                            src="{{ asset('template07/images/EAB4C87C-1DDB-4D84-A5D8-8E4FF4922477.jpeg') }}"
+                            src="{{ asset($weddingCard->groom_avatar) }}"
                             alt="">
                         <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
                         <address class="uk-margin-remove main-font">
