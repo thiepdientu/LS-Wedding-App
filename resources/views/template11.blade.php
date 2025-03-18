@@ -131,7 +131,7 @@
 		        <div class="time" data-aos="fade-up" data-aos-duration="3000">
           <span class="invitation_day">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}</span>
           .
-          <span class="invitation_month">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->day }}</span>
+          <span class="invitation_month">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->month }}</span>
           .
           <span class="invitation_year">{{ \Carbon\Carbon::parse($weddingCard->wedding_date)->year }}</span>
         </div>
