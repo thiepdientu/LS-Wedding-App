@@ -4,7 +4,7 @@
     --max-width: 1024px;
     /* color */
     --bg: #fcf5f2;
-    --primary-color: #9e3301;
+    --primary-color: #ffaa83;
     --secondary-color:#6D3E28 ;
     --text-white: #fff;
     --text-black:#000 ;
@@ -696,7 +696,8 @@ main{
     transform: translateX(-50%) translateY(-50%);
     height: max-content;
     z-index: 9;
-    display: flex;
+    display: flex
+;
     flex-direction: column;
     gap: 40px;
     justify-content: center;
@@ -705,10 +706,9 @@ main{
     color: var(--text-white);
     border: 1px solid rgb(255, 255, 255);
     padding: 20px;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    border-radius: 12px;
-    background-color: rgba(0, 0, 0, 0.237);
+
+    border-radius: 2%;
+    background-color: rgb(0 0 0 / 34%);
 }
 .banner-title {
     font-size: var(--title-fs);
@@ -804,12 +804,7 @@ main{
     padding: 20px;
     text-align: center;
     bottom: 0;
-    background-image: linear-gradient(
-        to top,
-        var(--primary-color),
-        transparent
-
-    );
+    background-image: linear-gradient(to top, #000000, transparent);
     color: var(--text-white);
     min-width: 100%;
 }
@@ -899,7 +894,7 @@ main{
 .timeline-body .title {
     font-family: var(--title-font);
     font-size: 20px;
-    color: #ffa02a;;
+    color: #ffaa83;;
 }
 
 /* COUNTDOWN */

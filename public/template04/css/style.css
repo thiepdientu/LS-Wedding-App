@@ -605,10 +605,10 @@ main{
     text-align: center;
 }
 .invitation-body {
-    background-color: #ff75a1;
+    background-color: #ffffff;
     width: 100%;
     padding: 24px;
-    color: var(--text-white);
+    color: #000000;
     display: grid
 ;
     row-gap: 16px;
