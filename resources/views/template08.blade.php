@@ -560,8 +560,8 @@
     <section id="banner" class="section-banner">
         <img src="{{ asset($weddingCard->banner_top) }}" alt=""
             class="banner-bg banner_top" style="object-position:center center">
-
-            <div class="banner-bg banner_top" style="background:#00000030;">
+        <div class="banner-bg" style="background:#00000030;z-index: 19;">
+            
         <div class="banner-container container" >
             <h1 class="banner-title script-font text-white" data-aos="fade-down" data-aos-duration="2000">{{ $weddingCard->wedding_message }}</h1>
             <img src="{{ asset('template08/images/hy-icon.png') }}" alt="" class="banner-icon">

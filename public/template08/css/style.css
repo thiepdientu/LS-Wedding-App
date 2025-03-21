@@ -673,6 +673,7 @@ body {
     justify-items: center;
     width: 100%;
     gap: 8px;
+    z-index: 20;
 }
 
 /* BẢN ĐỒ */
