@@ -605,7 +605,6 @@
     <!-- ABOUT -->
     <section id="about" class="section-about">
         <div class="section-heading">
-            <img src="images/title-bg.png" alt="" class="title-bg">
             <h2 class="main-color" style="font-size: 20px;font-weight:bold;">CHÚ RỂ VÀ CÔ DÂU</h2>
         </div>
         <div class="about-container container">
@@ -1097,8 +1096,7 @@
                         </path>
                     </g>
                 </svg>
-                <img src="{{ asset($weddingCard->bride_qr) }}" />
-
+               <span></span>
             </a>
             <div id="box-gift">
                 <div class="gift-container" id="gift-container">
