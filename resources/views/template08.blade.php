@@ -1097,7 +1097,7 @@ style="background-image:url({{ asset($weddingCard->banner_love_story) }})">
         $(':root').css('--bg', '');
     </script>
     <!-- AUDIO -->
-    <audio src="{{ asset('template08/media/Shane-Filan-Beautiful-In-White-Official-Video-7.mp3') }}" controls="" autoplay=""
+    <audio src="{{ asset('template08/media/Shane-Filan-Beautiful-In-White-Official-Video.mp3') }}" controls="" autoplay=""
         id="audio">
 
     </audio>
@@ -1109,7 +1109,7 @@ style="background-image:url({{ asset($weddingCard->banner_love_story) }})">
           </a></p>
         </div>
     </footer>
-    <button class="toggleAudio">
+    <button style="z-index: 20;"  class="toggleAudio">
         <i class="ri-volume-mute-fill"></i>
     </button>
     <!-- END FOOTER -->
