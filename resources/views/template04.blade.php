@@ -1065,8 +1065,8 @@
                 style="object-position:">
             <div class="thankyou-body container uk-position-relative uk-position-z-index">
                 <h2 class="script-font uk-heading-medium uk-text-center text-white" style="margin-top: 40px;"
-                    data-aos="fade-up" data-aos-duration="2000">Thank you!</h2>
-                <p data-aos="fade-down" data-aos-duration="3000">{{ $weddingCard->message_thanks }}</p>
+                    >Thank you!</h2>
+                <p>{{ $weddingCard->message_thanks }}</p>
 
 
             </div>

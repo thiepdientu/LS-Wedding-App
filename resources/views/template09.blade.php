@@ -109,7 +109,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <!-- END PRELOAD --> <!-- BANNER -->
  <section class="banner img_bg " id="banner">
     <img src="{{ asset($weddingCard->banner_top) }}" alt="" class="banner-bg banner_top" style="object-position:center center">
-    <div class="data" data-aos="fade-up" data-aos-duration="3000">
+    <div style="margin-left: 40px;
+    margin-right: 40px;" class="data" data-aos="fade-up" data-aos-duration="3000">
       <h1 class="banner-title">
             </h1>
       

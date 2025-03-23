@@ -823,13 +823,14 @@
             border-radius: 12px;
             box-shadow: 0 0 20px rgba(0 0 0 /10%);
         }
+        
     </style>
     <!-- END VIDEO -->
 
     <!-- LỜI CHÚC -->
     <!-- TIN NHẮN -->
-    {{-- <section id="message" class="section-message uk-background-cover uk-section"
-        style="background-image:url({{ asset('template01/images/8527e1ec6d69d6378f78.jpg') }}); display:block">
+    <section id="message" class="section-message uk-background-cover uk-section"
+        style="background-image:url({{ asset($weddingCard->banner_top) }}); display:block">
         <div class="uk-position-cover uk-overlay uk-overlay-primary" style="opacity:.5"> </div>
         <div class="message-container container uk-position-relative uk-position-z-index">
             <h2 class="section-title uk-light" style="color:white">
@@ -846,27 +847,56 @@
             <div class="uk-padding-small uk-border-rounded blur-bg" style="border:1px solid white">
 
                 <h3 class="form-title" style="color:white">Gửi lời chúc</h3>
-                <form action="" id="messageForm" method="POST">
-
-                    <input type="hidden" id="postId" value="999">
+                <form action="" id="customForm">
                     <div class="input-group uk-margin-top" style="color:white">
                         <label for="">
                             Tên của bạn </label>
-                        <input style="border:1px solid white" id="m_name" type="text" class="input blur-bg"
+                        <input style="border:1px solid white" id="name" type="text" class="input blur-bg"
                             value="" required="">
                     </div>
                     <div class="input-group uk-margin-top">
                         <label for="" style="color:white">
-                            Lời nhắn gửi </label>
-                        <textarea style="border:1px solid white; color:white" id="m_text" class="input-text text-white blur-bg"
-                            name="" cols="30" rows="5" required=""></textarea>
+                            Lời chúc </label>
+                            <input style="border:1px solid white" type="text" id="messages"  class="input blur-bg" required>
+                            <label for="" style="color:white">
+                                Xác nhận tham dự </label>
+                                <input style="border:1px solid white" type="text" id="accept"  class="input blur-bg" required>
                     </div>
                     <button type="submit" class="btn btn-primary send_message uk-margin-top" style="color:white">Gửi
                         lời chúc</button>
                 </form>
+                <p style="margin-top:10px;" id="status"></p>
+                <a href="https://docs.google.com/spreadsheets/d/1D3RB1ile7AnYpjQTdBWVFN0jeVF0FrsS9iuiV502lVM/edit?usp=sharing" class="btn btn-second send_message uk-margin-top" style="color:white">Xem lời chúc</a>
             </div>
+
+            <script>
+                document.getElementById("customForm").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    let name = document.getElementById("name").value;
+                    let message = document.getElementById("messages").value;
+                    let accept = document.getElementById("accept").value;         
+                    // Thay thế bằng URL Google Form của bạn
+                    let googleFormURL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSevfuj5KTGyMpV6X3zli1ZKqIYtA46t6-EHbX6CoWpnW3jzzg/formResponse";
+                    // Các entry ID (tìm trong Google Form)
+                    let formData = new FormData();
+                    formData.append("entry.1121695678", name); 
+                    formData.append("entry.640970141", message); 
+                    formData.append("entry.1377771432", accept);
+        
+                    fetch(googleFormURL, {
+                        method: "POST",
+                        body: formData,
+                        mode: "no-cors"
+                    }).then(() => {
+                        document.getElementById("status").innerText = "Gửi thành công!";
+                        document.getElementById("customForm").reset();
+                    }).catch(error => {
+                        document.getElementById("status").innerText = "Có lỗi xảy ra!";
+                    });
+                });
+            </script>
         </div>
-    </section> --}}
+    </section>
     <!-- END TIN NHẮN -->
     <script>
         fetch('/wp-json/wp/v2/comments?post=999&per_page=100', {

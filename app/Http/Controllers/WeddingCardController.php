@@ -91,8 +91,12 @@ class WeddingCardController extends Controller
     public function showTemplate($key)
     {
         // Tìm thiệp cưới theo name
-        $weddingCard = DB::table('wedding_cards')->first();
-
+        $weddingCard  = WeddingCard::where('identifyWedding', 'test')->first();
+        if (!$weddingCard) {
+            return response()->json([
+                'message' => 'Chua co data test. Them thiep voi id la test nhe <3'
+            ]);
+        }
         switch ($key) {
             case "1":
                 return view('template01', compact('weddingCard'));
