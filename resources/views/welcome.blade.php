@@ -18,7 +18,7 @@
             margin: auto;
         }
         .logo {
-            max-width: 200px;
+            max-width: 50px;
             margin-bottom: 10px;
         }
         h1 {
@@ -78,23 +78,23 @@
 <body>
     <div class="container">
         <img src="{{ asset('image/logo.png') }}" alt="Thiệp Cưới Online" class="logo">
-        <h1>THIỆP CƯỚI ONLINE</h1>
-        <p>Thiệp cưới online là xu hướng mới đang được nhiều cặp đôi lựa chọn cho hôn lễ của mình bởi nhiều tính năng nổi trội:</p>
+        <h1>THIỆP CƯỚI ONLINE - Trang Trọng & Tiện Lợi</h1>
+        <p style="font-size:12px;">Thiệp cưới online là xu hướng mới đang được nhiều cặp đôi lựa chọn cho hôn lễ bởi nhiều tính năng nổi trội:</p>
         <div class="features" style="text-align: start;">
-            <div class="feature">  <span>✔️ Thông tin tiệc cưới chi tiết, rõ ràng</span></div>
-            <div class="feature">  <span>✔️ Quét mã QR trên thiệp giấy để truy cập</span></div>
-            <div class="feature"> <span>✔️ Gửi thiệp bằng link qua chat Zalo/Facebook</span></div>
-            <div class="feature"><span>✔️ Đăng tải album ảnh, video cưới, Love Story</span></div>
-            <div class="feature"><span>✔️ Tùy chỉnh nội dung theo yêu cầu</span></div>
+            <div class="feature">  <span>✔️ Thông tin tiệc cưới dâu rể chi tiết, rõ ràng</span></div>
+            <div class="feature">  <span>✔️ Đăng album ảnh, câu chuyện tình yêu , đếm ngược ngày cưới</span></div>
+            <div class="feature"> <span>✔️ QR mừng cưới cho bạn bè ở xa</span></div>
+            <div class="feature"><span>✔️ Thông tin SDT, Google Map vị trí nhà trai, gái</span></div>
+            <div class="feature"><span>✔️Xác nhận tham dự và gửi lời chúc tới dâu rể </span></div>
         </div>
-        <p>Chat Zalo với chúng tôi để được tư vấn SDT: <b style="color: red;font-size:30px;">0335275330</b></p>
+        <p>Liên hệ ngay xem mẫu miễn phí SDT: <a style="color: red;font-size:30px;" href="tel:(+84)335275330"><b>0335275330</b></a></p>
         <div class="buttons">
            
             <a href="https://zalo.me/0335275330" class="zalo"><img style="width: 30px;heigh:30px;margin-right:10px;" src="{{ asset('image/zalo.webp') }}" alt="Thiệp Cưới Online" class="logo"> CHAT ZALO</a>
             <a href="https://www.facebook.com/profile.php?id=61574241566517" class="messenger"><img style="width: 30px;heigh:30px;margin-right:10px;" src="{{ asset('image/messenger.png') }}" alt="Thiệp Cưới Online" class="logo">MESSENGER</a>
         </div>
         <div  class="buttons"> <a href="https://www.tiktok.com/@thiepcuoionline29" class="zalo"><img style="width: 30px;heigh:30px;margin-right:10px;" src="{{ asset('image/tiktok.webp') }}" alt="Thiệp Cưới Online" class="logo"> Tiktok</a></div>
-        <a href="#" class="sample">XEM THIỆP MẪU</a>
+        <a href="https://zalo.me/0335275330" class="sample">XEM THIỆP MẪU</a>
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@thiepcuoionline29/video/7485191417762041106\" data-video-id="7485191417762041106" data-embed-from="oembed" style="max-width:605px; min-width:325px;\"> <section> <a target="_blank" title="@thiepcuoionline29" href="https://www.tiktok.com/@thiepcuoionline29?refer=embed\">@thiepcuoionline29</a> <p>Giữa muôn vàn yêu thương, chúng ta chọn nhau để viết tiếp hành trình hạnh phúc ❤️❤️❤️<a title="thiepcuoionline" target="_blank" href="https://www.tiktok.com/tag/thiepcuoionline?refer=embed\">#thiepcuoionline</a> <a title="thiepmoi" target="_blank" href="https://www.tiktok.com/tag/thiepmoi?refer=embed\">#thiepmoi</a> </p> <a target="_blank" title="♬ nhạc nền - LS Wedding - Thiệp Cưới Online - LS Wedding - Thiệp Cưới Online\" href="https://www.tiktok.com/music/nhạc-nền-LS-Wedding-Thiệp-Cưới-Online-7485191469050317585?refer=embed\">♬ nhạc nền - LS Wedding - Thiệp Cưới Online - LS Wedding - Thiệp Cưới Online</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
        
     </div>
