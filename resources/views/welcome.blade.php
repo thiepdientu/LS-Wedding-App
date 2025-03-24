@@ -81,11 +81,12 @@
         <h1>THIỆP CƯỚI ONLINE - Trang Trọng & Tiện Lợi</h1>
         <p style="font-size:12px;">Thiệp cưới online là xu hướng mới đang được nhiều cặp đôi lựa chọn cho hôn lễ bởi nhiều tính năng nổi trội:</p>
         <div class="features" style="text-align: start;">
-            <div class="feature">  <span>✔️ Thông tin tiệc cưới dâu rể chi tiết, rõ ràng</span></div>
-            <div class="feature">  <span>✔️ Đăng album ảnh, câu chuyện tình yêu , đếm ngược ngày cưới</span></div>
+            <div class="feature">  <span>✔️ Gửi không giới hạn tới bạn bè và lưu trữ trọn đời</span></div>
+            <div class="feature">  <span>✔️ Thông tin tiệc cưới dâu rể chi tiết</span></div>
+            <div class="feature">  <span>✔️ Album ảnh, câu chuyện tình yêu , đếm ngược ngày cưới</span></div>
             <div class="feature"> <span>✔️ QR mừng cưới cho bạn bè ở xa</span></div>
-            <div class="feature"><span>✔️ Thông tin SDT, Google Map vị trí nhà trai, gái</span></div>
-            <div class="feature"><span>✔️Xác nhận tham dự và gửi lời chúc tới dâu rể </span></div>
+            <div class="feature"><span>✔️ Thông tin SDT, Google Map vị trí nhà trai,nhà gái</span></div>
+            <div class="feature"><span>✔️Xác nhận dự, gửi lời chúc tới dâu rể </span></div>
         </div>
         <p>Liên hệ ngay xem mẫu miễn phí SDT: <a style="color: red;font-size:30px;" href="tel:(+84)335275330"><b>0335275330</b></a></p>
         <div class="buttons">
