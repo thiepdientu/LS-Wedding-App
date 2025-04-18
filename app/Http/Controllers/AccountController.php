@@ -34,14 +34,14 @@ class AccountController extends Controller
             return response()->json([
                 'code' => 0,
                 'message' => 'Account not exist'
-            ],404);
+            ],201);
         }
 
         if (!Hash::check($request->password, $acc->password)) {
             return response()->json([
                 'code' => 0,
                 'message' => 'Password not correct. Try again!'
-            ], 401);
+            ], 201);
         }
 
         return response()->json([
@@ -152,7 +152,7 @@ class AccountController extends Controller
             return response()->json([
                 'code' => 404,
                 'message' => 'Not found'
-            ], 404);
+            ], 201);
         }
 
         $account->delete();

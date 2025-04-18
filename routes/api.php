@@ -10,3 +10,4 @@ Route::get('/account/ping', function () {
 });
 
 Route::post('/account/login', [AccountController::class, 'login'])->name('account.login');
+Route::post('/account/register', [AccountController::class, 'store'])->name('account.store');
