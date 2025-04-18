@@ -51,5 +51,6 @@ class WeddingCard extends Model
         'bride_qr',             // Mã QR cô dâu
         'groom_map',            // Bản đồ nhà chú rể
         'bride_map',            // Bản đồ nhà cô dâu
+        'email',                //email
     ];
 }

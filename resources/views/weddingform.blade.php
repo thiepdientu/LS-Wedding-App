@@ -23,6 +23,9 @@
     <!-- Form -->
     <form action="{{ isset($weddingCard) ? route('wedding.update', $weddingCard->id) : route('wedding.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
+        <label>Email</label>
+        <input type="text" name="email" value="{{ old('email', $weddingCard->email ?? '') }}" required><br>
+
         <label>Tên thiệp</label>
         <input type="text" name="identifyWedding" value="{{ old('identifyWedding', $weddingCard->identifyWedding ?? '') }}" required><br>
 

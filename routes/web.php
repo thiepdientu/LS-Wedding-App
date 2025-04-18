@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AccountController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WeddingCardController;
 
@@ -21,12 +22,18 @@ Route::get('admin/all-wedding', function () {
     try {
          DB::connection()->getPdo();
          $cards = DB::select("SELECT * FROM wedding_cards;");
-         dd($cards);
+         return response()->json([
+            'code' => 1,
+            'message' => 'Success',
+            'data' => $cards
+        ], 200);
 
     } catch (\Exception $e) {
         return "Lỗi kết nối: " . $e->getMessage();
     }
 });
+
+Route::get('/getListWedding/{key}', [WeddingCardController::class, 'getListWedding']);
 
 
 // Route điều hướng user đến thiệp cưới dựa vào key
@@ -43,3 +50,30 @@ Route::get('admin/create', [WeddingCardController::class, 'create'])->name('wedd
 Route::post('/wedding-cards/store', [WeddingCardController::class, 'store'])->name('wedding.store');
 // Route điều hướng user đến template thiệp
 Route::get('/template/{key}', [WeddingCardController::class, 'showTemplate']);
+
+// api
+
+Route::get('admin/all-account', function () {
+    try {
+         DB::connection()->getPdo();
+         $cards = DB::select("SELECT * FROM accounts;");
+         return response()->json([
+            'code' => 1,
+            'message' => 'Success',
+            'data' => $cards
+        ], 201);
+    } catch (\Exception $e) {
+        return response()->json([
+            'code' => 0,
+            'message' => $e->getMessage(),
+    
+        ], 201);
+    }
+});
+
+Route::get('/account/create', [AccountController::class, 'create'])->name('account.create');
+Route::get('/account/edit/{id}', [AccountController::class, 'edit'])->name('account.edit');
+Route::post('/account/create', [AccountController::class, 'store'])->name('account.store');
+Route::post('/account/update', [AccountController::class, 'update'])->name('account.update');
+Route::post('/account/login', [AccountController::class, 'login'])->name('account.login');
+

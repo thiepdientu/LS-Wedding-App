@@ -55,8 +55,8 @@ return new class extends Migration
             $table->string('groom_qr'); // qr chú rể
             $table->string('bride_qr'); // qr cô dâu
             $table->string('groom_map'); // map chú rể
-            $table->string('bride_map'); // map cô dâu
-
+            $table->string('bride_map'); // map cô dâu 
+            $table->string('email');
             $table->timestamps();
         });
     }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\WeddingCard;
+use App\Models\Account;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
@@ -86,6 +87,18 @@ class WeddingCardController extends Controller
             default:
                 return view('welcome');
         }
+    }
+
+    public function getListWedding($key)
+    {
+        // Tìm thiệp cưới theo mail user
+        $weddingCard = WeddingCard::where('email', $key)->get();
+
+        return response()->json([
+            'code' => 1,
+            'message' => 'Success',
+            'data' => $weddingCard
+        ], 200);
     }
 
     public function showTemplate($key)
@@ -209,8 +222,18 @@ class WeddingCardController extends Controller
             'bride_qr' => 'required|string|max:500',
             'groom_map' => 'required|string|max:500',
             'bride_map' => 'required|string|max:500',
+            'email' => 'required|string|max:500',
         ]);
 
+        $acc = Account::where('email', $request->email)
+        ->first();
+
+        if (!$acc) {
+            return response()->json([
+                'code' => 0,
+                'message' => 'Account not exist'
+            ],404);
+        }
 
         // 2️⃣ Tạo thiệp cưới trước để lấy ID
         $weddingCard = WeddingCard::create($validated);
