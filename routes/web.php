@@ -75,5 +75,4 @@ Route::get('/account/create', [AccountController::class, 'create'])->name('accou
 Route::get('/account/edit/{id}', [AccountController::class, 'edit'])->name('account.edit');
 Route::post('/account/create', [AccountController::class, 'store'])->name('account.store');
 Route::post('/account/update', [AccountController::class, 'update'])->name('account.update');
-Route::post('/account/login', [AccountController::class, 'login'])->name('account.login');
 
