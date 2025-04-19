@@ -3,6 +3,8 @@
 use App\Http\Controllers\AccountController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WeddingCardController;
+use App\Http\Controllers\TodoTaskController;
+use App\Http\Controllers\ResponseController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -26,6 +28,36 @@ Route::get('admin/all-wedding', function () {
             'code' => 1,
             'message' => 'Success',
             'data' => $cards
+        ], 200);
+
+    } catch (\Exception $e) {
+        return "Lỗi kết nối: " . $e->getMessage();
+    }
+});
+
+Route::get('admin/all-task', function () {
+    try {
+         DB::connection()->getPdo();
+         $task = DB::select("SELECT * FROM todo_tasks;");
+         return response()->json([
+            'code' => 1,
+            'message' => 'Success',
+            'data' => $task
+        ], 200);
+
+    } catch (\Exception $e) {
+        return "Lỗi kết nối: " . $e->getMessage();
+    }
+});
+
+Route::get('admin/all-response', function () {
+    try {
+         DB::connection()->getPdo();
+         $response = DB::select("SELECT * FROM responses;");
+         return response()->json([
+            'code' => 1,
+            'message' => 'Success',
+            'data' => $response
         ], 200);
 
     } catch (\Exception $e) {
@@ -76,3 +108,12 @@ Route::get('/account/edit/{id}', [AccountController::class, 'edit'])->name('acco
 Route::post('/account/create', [AccountController::class, 'store'])->name('account.store');
 Route::post('/account/update', [AccountController::class, 'update'])->name('account.update');
 
+Route::get('/task/create', [TodoTaskController::class, 'create'])->name('task.create');
+Route::get('/task/edit/{id}', [TodoTaskController::class, 'edit'])->name('task.edit');
+// Route::post('/task/create', [TodoTaskController::class, 'store'])->name('task.store');
+// Route::post('/task/update/{key}', [TodoTaskController::class, 'update'])->name('task.update');
+
+Route::get('/response/create', [ResponseController::class, 'create'])->name('response.create');
+Route::get('/response/edit/{id}', [ResponseController::class, 'edit'])->name('response.edit');
+// Route::post('/response/create', [ResponseController::class, 'store'])->name('response.store');
+// Route::post('/response/update/{id}', [ResponseController::class, 'update'])->name('response.update');
